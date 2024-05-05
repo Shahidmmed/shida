@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=ITC+Avant+Garde+Gothic+Std:wght@600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "ITC Avant Garde Gothic Std", sans-serif;
+}
+
+.mega-text {
+  font-size: 12.5rem;
+}
+
+.giga-text {
+  font-size: 10rem;
+}
+
+.text-carousel {
+  overflow: hidden;
+  height: 2em;
+  width: 100%;
+  position: relative;
+}
+
+.text-container {
+  display: flex;
+  animation: scrollText 20s linear infinite;
+}
+
+.text-item {
+  margin-right: 20px;
+  white-space: nowrap !important;
+}
+
+.border-black {
+  -webkit-text-stroke: 1px #000000;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
