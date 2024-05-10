@@ -37,6 +37,10 @@ body {
   -webkit-text-stroke: 1px #000000;
 }
 
+#topnav a.active {
+  border-bottom: 1px solid black;
+}
+
 @keyframes scrollText {
   0% {
     transform: translateX(0%);

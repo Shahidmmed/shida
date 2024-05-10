@@ -2,6 +2,8 @@ import { Input } from "@/components/ui/input";
 import hey from "../../assets/hey.gif";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
+import { Linkedin, Twitter } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -36,7 +38,17 @@ const Contact = () => {
             <Textarea id="description" className="min-h-32" />
           </div>
         </div>
+        <Button className="rounded-none bg-black px-16 py-6 border mt-6">
+          Send Message
+        </Button>
       </div>
+      <footer className="flex justify-between py-6">
+        <div className="underline">Naayettey07@gmail.com</div>
+        <div className="flex justify-evenly">
+          <Linkedin className="mr-4" />
+          <Twitter />
+        </div>
+      </footer>
     </div>
   );
 };

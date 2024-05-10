@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useEffect, useState } from "react";
 import Footer from "../layout/Footer";
+import { Link } from "react-router-dom";
 const Work = () => {
   const [items] = useState([
     "Design Consulting ✏️",
@@ -98,9 +99,12 @@ const Work = () => {
                 An app that aims to help Ghanaian businesses plan, track and
                 manage their daily operations.
               </p>
-              <Button className="rounded-none bg-black px-16 py-6 border">
+              <Link
+                to="/work/management"
+                className="inline-block bg-black px-16 py-4 border border-white rounded-none text-white"
+              >
                 Case Study
-              </Button>
+              </Link>
             </div>
           </div>
         </div>

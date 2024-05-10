@@ -48,7 +48,10 @@ const Navbar = () => {
             </nav>
           </SheetContent>
         </Sheet>
-        <nav className="flex font-medium items-center gap-4 md:ml-auto md:gap-2 lg:gap-4 ml-auto flex-1 sm:flex-initial">
+        <nav
+          id="topnav"
+          className="flex font-medium items-center gap-4 md:ml-auto md:gap-2 lg:gap-4 ml-auto flex-1 sm:flex-initial"
+        >
           <NavLink
             to="/work"
             className="text-foreground transition-colors hover:text-foreground"
@@ -56,7 +59,7 @@ const Navbar = () => {
             Work
           </NavLink>
           <NavLink
-            to="/about"
+            to="/"
             className="text-muted-foreground transition-colors hover:text-foreground"
           >
             About
