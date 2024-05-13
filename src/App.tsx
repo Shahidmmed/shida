@@ -4,6 +4,7 @@ import Layout from "./pages/layout/Layout";
 import Work from "./pages/work/Work";
 import Contact from "./pages/contact/Contact";
 import CaseStudy from "./pages/work/CaseStudy";
+import Report from "./pages/work/Report";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
           <Route element={<Layout />}>
             <Route path="/" element={<About />} />
             <Route path="/work" element={<Work />} />
-            <Route path="/work/:category" element={<CaseStudy />} />
+            <Route path="/work/:caseStudy" element={<CaseStudy />} />
+            <Route path="/work/report/:report" element={<Report />} />
             <Route path="/contact" element={<Contact />} />
           </Route>
         </Routes>

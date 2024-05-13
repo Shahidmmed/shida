@@ -3,6 +3,9 @@ import { Card } from "@/components/ui/card";
 import { useEffect, useState } from "react";
 import Footer from "../layout/Footer";
 import { Link } from "react-router-dom";
+import { data, moreWork } from "@/data/info";
+import React from "react";
+import { getImgUrl } from "@/data/functions";
 const Work = () => {
   const [items] = useState([
     "Design Consulting ✏️",
@@ -68,60 +71,52 @@ const Work = () => {
       </section>
       <section className="py-8 bg-black text-white px-20 flex items-center flex-col justify-center mx-auto">
         <div className="space-y-12">
-          <div className="flex work-container">
-            <Card className="w-[350px]"></Card>
-            <div className="p-4 max-w-[500px] ml-12">
-              <p className="font-avant-garde font-medium text-sm leading-5 tracking-wide text-left mb-2">
-                UI/UX DESIGN &#10209; USABILITY TESTING REPORT
-              </p>
-              <h2 className="font-avant-garde font-medium text-5xl leading-3xl tracking-tighter text-left mb-2">
-                Leads Management
-              </h2>
-              <p className="mb-2 py-4">
-                A management platform that aims to assist with collecting and
-                tracking prospects' data
-              </p>
-              <Button className="rounded-none bg-black px-16 py-6 border">
-                View Report
-              </Button>
+          {data.map((item, index) => (
+            <div key={index} className="flex work-container">
+              <Card
+                className="w-[350px] bg-cover bg-center"
+                style={{
+                  backgroundImage: `url(${getImgUrl(item.previewImg)})`,
+                }}
+              ></Card>
+              <div className="p-4 max-w-[500px] ml-12">
+                <p className="font-avant-garde font-medium text-sm leading-5 tracking-wide text-left mb-2">
+                  {item.designTypes.map((type, index) => (
+                    <React.Fragment key={index}>
+                      {type}
+                      {index !== item.designTypes.length - 1 && <> &#10209; </>}
+                    </React.Fragment>
+                  ))}
+                </p>
+                <h2 className="font-avant-garde font-medium text-5xl leading-3xl tracking-tighter text-left mb-2">
+                  {item.name}
+                </h2>
+                <p className="mb-2 py-4">{item.brief}</p>
+                <Link
+                  to={
+                    item.type === "report"
+                      ? `/work/report/${item.id}`
+                      : `/work/${item.id}`
+                  }
+                  className="inline-block bg-black px-14 py-4 border border-white rounded-none text-white"
+                >
+                  {item.type === "report" ? "View Report" : "Case Study"}
+                </Link>
+              </div>
             </div>
-          </div>
-          <div className="flex work-container">
-            <Card className="w-[350px]"></Card>
-            <div className="p-4 max-w-[500px] ml-12">
-              <p className="font-avant-garde font-medium text-sm leading-5 tracking-wide text-left mb-2">
-                UI/UX DESIGN &#10209; MOBILE APP &#11047; CASE STUDY
-              </p>
-              <h2 className="font-avant-garde font-medium text-5xl leading-3xl tracking-tighter text-left mb-2">
-                Inventory Managemennt
-              </h2>
-              <p className="mb-2 py-4">
-                An app that aims to help Ghanaian businesses plan, track and
-                manage their daily operations.
-              </p>
-              <Link
-                to="/work/management"
-                className="inline-block bg-black px-16 py-4 border border-white rounded-none text-white"
-              >
-                Case Study
-              </Link>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
+
       <section className="py-8 px-20 mx-auto">
-        <div className="flex justify-evenly py-10">
-          <div className="">
-            <Card className="w-[150px] h-[150px]"></Card>
-            <p>Property & Roomie Finder</p>
-          </div>
-          <div>
-            <Card className="w-[150px] h-[150px]"></Card>
-            <p>Members Management App</p>
-          </div>
-          <div>
-            <Card className="w-[150px] h-[150px]"></Card>
-            <p>Pay Up Website</p>
+        <div className="overflow-x-auto">
+          <div className="flex justify-evenly py-10">
+            {moreWork.map((work, index) => (
+              <div key={index}>
+                <Card className="w-[150px] h-[150px]"></Card>
+                <p>{work.img}</p>
+              </div>
+            ))}
           </div>
         </div>
         <hr className="my-6 border-t border-gray-300" />

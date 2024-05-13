@@ -56,20 +56,20 @@ const About = () => {
           </p>
           <p>What i am good at (but not limited to) :</p>
           <p className="font-sans font-avant-garde mb-6 text-base leading-tight tracking-tighter text-left">
-            <span className="font-bold">Design & Strategy:</span> Design
+            <span className="font-bold">Design & Strategy: </span> Design
             Thinking, UI/UX Design, Product Strategy & Management, Creative
             Direction
           </p>
           <p className="font-sans font-avant-garde mb-6 text-base leading-tight tracking-tighter text-left">
-            <span className="font-bold">Research & Evaluation:</span> Market &
+            <span className="font-bold">Research & Evaluation: </span>Market &
             User Research, User Interviews, Usability Testing
           </p>
           <p className="font-sans font-avant-garde mb-6 text-base leading-tight tracking-tighter text-left">
-            <span className="font-bold">Prototyping & Design:</span>
+            <span className="font-bold">Prototyping & Design: </span>
             Wireframing, Prototyping, Visual Design & Style Guides
           </p>
           <p className="font-sans font-avant-garde mb-6 text-base leading-tight tracking-tighter text-left">
-            <span className="font-bold">Digital Marketing & Branding:</span>
+            <span className="font-bold">Digital Marketing & Branding: </span>
             Social Media Management, SEO, Copy & Content Writing
           </p>
 
@@ -85,7 +85,7 @@ const About = () => {
         </h4>
 
         <div className="font-avant-garde py-8">
-          <div className="flex justify-evenly">
+          <div className="flex justify-evenly py-8">
             <div className="mb-6 w-[200px]">
               <p className="text-base font-light leading-none tracking-wide">
                 Nana Yaw Kunale
@@ -101,7 +101,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="flex justify-evenly">
+          <div className="flex justify-evenly py-8">
             <div className="mb-6 w-[200px]">
               <p className="text-base font-light leading-none tracking-wide">
                 Ummul-Khair Zurak
@@ -114,6 +114,22 @@ const About = () => {
               Her designs are intuitive and suit the needs of users perfectly.
               Her excellent inter-personal skills coupled with her design skills
               makes her a top-notch professional.
+            </p>
+          </div>
+          <div className="flex justify-evenly py-8">
+            <div className="mb-6 w-[200px]">
+              <p className="text-base font-light leading-none tracking-wide">
+                Welly Gedel
+              </p>
+              <p className="text-xs font-light leading-none tracking-wide">
+                Product Owner
+              </p>
+            </div>
+            <p className="text-base font-light leading-none tracking-wide mb-4 max-w-[900px]">
+              Ayeley’s outstanding skills, dedication, and patience resulted in
+              a product that perfectly aligned with our vision and achieved a
+              high level of quality. Her work continues to be incredibly
+              valuable to me and my team.
             </p>
           </div>
         </div>

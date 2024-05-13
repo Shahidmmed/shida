@@ -41,6 +41,11 @@ body {
   border-bottom: 1px solid black;
 }
 
+/* Add this CSS to your Tailwind CSS file or custom CSS */
+.list-lower-alpha {
+  list-style-type: lower-alpha;
+}
+
 @keyframes scrollText {
   0% {
     transform: translateX(0%);

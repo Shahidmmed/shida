@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Linkedin, Twitter } from "lucide-react";
+import MiniFooter from "./MiniFooter";
 
 const Footer = () => {
   return (
@@ -22,13 +22,7 @@ const Footer = () => {
           </Button>
         </div>
       </div>
-      <footer className="flex justify-between py-6">
-        <div className="underline">Naayettey07@gmail.com</div>
-        <div className="flex justify-evenly">
-          <Linkedin className="mr-4" />
-          <Twitter />
-        </div>
-      </footer>
+      <MiniFooter />
     </div>
   );
 };
