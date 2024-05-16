@@ -46,6 +46,71 @@ body {
   list-style-type: lower-alpha;
 }
 
+.product {
+  top: 54%;
+  left: 64%;
+  z-index: 1;
+}
+
+.stars {
+  top: -4%;
+  left: -8%;
+}
+
+.footer-stars {
+  top: 1%;
+  left: -2%;
+}
+
+.hi {
+  bottom: 7%;
+  left: 52%;
+}
+
+.contact-hi {
+  bottom: 7%;
+  left: 37%;
+}
+
+.heart-kiss {
+  top: -5%;
+  right: -4%;
+}
+
+.ux {
+  bottom: 75%;
+  left: 100%;
+}
+
+.heart {
+  top: 35%;
+  left: 39%;
+}
+
+.top-btn-position {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  z-index: 999;
+}
+
+.top-btn-style {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+.top-btn-style:hover {
+  animation: none;
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
 @keyframes scrollText {
   0% {
     transform: translateX(0%);

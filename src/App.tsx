@@ -5,11 +5,13 @@ import Work from "./pages/work/Work";
 import Contact from "./pages/contact/Contact";
 import CaseStudy from "./pages/work/CaseStudy";
 import Report from "./pages/work/Report";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<About />} />

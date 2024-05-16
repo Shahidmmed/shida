@@ -2,7 +2,7 @@ import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/Logo.svg";
+import logo from "/assets/images/Logo.svg";
 
 const Navbar = () => {
   return (

@@ -1,19 +1,25 @@
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import Footer from "../layout/Footer";
+import shida from "/assets/images/shida.png";
+import kite from "/assets/images/kite.png";
+import kite2 from "/assets/images/kite2.png";
+import heart from "/assets/images/heart-kiss.png";
+import whiskers from "/assets/images/whiskers.png";
+import whiskers2 from "/assets/images/whiskers2.png";
 
 const About = () => {
   return (
     <div>
       <section className="pb-16">
-        <div className="max-w-[1220px] px-2 mx-auto">
+        <div className="max-w-[1200px] px-28 mx-auto">
           <h3 className="font-sans font-avant-garde mb-6 font-medium text-3xl leading-tight tracking-tighter text-left">
             <span className="bg-blue-100">Envisioning</span> the possibility of
-            things and using my creativity to make them happen in ways that I
-            can is what I do for a living.
+            things and <span className="bg-blue-100">using my creativity</span>{" "}
+            to make them happen in ways that I can{" "}
+            <span className="bg-blue-100">is what I do for a living.</span>
           </h3>
-          <div className="flex work-container">
-            <div className="max-w-[750px] mr-4">
+          <div className="flex work-container justify-between">
+            <div className="max-w-[550px] mr-4">
               <p className="font-sans font-avant-garde text-base font-light leading-relaxed tracking-wide text-left">
                 I am a versatile creative living in Accra and i’m all about
                 using UX and storytelling to craft impactful experiences that
@@ -29,17 +35,24 @@ const About = () => {
                 My Resume
               </Button>
             </div>
-            <Card className="w-[550px] ml-4"></Card>
+            <div className="relative flex flex-row-reverse">
+              <img src={shida} alt="orange kite" className="h-80 ml-6" />
+              <img
+                src={heart}
+                alt="heart"
+                className="h-12 absolute z-10 heart-kiss"
+              />
+            </div>
           </div>
           <div className="flex justify-between items-center pt-12">
             <p className="font-avant-garde font-bold text-5xl text-black leading-none tracking-tighter">
               Innovation
             </p>
-            <span className="text-black">&#10209;</span>
+            <img src={kite} alt="orange kite" className="h-10" />
             <p className="font-avant-garde font-bold text-5xl text-white leading-none tracking-tighter border-black">
               Strategy
             </p>
-            <span className="text-black">&#10209;</span>
+            <img src={kite2} alt="green kite" className="h-10" />
             <p className="font-avant-garde font-bold text-5xl text-black leading-none tracking-tighter">
               Design
             </p>
@@ -48,13 +61,20 @@ const About = () => {
       </section>
       <section className="py-8 bg-black text-white px-20 flex items-center flex-col justify-centermax-w-[1220px] mx-auto">
         <div className="space-y-12 ">
-          <h3>Areas of expertise</h3>
+          <div>
+            <h3 className="font-avant-garde text-5xl font-medium leading-14 mb-6">
+              Areas of expertise
+            </h3>
+            <hr className="border-white w-3/4 mt-0" />
+          </div>
           <p>
             My key areas of expertise are in Design, Management, Marketing and
             Strategy. Below is a more granular breakdown of my skill-set and
             services.
           </p>
-          <p>What i am good at (but not limited to) :</p>
+          <p className="text-blue-500">
+            What i am good at (but not limited to) :
+          </p>
           <p className="font-sans font-avant-garde mb-6 text-base leading-tight tracking-tighter text-left">
             <span className="font-bold">Design & Strategy: </span> Design
             Thinking, UI/UX Design, Product Strategy & Management, Creative
@@ -78,13 +98,17 @@ const About = () => {
           </Button>
         </div>
       </section>
-      <section className="py-12 max-w-[1220px] px-2 mx-auto">
-        <h4 className="font-avant-garde font-medium text-lg md:text-2xl lg:text-3xl leading-9 md:leading-10 lg:leading-11 tracking-tight md:tracking-tighter lg:tracking-tight text-center">
-          Strategic thinking + collaboration = impactful solutions for you &
-          your business.
-        </h4>
+      <section className="py-12 px-16 mx-auto">
+        <div className="flex justify-center items-center">
+          <img src={whiskers} alt="whiskers" className="h-24" />
+          <h4 className="font-avant-garde text-nowrap font-medium text-lg md:text-2xl lg:text-3xl leading-9 md:leading-10 lg:leading-11 tracking-tight md:tracking-tighter lg:tracking-tight text-center">
+            Strategic thinking + collaboration = impactful solutions for you &
+            your business.
+          </h4>
+          <img src={whiskers2} alt="whiskers" className="h-24" />
+        </div>
 
-        <div className="font-avant-garde py-8">
+        <div className="font-avant-garde py-8 max-w-[1220px] px-16 mx-auto">
           <div className="flex justify-evenly py-8">
             <div className="mb-6 w-[200px]">
               <p className="text-base font-light leading-none tracking-wide">
@@ -94,6 +118,7 @@ const About = () => {
                 CTO - Detosphere
               </p>
             </div>
+            <span className="text-2xl font-bold ml-2 mr-6">:</span>
             <p className="text-base font-light leading-none tracking-wide mb-4 max-w-[900px]">
               I love working with Naa. She’s an amazing person first and a
               capable UI/UX Designer with impeccable work ethic. She may also,
@@ -110,6 +135,7 @@ const About = () => {
                 Software Dev
               </p>
             </div>
+            <span className="text-2xl font-bold ml-2 mr-6">:</span>
             <p className="text-base font-light leading-none tracking-wide mb-4 max-w-[900px]">
               Her designs are intuitive and suit the needs of users perfectly.
               Her excellent inter-personal skills coupled with her design skills
@@ -125,6 +151,7 @@ const About = () => {
                 Product Owner
               </p>
             </div>
+            <span className="text-2xl font-bold ml-2 mr-6">:</span>
             <p className="text-base font-light leading-none tracking-wide mb-4 max-w-[900px]">
               Ayeley’s outstanding skills, dedication, and patience resulted in
               a product that perfectly aligned with our vision and achieved a

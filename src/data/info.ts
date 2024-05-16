@@ -47,23 +47,23 @@ export const data = [
 
 export const moreWork = [
   {
-    name: "",
-    img: "Property & Roomie Finder",
+    img: "previewImgs/finder.png",
+    name: "Property & Roomie Finder",
   },
   {
-    name: "",
-    img: "Members Management App",
+    img: "previewImgs/members.png",
+    name: "Members Management App",
   },
   {
-    name: "",
-    img: "Pay Up Website",
+    img: "previewImgs/payup.png",
+    name: "Pay Up Website",
   },
   {
-    name: "",
-    img: "NCA Website",
+    img: "previewImgs/nca.png",
+    name: "NCA Website",
   },
   {
-    name: "",
-    img: "Ehealth Website",
+    img: "previewImgs/ehealth.png",
+    name: "Ehealth Website",
   },
 ];
