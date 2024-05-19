@@ -11,11 +11,11 @@ import heart from "/assets/images/heart.png";
 
 const Contact = () => {
   return (
-    <div className="max-w-[1220px] px-2 mx-auto">
+    <div className="max-w-[1220px] px-2 mx-auto pt-20">
       <div className="flex relative">
         <img src={star} alt="stars" className="absolute footer-stars" />
         <img src={hi} alt="ux" className="absolute contact-hi" />
-        <h1 className="font-avant-garde font-bold text-5xl leading-none tracking-tighter text-left giga-text">
+        <h1 className="avant-garde-bold font-bold text-5xl leading-none tracking-tighter text-left giga-text">
           SAY HI
         </h1>
       </div>

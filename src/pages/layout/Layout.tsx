@@ -5,7 +5,7 @@ const Layout = () => {
   return (
     <div className="w-screen h-screen overflow-x-hidden">
       <Navbar />
-      <div className="pt-24">
+      <div className="">
         <Outlet />
       </div>
     </div>

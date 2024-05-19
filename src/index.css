@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=ITC+Avant+Garde+Gothic+Std:wght@600&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=ITC+Avant+Garde+Gothic+Std:wght@600&display=swap"); */
 
 @tailwind base;
 @tailwind components;
@@ -6,6 +6,18 @@
 
 body {
   font-family: "ITC Avant Garde Gothic Std", sans-serif;
+}
+
+.avant-garde-extralight {
+  font-family: "ITC Avant Garde Gothic Std ExtraLight", sans-serif;
+}
+.avant-garde-bold {
+  font-family: "ITC Avant Garde Gothic Std Bold", sans-serif;
+}
+
+.font-avant-garde-thin {
+  font-family: "ITC Avant Garde Gothic Std ExtraLight", sans-serif;
+  font-weight: 100;
 }
 
 .mega-text {
@@ -54,7 +66,7 @@ body {
 
 .stars {
   top: -4%;
-  left: -8%;
+  left: -7%;
 }
 
 .footer-stars {
@@ -63,8 +75,8 @@ body {
 }
 
 .hi {
-  bottom: 7%;
-  left: 52%;
+  bottom: 4%;
+  left: 68%;
 }
 
 .contact-hi {
@@ -79,11 +91,11 @@ body {
 
 .ux {
   bottom: 75%;
-  left: 100%;
+  left: 98%;
 }
 
 .heart {
-  top: 35%;
+  top: 41%;
   left: 39%;
 }
 

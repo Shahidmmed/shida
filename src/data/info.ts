@@ -17,7 +17,7 @@ export const data = [
     brief:
       "An app that aims to help Ghanaian businesses plan, track and manage their daily operations.",
     previewImg: "previewImgs/work-inventory.png",
-    image: "case_studies/inventory.png",
+    image: "case_studies/inventory/inventory.png",
     previewText: "inventory management",
     designTypes: ["UI/UX DESIGN", "MOBILE APP", "CASE STUDY"],
   },
@@ -28,7 +28,7 @@ export const data = [
     brief:
       "An app that portrays accurate restaurant information, allows users to make reservations and pre-order meals.",
     previewImg: "previewImgs/work-restaurant.png",
-    image: "case_studies/inventory.png",
+    image: "case_studies/restaurant/restaurant.png",
     previewText: "Restaurant Booking",
     designTypes: ["USER RESEARCH", "UX DESIGN", "USABILITY TESTING"],
   },
@@ -39,9 +39,9 @@ export const data = [
     brief:
       "A free service that connects Ghanaian shoppers with UK stores, making it easy to buy things from abroad.",
     previewImg: "previewImgs/work-thenga.png",
-    image: "case_studies/inventory.png",
+    image: "case_studies/thenga/thenga.png",
     previewText: "Thenga Web & Extension",
-    designTypes: ["UI/UX DESIGN", "Visual Design"],
+    designTypes: ["UI/UX DESIGN", "VISUAL DESIGN"],
   },
 ];
 

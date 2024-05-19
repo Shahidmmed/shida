@@ -9,29 +9,31 @@ const Footer = () => {
   return (
     <div className="max-w-[1150px] mx-auto">
       <div className="mx-auto flex items-left flex-col justify-center p-10">
-        <p>Not you scrolling to the bottom 😌, </p>
+        <p className="avant-garde-extralight text-xl tracking-widest pb-6">
+          Not you scrolling to the bottom 😌,
+        </p>
         <div className="flex relative">
           <img src={star} alt="stars" className="absolute footer-stars" />
           <img src={hi} alt="ux" className="absolute hi" />
-          <h1 className="font-avant-garde font-bold text-8xl leading-none tracking-tighter text-left mega-text">
+          <h1 className="avant-garde-bold font-extrabold  leading-none tracking-wide text-left mega-text">
             SAY HI
           </h1>
         </div>
         <div>
-          <p>
+          <p className="avant-garde-extralight text-xl tracking-widest pt-6">
             Reach out for design consultations, collaborations and general
             enquiries. I'm just a click away!
           </p>
-          <div className="flex justify-between max-w-[650px]">
+          <div className="flex justify-between max-w-[950px]">
             <img src={heart} alt="stars" className="h-[40px]" />
             <img src={solutions} alt="ux" className="h-[40px]" />
           </div>
         </div>
         <div className="flex pt-14">
-          <Button className="rounded-none bg-white text-black px-16 py-6 border">
+          <Button className="rounded-none bg-white text-base text-black px-20 py-8 border-2 border-black">
             Contact
           </Button>
-          <Button className="rounded-none bg-black px-16 py-6 border ml-6">
+          <Button className="rounded-none bg-black text-base px-20 py-8 border-2 ml-6">
             About Me
           </Button>
         </div>
