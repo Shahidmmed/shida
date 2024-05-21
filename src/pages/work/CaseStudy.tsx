@@ -119,7 +119,16 @@ const CaseStudy = () => {
                     <h2 className="font-avant-garde text-3xl font-medium leading-10">
                       My Design Process
                     </h2>
-                    <p className="pt-8">Image</p>
+                    <div className="pt-8">
+                      {project.images && project.images.length > 0 && (
+                        <>
+                          <img
+                            src={getImgUrl(project.images[0])}
+                            alt="Design Process Image"
+                          />
+                        </>
+                      )}
+                    </div>
                   </div>
                 </div>
                 <div className="px-16 max-w-[1220px] mx-auto py-14">
@@ -150,8 +159,26 @@ const CaseStudy = () => {
                       designs—sounds fun, right?
                     </li>
                   </ul>
-                  <div className="py-10">Image</div>
-                  <div>Image</div>
+                  <div className="py-10 flex justify-center">
+                    {project.images && project.images.length > 0 && (
+                      <>
+                        <img
+                          src={getImgUrl(project.images[1])}
+                          alt="Transformation Image"
+                        />
+                      </>
+                    )}
+                  </div>
+                </div>
+                <div>
+                  {project.images && project.images.length > 0 && (
+                    <>
+                      <img
+                        src={getImgUrl(project.images[2])}
+                        alt="Scene Image"
+                      />
+                    </>
+                  )}
                 </div>
               </TabsContent>
               <TabsContent value="developing">
@@ -173,7 +200,7 @@ const CaseStudy = () => {
                       how to blend visual elements into the design to boost the
                       overall experience (while developing my information
                       architecture as well—sounds complex, but that's literally
-                      the job
+                      the job😭.)
                     </li>
                     <li className="mb-6">
                       The first challenge I faced was understanding the project
@@ -194,7 +221,16 @@ const CaseStudy = () => {
                       develop them into digital wireframes.
                     </li>
                   </ul>
-                  <div>Image</div>
+                  <div className="py-10 flex justify-center">
+                    {project.images && project.images.length > 0 && (
+                      <>
+                        <img
+                          src={getImgUrl(project.images[3])}
+                          alt="Sketch Image"
+                        />
+                      </>
+                    )}
+                  </div>
                 </div>
                 <div className="px-16 max-w-[1220px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
@@ -206,7 +242,16 @@ const CaseStudy = () => {
                     to ensure my ideas are organised into key sections and
                     functionalities.
                   </p>
-                  <div>Image</div>
+                </div>
+                <div className="py-10 flex justify-center">
+                  {project.images && project.images.length > 0 && (
+                    <>
+                      <img
+                        src={getImgUrl(project.images[4])}
+                        alt="Information Architecture Image"
+                      />
+                    </>
+                  )}
                 </div>
                 <div className="px-16 max-w-[1220px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
@@ -218,7 +263,16 @@ const CaseStudy = () => {
                     design to meet the needs and expectations of users and the
                     business.
                   </p>
-                  <div>Image</div>
+                </div>
+                <div className="py-10 flex justify-center">
+                  {project.images && project.images.length > 0 && (
+                    <>
+                      <img
+                        src={getImgUrl(project.images[5])}
+                        alt="User Journey Image"
+                      />
+                    </>
+                  )}
                 </div>
                 <div className="px-16 max-w-[1220px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
@@ -233,11 +287,23 @@ const CaseStudy = () => {
                     on sales and invoices, stands as the most significant
                     journey within the app.
                   </p>
-                  <div>Image</div>
+                </div>
+                <div className="py-10 flex justify-center">
+                  {project.images && project.images.length > 0 && (
+                    <>
+                      <img
+                        src={getImgUrl(project.images[6])}
+                        alt="User Flows Image"
+                      />
+                    </>
+                  )}
+                </div>
+                <div className="px-16 max-w-[1220px] mx-auto py-14 flex flex-col items-center justify-center">
                   <p>
                     Every design decision is meticulously tailored to enhance
                     user engagement and satisfaction.
                   </p>
+                  <p className="text-6xl">😌</p>
                 </div>
               </TabsContent>
               <TabsContent value="clarity">
@@ -284,18 +350,36 @@ const CaseStudy = () => {
                       combining everything into one app.
                     </li>
                   </ul>
-                  <div>Image</div>
-                  <div className="px-16 max-w-[1220px] mx-auto py-14">
-                    <h2 className="font-avant-garde text-3xl font-medium leading-10">
-                      Final Wireframes (selected frames)
-                    </h2>
-                    <p className="pt-8">
-                      The screens below show the final ideas after combining the
-                      control panel and pos lite ideas into one app after two
-                      weeks of ideations and modifications. I picked the best
-                      design patterns and flows to create the final work.
-                    </p>
-                    <div>Image</div>
+                </div>
+                <div className="py-10 flex justify-center">
+                  {project.images && project.images.length > 0 && (
+                    <>
+                      <img
+                        src={getImgUrl(project.images[7])}
+                        alt="Low-fi Wireframes Image"
+                      />
+                    </>
+                  )}
+                </div>
+                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                    Final Wireframes (selected frames)
+                  </h2>
+                  <p className="pt-8">
+                    The screens below show the final ideas after combining the
+                    control panel and pos lite ideas into one app after two
+                    weeks of ideations and modifications. I picked the best
+                    design patterns and flows to create the final work.
+                  </p>
+                  <div className="py-10 flex justify-center">
+                    {project.images && project.images.length > 0 && (
+                      <>
+                        <img
+                          src={getImgUrl(project.images[8])}
+                          alt="Final Wireframes Image"
+                        />
+                      </>
+                    )}
                   </div>
                 </div>
               </TabsContent>
@@ -329,7 +413,16 @@ const CaseStudy = () => {
                     the unique needs of each project. #WiseWordsFr
                   </p>
                 </div>
-                <div>really long image</div>
+                <div className="py-10 flex justify-center">
+                  {project.images && project.images.length > 0 && (
+                    <>
+                      <img
+                        src={getImgUrl(project.images[9])}
+                        alt="Final Screens Image"
+                      />
+                    </>
+                  )}
+                </div>
               </TabsContent>
               <TabsContent value="guide">
                 <div className="px-16 max-w-[1220px] mx-auto py-14">
@@ -349,14 +442,31 @@ const CaseStudy = () => {
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Color palette
                   </h2>
-                  <p className="pt-8">
-                    I was inspired by the design system for the desktop & web
-                    app to create my style guide for the mobile app to deliver a
-                    clear and consistent design solution. Predominantly purple
-                    and green screens would provide a sense of calm and control;
-                    simple button states and clear iconography would help make
-                    tasks feel manageable and easy to use.
-                  </p>
+                  <div className="py-10 flex justify-center">
+                    {project.images && project.images.length > 0 && (
+                      <>
+                        <img
+                          src={getImgUrl(project.images[10])}
+                          alt="Final Screens Image"
+                        />
+                      </>
+                    )}
+                  </div>
+                </div>
+                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                    Logo
+                  </h2>
+                  <div className="py-10 flex justify-center">
+                    {/* {project.images && project.images.length > 0 && (
+                      <>
+                        <img
+                          src={getImgUrl(project.images[10])}
+                          alt="Final Screens Image"
+                        />
+                      </>
+                    )} */}
+                  </div>
                 </div>
                 <div className="px-16 max-w-[1220px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
@@ -370,6 +480,78 @@ const CaseStudy = () => {
                     various screen sizes and resolutions while also creating a
                     sense of professionalism.
                   </p>
+                </div>
+                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                    Icons
+                  </h2>
+                  <div className="py-10 flex justify-center">
+                    {project.images && project.images.length > 0 && (
+                      <>
+                        <img src={getImgUrl(project.images[11])} alt="Icons" />
+                      </>
+                    )}
+                  </div>
+                </div>
+                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                    Border Radius
+                  </h2>
+                  <div className="py-10 flex justify-center">
+                    {project.images && project.images.length > 0 && (
+                      <>
+                        <img
+                          src={getImgUrl(project.images[12])}
+                          alt="Border Radius"
+                        />
+                      </>
+                    )}
+                  </div>
+                </div>
+                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                    Buttons
+                  </h2>
+                  <div className="py-10 flex justify-center">
+                    {project.images && project.images.length > 0 && (
+                      <>
+                        <img
+                          src={getImgUrl(project.images[13])}
+                          alt="Buttons"
+                        />
+                      </>
+                    )}
+                  </div>
+                </div>
+                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                    Navigations
+                  </h2>
+                  <div className="py-10 flex justify-center">
+                    {/*  {project.images && project.images.length > 0 && (
+                      <>
+                        <img
+                          src={getImgUrl(project.images[13])}
+                          alt="Buttons"
+                        />
+                      </>
+                    )} */}
+                  </div>
+                </div>
+                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                    Illustrations
+                  </h2>
+                  <div className="py-10 flex justify-center">
+                    {project.images && project.images.length > 0 && (
+                      <>
+                        <img
+                          src={getImgUrl(project.images[14])}
+                          alt="Illustrations"
+                        />
+                      </>
+                    )}
+                  </div>
                 </div>
               </TabsContent>
             </Tabs>

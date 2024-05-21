@@ -9,6 +9,103 @@ export const data = [
     image: "reports/leads.png",
     previewText: "leads management",
     designTypes: ["UI/UX DESIGN", "USABILITY TESTING REPORT"],
+    prototype:
+      "https://www.figma.com/proto/ZVVzEbX1tyeOnOfgIeq5lU/Leads-management?page-id=710%3A3&node-id=710-3654&viewport=1315%2C206%2C0.06&scaling=scale-down&starting-point-node-id=710%3A3654",
+    images: [
+      "reports/summary1.png",
+      "reports/summary2.png",
+      "reports/feedback.png",
+      "reports/interface.png",
+      "reports/interface-tested.png",
+    ],
+    challenges: [
+      {
+        name: "Victoria",
+        challenge:
+          "Figma made it very messy to use because a lot of features weren't responsive.",
+      },
+      {
+        name: "Maame",
+        challenge:
+          "Toggling between some tabs was a bit slow. Eg from Contacts to People.",
+      },
+      {
+        name: "Nana Yaw",
+        challenge: "The modals aren't going to work in real time circumstances",
+      },
+      {
+        name: "Leslie",
+        challenge: "Theres a lot going on on the overview page for me.",
+      },
+      {
+        name: "Leslie",
+        challenge: "Theres too many things to fill on the create contact page.",
+      },
+    ],
+    comments: [
+      {
+        name: "Maame",
+        comment:
+          "The key metrics are quite easy to find. I liked the red and green buttons used to indicate urgency.",
+      },
+      {
+        name: "Victoria",
+        comment:
+          "The colors are aesthetically pleasing. The layout isn’t that bad. Very simple and straight to the point. Easy to navigate",
+      },
+      {
+        name: "Sandra",
+        comment:
+          "The buttons for navigation were clearly labeled and informative.",
+      },
+      {
+        name: "Leslie",
+        comment:
+          "The interface is very user friendly. It’s not too sophisticated. It’s very cool and relaxing. It makes me want to work",
+      },
+      {
+        name: "Leslie",
+        comment:
+          "The segregation of cold and warm leads is essential cause you know which lead to put effort into.",
+      },
+      {
+        name: "Nick",
+        comment:
+          "Its straightforward and doesn't require a lot of thinking. Anyone who has experienced a dashboard should be able to use this",
+      },
+      {
+        name: "Nana Yaw",
+        comment:
+          "The interface is great. it has the right amount of colors to differentiate items.",
+      },
+      {
+        name: "Maame",
+        comment:
+          "I appreciated how I was provided a summary of each product without even clicking.",
+      },
+    ],
+    recommendations: [
+      {
+        name: "Victoria",
+        recommendation:
+          "I understood a lot because i have a business background and have worked with CRMs before, but, from another perspective; this might not be as clear.",
+      },
+      {
+        name: "Nana Yaw",
+        recommendation:
+          "The yellows are hard to see. it would be visible if you made it darker.",
+      },
+      {
+        name: "Victoria",
+        recommendation:
+          "Please include more than two avatars for representation sake",
+      },
+      {
+        name: "Leslie",
+        recommendation:
+          "Two sales people on a lead is not advisable because there can be competition. However if it’s a team lead and a sales person that’s okay.",
+      },
+    ],
   },
   {
     type: "caseStudy",
@@ -20,6 +117,25 @@ export const data = [
     image: "case_studies/inventory/inventory.png",
     previewText: "inventory management",
     designTypes: ["UI/UX DESIGN", "MOBILE APP", "CASE STUDY"],
+    images: [
+      "case_studies/inventory/design-process.png",
+      "case_studies/inventory/transformation.png",
+      "case_studies/inventory/scene1.png",
+      "case_studies/inventory/sketch.png",
+      "case_studies/inventory/info-achitecture.png",
+      "case_studies/inventory/journeys1.png",
+      "case_studies/inventory/userflows.png",
+      "case_studies/inventory/selected-frames.png",
+      "case_studies/inventory/final-frames.png",
+      "case_studies/inventory/conclusion.png",
+      "case_studies/inventory/color-palette.png",
+      "case_studies/inventory/border.png",
+      "case_studies/inventory/icons.png",
+      "case_studies/inventory/buttons.png",
+      "case_studies/inventory/illustrations.png",
+    ],
+    prototype:
+      "https://www.figma.com/proto/KHNYuoO5LgwdDXmwQvDlvo/smartup-mobile?page-id=455%3A4197&type=design&node-id=955-3709&viewport=4998%2C-4232%2C0.23&t=lRktjEAcCBG0Pmun-1&scaling=scale-down&starting-point-node-id=955%3A4412&show-proto-sidebar=1&mode=design&fuid=860195332150006297",
   },
   {
     type: "caseStudy",

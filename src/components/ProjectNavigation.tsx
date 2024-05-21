@@ -22,7 +22,7 @@ const ProjectNavigation: React.FC<ProjectNavigationProps> = ({
   const nextProject = data[nextIndex];
 
   return (
-    <div className="max-w-[1220px] mx-auto">
+    <div className="max-w-[1220px] mx-auto mt-10">
       <p className="text-lg font-medium ml-6 text-customGray">
         View more projects
       </p>

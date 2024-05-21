@@ -58,12 +58,16 @@ const Report = () => {
                 lead conversion rates, and ultimately boost customer relations.
               </p>
               <div className="mt-2">
-                <Link
-                  to="#"
-                  className="rounded-none bg-black px-12 py-4 border mt-6 text-white"
-                >
-                  View Prototype
-                </Link>
+                {project.prototype ? (
+                  <Link
+                    to={project.prototype}
+                    className="rounded-none bg-black px-12 py-4 border mt-6 text-white"
+                  >
+                    View Prototype
+                  </Link>
+                ) : (
+                  <span className="text-lg font-medium"></span>
+                )}
               </div>
             </div>
             <div className="bg-black flex py-10 text-white justify-evenly">
@@ -99,7 +103,14 @@ const Report = () => {
                 product user-friendly, easy to navigate and straightforward.
               </p>
             </div>
-            <div className="px-16 max-w-[1220px] mx-auto py-14">Images</div>
+            <div className="px-16 max-w-[1220px] mx-auto py-14">
+              {project.images && project.images.length > 0 && (
+                <>
+                  <img src={getImgUrl(project.images[0])} alt="Summary Image" />
+                  <img src={getImgUrl(project.images[1])} alt="Summary Image" />
+                </>
+              )}
+            </div>
             <div className="px-16 max-w-[1220px] mx-auto py-14">
               <h2 className="font-avant-garde text-3xl font-medium leading-10">
                 Methodology
@@ -301,64 +312,61 @@ const Report = () => {
               <div className="pt-8">
                 <p className="font-bold">Challenges</p>
                 <div className="grid flex-1 items-start gap-4 py-4 sm:py-6 md:gap-8 lg:grid-cols-3 xl:grid-cols-3">
-                  <Card className="w-[300px] h-[145px] bg-blue-200 rounded-none flex flex-col items-center justify-center">
-                    <CardTitle className="text-lg p-4">Victoria</CardTitle>
-                    <p className="text-center">
-                      Figma made it very messy to use because a lot of features
-                      weren't responsive.
-                    </p>
-                  </Card>
-                  <Card className="w-[300px] h-[145px] bg-blue-200 rounded-none flex flex-col items-center justify-center">
-                    <CardTitle className="text-lg p-4">Maame</CardTitle>
-                    <p className="text-center">
-                      Toggling between some tabs was a bit slow. Eg from
-                      Contacts to People.
-                    </p>
-                  </Card>
-                  <Card className="w-[300px] h-[145px] bg-blue-200 rounded-none flex flex-col items-center justify-center">
-                    <CardTitle className="text-lg p-4">Nana Yaw</CardTitle>
-                    <p className="text-center">
-                      The modals aren't going to work in real time circumstances
-                    </p>
-                  </Card>
+                  {project.challenges?.map((challenge, index) => (
+                    <>
+                      <Card
+                        key={index}
+                        className="w-[310px] h-[150px] bg-blue-200 rounded-none flex flex-col items-center justify-center"
+                      >
+                        <CardTitle className="text-lg p-4">
+                          {challenge.name}
+                        </CardTitle>
+                        <p className="text-center max-w-[300px] text-sm">
+                          {challenge.challenge}
+                        </p>
+                      </Card>
+                    </>
+                  ))}
                 </div>
-              </div>
-              <div className="pt-8">
-                <p className="font-bold">Comments</p>
-                <div className="grid flex-1 items-start gap-4 py-4 sm:py-6 md:gap-8 lg:grid-cols-3 xl:grid-cols-3">
-                  <Card className="w-[300px] h-[145px] bg-blue-500 rounded-none flex flex-col items-center justify-center">
-                    <CardTitle className="text-lg p-4">Victoria</CardTitle>
-                    <p className="text-center">
-                      Figma made it very messy to use because a lot of features
-                      weren't responsive.
-                    </p>
-                  </Card>
-                  <Card className="w-[300px] h-[145px] bg-blue-500 rounded-none flex flex-col items-center justify-center">
-                    <CardTitle className="text-lg p-4">Maame</CardTitle>
-                    <p className="text-center">
-                      Toggling between some tabs was a bit slow. Eg from
-                      Contacts to People.
-                    </p>
-                  </Card>
+                <div className="pt-8">
+                  <p className="font-bold">Comments</p>
+                  <div className="grid flex-1 items-start gap-4 py-4 sm:py-6 md:gap-8 lg:grid-cols-3 xl:grid-cols-3">
+                    {project.comments?.map((comment, index) => (
+                      <>
+                        <Card
+                          key={index}
+                          className="w-[310px] h-[150px] bg-blue-500 rounded-none flex flex-col items-center justify-center"
+                        >
+                          <CardTitle className="text-lg p-4">
+                            {comment.name}
+                          </CardTitle>
+                          <p className="text-center max-w-[300px] text-sm">
+                            {comment.comment}
+                          </p>
+                        </Card>
+                      </>
+                    ))}
+                  </div>
                 </div>
               </div>
               <div className="pt-8">
                 <p className="font-bold">Recommendations</p>
                 <div className="grid flex-1 items-start gap-4 py-4 sm:py-6 md:gap-8 lg:grid-cols-3 xl:grid-cols-3">
-                  <Card className="w-[300px] h-[145px] bg-emerald-500 rounded-none flex flex-col items-center justify-center">
-                    <CardTitle className="text-lg p-4">Victoria</CardTitle>
-                    <p className="text-center">
-                      Figma made it very messy to use because a lot of features
-                      weren't responsive.
-                    </p>
-                  </Card>
-                  <Card className="w-[300px] h-[145px] bg-emerald-500 rounded-none flex flex-col items-center justify-center">
-                    <CardTitle className="text-lg p-4">Maame</CardTitle>
-                    <p className="text-center">
-                      Toggling between some tabs was a bit slow. Eg from
-                      Contacts to People.
-                    </p>
-                  </Card>
+                  {project.recommendations?.map((recommendation, index) => (
+                    <>
+                      <Card
+                        key={index}
+                        className="w-[310px] h-[150px] bg-emerald-500 rounded-none flex flex-col items-center justify-center"
+                      >
+                        <CardTitle className="text-lg p-4">
+                          {recommendation.name}
+                        </CardTitle>
+                        <p className="text-center max-w-[300px] text-sm">
+                          {recommendation.recommendation}
+                        </p>
+                      </Card>
+                    </>
+                  ))}
                 </div>
               </div>
             </div>
@@ -405,20 +413,47 @@ const Report = () => {
                 the product's user experience and what does not work well for
                 users.
               </p>
-              <div>Image</div>
+              <div className="pt-6">
+                {project.images && project.images.length > 0 && (
+                  <>
+                    <img
+                      src={getImgUrl(project.images[2])}
+                      alt="Feedback Image"
+                    />
+                  </>
+                )}
+              </div>
             </div>
             <div className="px-16 max-w-[1220px] mx-auto py-14">
               <h2 className="font-avant-garde text-3xl font-medium leading-10">
                 Interface before the usability test.
               </h2>
-              <div>Image</div>
+              <div className="pt-6">
+                {project.images && project.images.length > 0 && (
+                  <>
+                    <img
+                      src={getImgUrl(project.images[3])}
+                      alt="Feedback Image"
+                    />
+                  </>
+                )}
+              </div>
             </div>
             <div className="px-16 max-w-[1220px] mx-auto py-14">
               <h2 className="font-avant-garde text-3xl font-medium leading-10">
                 This is the interface after the usability test. The modal was
                 changed into a page
               </h2>
-              <div>Image</div>
+              <div className="pt-6">
+                {project.images && project.images.length > 0 && (
+                  <>
+                    <img
+                      src={getImgUrl(project.images[4])}
+                      alt="Feedback Image"
+                    />
+                  </>
+                )}
+              </div>
             </div>
             <div className="px-16 max-w-[1220px] mx-auto py-14">
               <h2 className="font-avant-garde text-3xl font-medium leading-10">
@@ -434,14 +469,14 @@ const Report = () => {
                   needed improvement, particularly with the contacts and leads
                   features and some user interface components.
                 </li>
-                <li>
+                <li className="mb-6 list-lower-alpha">
                   Additionally, some users requested a more responsive prototype
                   which I will continue to work on to make this prototype and
                   future prototypes easier to use. The study also revealed that
                   users valued the categorisations of leads and the colours used
                   to differentiate items.
                 </li>
-                <li>
+                <li className="mb-6 list-lower-alpha">
                   Overall, the leads management system has a solid foundation in
                   terms of usability, but there is room for improvement (on my
                   part) regarding the prototype's responsiveness to enhance the
