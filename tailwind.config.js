@@ -14,14 +14,18 @@ module.exports = {
       
       
       
-      "2xl": "1.563rem",
-     */ sm: "0.9rem" /* 15px */,
+      
+      
+     */ xs: "0.75rem",
+      sm: "0.9rem" /* 15px */,
       base: "1rem",
       xl: "1.25rem" /* 20px */,
+      "2xl": "1.73rem",
       "3xl": "1.875rem" /* 30px */,
       "4xl": "2.813rem" /* 45px */,
       "5xl": "3.125rem" /* 50px */,
       "6xl": "3.75rem" /* 60px */,
+      "8xl": "8rem",
     },
     container: {
       center: true,
@@ -31,6 +35,9 @@ module.exports = {
       },
     },
     extend: {
+      screens: {
+        xl2: "1450px", // Add custom breakpoint for screens larger than 1450px
+      },
       colors: {
         customGray: "#484A56",
       },

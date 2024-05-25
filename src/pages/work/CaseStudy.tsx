@@ -5,11 +5,45 @@ import { getImgUrl } from "@/data/functions";
 import { data } from "@/data/info";
 import { useParams } from "react-router-dom";
 import MiniFooter from "../layout/MiniFooter";
-import React from "react";
+import React, { useEffect } from "react";
 import ProjectNavigation from "@/components/ProjectNavigation";
+import { Card } from "@/components/ui/card";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
 
 const CaseStudy = () => {
   const { caseStudy } = useParams<{ caseStudy: string }>();
+
+  useEffect(() => {
+    const container = document.querySelector(".text-container") as HTMLElement;
+    if (!container) return;
+
+    const containerWidth = container.offsetWidth;
+    const itemWidth =
+      (container.firstElementChild as HTMLElement)?.offsetWidth || 0;
+    const animationDuration = (containerWidth + itemWidth) / 50; // Adjust speed as needed
+
+    const textItems = container.querySelectorAll(
+      ".text-item"
+    ) as NodeListOf<HTMLElement>;
+    textItems.forEach((item, index) => {
+      item.style.animation = `carousel ${animationDuration}s linear infinite ${
+        index * animationDuration
+      }s`;
+    });
+
+    return () => {
+      textItems.forEach((item) => {
+        item.style.animation = "";
+      });
+    };
+  }, []);
 
   const project = data.find(
     (item) => item.type === "caseStudy" && item.id === caseStudy
@@ -20,14 +54,14 @@ const CaseStudy = () => {
       {project ? (
         <>
           <section className="mx-auto">
-            <div className="p-12 flex items-center justify-start bg-slate-100 pt-20">
+            <div className="p-16 flex items-center justify-start bg-slate-100 pt-20">
               <img
                 src={getImgUrl(project.image)}
                 alt={project.previewText}
-                className="max-h-[300px] max-w-[400px]"
+                className="max-h-[300px] max-w-[400px] ml-10"
               />
               <div className="ml-8">
-                <p className="avant-garde-bold font-medium text-sm leading-5 tracking-widest text-left mb-2 pb-2">
+                <p className="avant-garde-bold font-medium text-sm leading-5 tracking-wider text-left mb-2 pb-2">
                   {project.designTypes.map((type, index) => (
                     <React.Fragment key={index}>
                       {type}{" "}
@@ -44,20 +78,26 @@ const CaseStudy = () => {
               </div>
             </div>
 
-            <Tabs defaultValue="defining" className="w-full pt-12">
-              <TabsList className="sticky top-0 z-10 grid w-full grid-cols-5 px-16 mb-14py-2">
-                <TabsTrigger value="defining">
+            <Tabs defaultValue="defining" className="w-full">
+              <TabsList className="sticky top-0 z-10 grid w-full grid-cols-5 h-16 px-24 mb-14">
+                <TabsTrigger value="defining" className="py-4">
                   Defining and Understanding
                 </TabsTrigger>
-                <TabsTrigger value="developing">Developing ideas</TabsTrigger>
-                <TabsTrigger value="clarity">
+                <TabsTrigger value="developing" className="py-4">
+                  Developing ideas
+                </TabsTrigger>
+                <TabsTrigger value="clarity" className="py-4">
                   Visual clarity and direction
                 </TabsTrigger>
-                <TabsTrigger value="design">Approved Design</TabsTrigger>
-                <TabsTrigger value="guide">Style Guide</TabsTrigger>
+                <TabsTrigger value="design" className="py-4">
+                  Approved Design
+                </TabsTrigger>
+                <TabsTrigger value="guide" className="py-4">
+                  Style Guide
+                </TabsTrigger>
               </TabsList>
               <TabsContent value="defining">
-                <div className="px-16 max-w-[1220px] mx-auto pb-14">
+                <div className="px-16 max-w-[1220px] mx-auto pt-8 pb-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     One thing about me: I love to work on challenging projects,
                     especially those new to me.
@@ -442,6 +482,65 @@ const CaseStudy = () => {
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Color palette
                   </h2>
+                  <div className="py-10 flex flex-col justify-center">
+                    <div className="flex pb-4">
+                      {project.colorPalette &&
+                        project.colorPalette.topPalette.map((color, index) => (
+                          <Card
+                            key={index}
+                            className={`h-[165px] w-[${color.width}] text-white mr-3 relative`}
+                            style={{
+                              background: color.gradient
+                                ? color.gradient
+                                : color.hex,
+                              color: color.textColor
+                                ? color.textColor
+                                : "#FFFFFF",
+                            }}
+                          >
+                            <p className="absolute top-4 right-5 text-xs font-bold">
+                              {color.title}
+                            </p>
+                            <p className="absolute bottom-1.5 left-2.5 text-xs">
+                              {color.gradient ? "Gradient" : "Hex"}:{" "}
+                              {color.gradient ? "" : color.hex}
+                            </p>
+                          </Card>
+                        ))}
+                    </div>
+                    <div className="flex">
+                      {project.colorPalette &&
+                        project.colorPalette.bottomPalette.map(
+                          (color, index) => (
+                            <Card
+                              key={index}
+                              className={`h-[99px] w-[${color.width}] text-white mr-3 relative`}
+                              style={{
+                                background: color.gradient
+                                  ? color.gradient
+                                  : color.hex,
+                                color: color.textColor
+                                  ? color.textColor
+                                  : "#FFFFFF",
+                              }}
+                            >
+                              <p className="absolute top-4 right-5 text-xs font-bold">
+                                {color.title}
+                              </p>
+                              <p className="absolute bottom-1.5 left-2.5 text-xs">
+                                {color.gradient ? "Gradient" : "Hex"}:{" "}
+                                {color.gradient ? "" : color.hex}
+                              </p>
+                            </Card>
+                          )
+                        )}
+                    </div>
+                  </div>
+                </div>
+                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                    Logo
+                  </h2>
                   <div className="py-10 flex justify-center">
                     {project.images && project.images.length > 0 && (
                       <>
@@ -451,21 +550,6 @@ const CaseStudy = () => {
                         />
                       </>
                     )}
-                  </div>
-                </div>
-                <div className="px-16 max-w-[1220px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
-                    Logo
-                  </h2>
-                  <div className="py-10 flex justify-center">
-                    {/* {project.images && project.images.length > 0 && (
-                      <>
-                        <img
-                          src={getImgUrl(project.images[10])}
-                          alt="Final Screens Image"
-                        />
-                      </>
-                    )} */}
                   </div>
                 </div>
                 <div className="px-16 max-w-[1220px] mx-auto py-14">
@@ -480,6 +564,41 @@ const CaseStudy = () => {
                     various screen sizes and resolutions while also creating a
                     sense of professionalism.
                   </p>
+                </div>
+                <div className="text-container text-8xl">
+                  {project.typography &&
+                    project.typography.map((item, index) => (
+                      <div
+                        key={index}
+                        className={`text-item ${
+                          index % 2 === 0 ? "avant-garde-extralight" : ""
+                        }`}
+                      >
+                        {item}
+                      </div>
+                    ))}
+                </div>
+                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                  <p className="mb-5">Hierarchy</p>
+                  <Table>
+                    <TableHeader>
+                      <TableRow>
+                        <TableHead className="">Text Type</TableHead>
+                        <TableHead>Weight</TableHead>
+                        <TableHead>Font Size</TableHead>
+                      </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                      {project.hierarchy &&
+                        project.hierarchy.map((item, index) => (
+                          <TableRow key={index}>
+                            <TableCell>{item.textType}</TableCell>
+                            <TableCell>{item.weight}</TableCell>
+                            <TableCell>{item.fontSize}</TableCell>
+                          </TableRow>
+                        ))}
+                    </TableBody>
+                  </Table>
                 </div>
                 <div className="px-16 max-w-[1220px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
@@ -523,19 +642,36 @@ const CaseStudy = () => {
                     )}
                   </div>
                 </div>
-                <div className="px-16 max-w-[1220px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
-                    Navigations
-                  </h2>
-                  <div className="py-10 flex justify-center">
-                    {/*  {project.images && project.images.length > 0 && (
-                      <>
-                        <img
-                          src={getImgUrl(project.images[13])}
-                          alt="Buttons"
-                        />
-                      </>
-                    )} */}
+                <div className="px-16 max-w-[1220px] flex mx-auto justify-evenly py-14">
+                  <div>
+                    <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                      Navigations
+                    </h2>
+                    <div className="py-10 flex justify-center">
+                      {project.images && project.images.length > 0 && (
+                        <>
+                          <img
+                            src={getImgUrl(project.images[14])}
+                            alt="Buttons"
+                          />
+                        </>
+                      )}
+                    </div>
+                  </div>
+                  <div>
+                    <h2 className="font-avant-garde text-base font-medium leading-10">
+                      Radio buttons
+                    </h2>
+                    <div className="py-4 flex justify-center">
+                      {project.images && project.images.length > 0 && (
+                        <>
+                          <img
+                            src={getImgUrl(project.images[15])}
+                            alt="Buttons"
+                          />
+                        </>
+                      )}
+                    </div>
                   </div>
                 </div>
                 <div className="px-16 max-w-[1220px] mx-auto py-14">
@@ -546,7 +682,7 @@ const CaseStudy = () => {
                     {project.images && project.images.length > 0 && (
                       <>
                         <img
-                          src={getImgUrl(project.images[14])}
+                          src={getImgUrl(project.images[16])}
                           alt="Illustrations"
                         />
                       </>

@@ -128,14 +128,90 @@ export const data = [
       "case_studies/inventory/selected-frames.png",
       "case_studies/inventory/final-frames.png",
       "case_studies/inventory/conclusion.png",
-      "case_studies/inventory/color-palette.png",
+      "case_studies/inventory/logos.png",
       "case_studies/inventory/border.png",
       "case_studies/inventory/icons.png",
       "case_studies/inventory/buttons.png",
+      "case_studies/inventory/navigations.png",
+      "case_studies/inventory/radio.png",
       "case_studies/inventory/illustrations.png",
     ],
     prototype:
       "https://www.figma.com/proto/KHNYuoO5LgwdDXmwQvDlvo/smartup-mobile?page-id=455%3A4197&type=design&node-id=955-3709&viewport=4998%2C-4232%2C0.23&t=lRktjEAcCBG0Pmun-1&scaling=scale-down&starting-point-node-id=955%3A4412&show-proto-sidebar=1&mode=design&fuid=860195332150006297",
+    colorPalette: {
+      topPalette: [
+        {
+          title: "Primary",
+          hex: "#8778F7",
+          width: "220px",
+        },
+        {
+          title: "Primary",
+          hex: "#00a16b",
+          width: "220px",
+        },
+        {
+          title: "Secondary",
+          hex: "#C8C8F8",
+          textColor: "#8378ed",
+          width: "110px",
+        },
+        {
+          title: "Secondary",
+          hex: "#C7F4CE",
+          textColor: "#2db482",
+          width: "110px",
+        },
+        {
+          title: "Grey",
+          hex: "#E7E7E7",
+          textColor: "#757575",
+          width: "110px",
+        },
+        {
+          title: "Gradient Design 1",
+          gradient: "linear-gradient(to right, #7268C4, #59519A)",
+          width: "245px",
+        },
+      ],
+      bottomPalette: [
+        {
+          title: "Dark",
+          hex: "#181c42",
+          width: "225px",
+        },
+        {
+          title: "White",
+          hex: "#ffffff",
+          textColor: "#8378ed",
+          width: "225px",
+        },
+        {
+          title: "Secondary",
+          hex: "#505480",
+          width: "225px",
+        },
+        {
+          title: "Warning",
+          hex: "#f5d8d8",
+          textColor: "#cf4747",
+          width: "110px",
+        },
+        {
+          title: "Gradient Design 2",
+          gradient: "linear-gradient(to bottom, #A178F7, #4C60DD)",
+          width: "245px",
+        },
+      ],
+    },
+    typography: ["Albert Sans", "Albert Sans", "Albert Sans", "Albert Sans"],
+    hierarchy: [
+      { textType: "Onboarding Heading", weight: "Bold", fontSize: "25.00px" },
+      { textType: "Heading", weight: "Medium", fontSize: "21.00px" },
+      { textType: "Heading", weight: "Medium/Regular", fontSize: "15.00px" },
+      { textType: "Body Text", weight: "Regular", fontSize: "12.00px" },
+      { textType: "Small Text", weight: "Regular", fontSize: "10.00px" },
+    ],
   },
   {
     type: "caseStudy",
@@ -147,6 +223,8 @@ export const data = [
     image: "case_studies/restaurant/restaurant.png",
     previewText: "Restaurant Booking",
     designTypes: ["USER RESEARCH", "UX DESIGN", "USABILITY TESTING"],
+    prototype:
+      "https://www.figma.com/proto/ZVVzEbX1tyeOnOfgIeq5lU/Leads-management?page-id=710%3A3&node-id=710-3654&viewport=1315%2C206%2C0.06&scaling=scale-down&starting-point-node-id=710%3A3654",
   },
   {
     type: "caseStudy",

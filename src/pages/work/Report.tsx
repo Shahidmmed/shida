@@ -24,10 +24,10 @@ const Report = () => {
               <img
                 src={getImgUrl(project.image)}
                 alt={project.previewText}
-                className="max-h-[300px] max-w-[400px]"
+                className="max-h-[300px] max-w-[400px] ml-10"
               />
               <div className="ml-8">
-                <p className="avant-garde-bold font-medium text-sm leading-5 tracking-widest text-left mb-2 pb-2">
+                <p className="avant-garde-bold font-medium text-sm leading-5 tracking-wider text-left mb-2 pb-2">
                   {project.designTypes.map((type, index) => (
                     <React.Fragment key={index}>
                       {type}{" "}
@@ -38,7 +38,7 @@ const Report = () => {
                 <h2 className="font-avant-garde font-semibold tracking-wider text-4xl text-left mb-2 text-nowrap">
                   {project.name}
                 </h2>
-                <p className="mb-2 py-4 font-avant-garde text-sm leading-6 tracking-wider">
+                <p className="mb-2 py-4 font-avant-garde text-sm leading-6 tracking-wider max-w-[550px]">
                   {project.brief}
                 </p>
               </div>
@@ -70,7 +70,7 @@ const Report = () => {
                 )}
               </div>
             </div>
-            <div className="bg-black flex py-10 text-white justify-evenly">
+            <div className="bg-black flex py-20 text-white justify-evenly">
               <div className="">
                 <p className="pb-2">Timeline</p>
                 <small>4 weeks (80 hours)</small>

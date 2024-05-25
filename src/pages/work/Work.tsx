@@ -109,18 +109,18 @@ const Work = () => {
                   backgroundImage: `url(${getImgUrl(item.previewImg)})`,
                 }}
               ></Card>
-              <div className="px-4 py-8 md:max-2xl:max-w-[520px] md:max-xl:w-[450px] ml-12">
-                <p className="font-avant-garde font-medium text-sm leading-5 tracking-widest text-left mb-2 pb-2">
+              <div className="px-4 py-8 md:max-2xl:max-w-[520px] md:max-xl:w-[450px] ml-8">
+                <p className="font-avant-garde font-medium text-xs leading-5 tracking-widest text-left mb-2 pb-2">
                   {item.designTypes.map((type, index) => (
                     <React.Fragment key={index}>
                       {type} {index !== item.designTypes.length - 1 && <> ♦ </>}
                     </React.Fragment>
                   ))}
                 </p>
-                <h2 className="font-avant-garde font-semibold tracking-wider text-4xl text-left mb-2 text-nowrap">
+                <h2 className="font-avant-garde font-semibold tracking-wider work-text text-left mb-2 text-nowrap">
                   {item.name}
                 </h2>
-                <p className="mb-2 py-4 font-avant-garde text-sm avant-garde-extralight leading-6 tracking-wider">
+                <p className="mb-2 py-4 font-avant-garde text-xs avant-garde-extralight leading-6 tracking-wider">
                   {item.brief}
                 </p>
                 <Link

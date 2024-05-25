@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div className="pt-20">
       <section className="pb-16">
-        <div className="max-w-[1200px] px-28 mx-auto">
+        <div className="xl2:w-[1240px] w-[1100px] px-16 mx-auto">
           <h3 className="font-sans font-avant-garde mb-6 font-medium text-3xl leading-normal  text-left">
             <span className="bg-blue-100">Envisioning</span> the possibility of
             things and <span className="bg-blue-100">using my creativity</span>{" "}
@@ -19,7 +19,7 @@ const About = () => {
             <span className="bg-blue-100">is what I do for a living.</span>
           </h3>
           <div className="flex work-container justify-between">
-            <div className="max-w-[550px] mr-4">
+            <div className="max-w-[558px] mr-4">
               <p className="font-sans font-avant-garde text-xl font-light leading-relaxed tracking-wide text-left">
                 I am a versatile creative living in Accra and i’m all about
                 using UX and storytelling to craft impactful experiences that
@@ -31,12 +31,12 @@ const About = () => {
                 and improving myself and my skills, and when I'm not online, I'm
                 probably binge-watching a TV show or taking a nap.
               </p>
-              <Button className="rounded-none bg-black px-16 py-6 border mt-6">
+              <Button className="rounded-none bg-black text-base px-20 py-8 border mt-6">
                 My Resume
               </Button>
             </div>
             <div className="relative flex flex-row-reverse">
-              <img src={shida} alt="orange kite" className="h-80 ml-6" />
+              <img src={shida} alt="orange kite" className="h-94 ml-4" />
               <img
                 src={heart}
                 alt="heart"
@@ -45,7 +45,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="flex max-w-[1200px] px-14 mx-auto justify-between items-center pt-12">
+        <div className="flex max-w-[1200px] w-[1120px] px-2 mx-auto justify-between items-center pt-12">
           <p className="avant-garde-bold font-bold text-6xl text-black leading-none ">
             Innovation
           </p>
@@ -59,67 +59,69 @@ const About = () => {
           </p>
         </div>
       </section>
-      <section className="py-8 bg-black text-white px-20 flex items-center flex-col justify-centermax-w-[1220px] mx-auto">
-        <div className="space-y-12 ">
+      <section className="py-10 bg-black text-white flex items-center flex-col justify-center mx-auto">
+        <div className="space-y-12 xl2:w-[1240px] w-[1100px] px-16">
           <div>
-            <h3 className="font-avant-garde text-4xl font-medium leading-14 mb-6">
+            <h3 className="font-avant-garde text-4xl font-bold tracking-wider leading-14 mb-6">
               Areas of expertise
             </h3>
             <hr className="border-white w-3/4 mt-0" />
           </div>
-          <p className="text-xl">
+          <p className="text-xl tracking-wide">
             My key areas of expertise are in Design, Management, Marketing and
             Strategy. Below is a more granular breakdown of my skill-set and
             services.
           </p>
-          <p className="text-blue-500 text-xl">
+          <p className="text-blue-500 tracking-wide text-xl">
             What i am good at (but not limited to) :
           </p>
-          <p className="font-sans font-avant-garde mb-6 leading-normal text-xl text-left">
+          <p className="font-sans font-avant-garde mb-6 leading-normal tracking-wide text-xl text-left">
             <span className="font-bold">Design & Strategy: </span> Design
             Thinking, UI/UX Design, Product Strategy & Management, Creative
             Direction
           </p>
-          <p className="font-sans font-avant-garde mb-6 text-xl leading-normal  text-left">
+          <p className="font-sans font-avant-garde mb-6 text-xl tracking-wide leading-normal  text-left">
             <span className="font-bold">Research & Evaluation: </span>Market &
             User Research, User Interviews, Usability Testing
           </p>
-          <p className="font-sans font-avant-garde mb-6 text-xl leading-normal  text-left">
+          <p className="font-sans font-avant-garde mb-6 text-xl tracking-wide leading-normal  text-left">
             <span className="font-bold">Prototyping & Design: </span>
             Wireframing, Prototyping, Visual Design & Style Guides
           </p>
-          <p className="font-sans font-avant-garde mb-6 text-xl leading-normal  text-left">
+          <p className="font-sans font-avant-garde mb-6 text-xl tracking-wide leading-normal  text-left">
             <span className="font-bold">Digital Marketing & Branding: </span>
             Social Media Management, SEO, Copy & Content Writing
           </p>
 
-          <Button className="rounded-none bg-white px-16 py-6 text-black border">
+          <Button className="rounded-none bg-white text-base px-20 py-8 text-black border">
             My Resume
           </Button>
         </div>
       </section>
       <section className="py-12 px-16 mx-auto">
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center mx-auto max-w-full w-[1200px]">
           <img src={whiskers} alt="whiskers" className="h-24" />
-          <h4 className="font-avant-garde text-nowrap font-medium text-lg md:text-2xl lg:text-3xl leading-9 md:leading-10 lg:leading-11 tracking-tight md: lg:tracking-tight text-center">
+          <h4 className="font-avant-garde text-nowrap  font-medium text-lg md:text-2xl lg:text-2xl xl2:text-3xl leading-9 md:leading-10 lg:leading-11 tracking-tight md: lg:tracking-tight text-center">
             Strategic thinking + collaboration = impactful solutions for you &
             your business.
           </h4>
           <img src={whiskers2} alt="whiskers" className="h-24" />
         </div>
 
-        <div className="font-avant-garde py-8 max-w-[1220px] px-16 mx-auto">
+        <div className="font-avant-garde py-8 max-w-[1220px] px-10 mx-auto">
           <div className="flex justify-evenly py-8">
-            <div className="mb-6 w-[200px]">
-              <p className="text-xl font-light leading-none tracking-wide">
+            <div className="mb-6 w-[220px]">
+              <p className="text-xl font-light text-nowrap leading-relaxed tracking-wide">
                 Nana Yaw Kunale
               </p>
-              <p className="text-xs font-light leading-none tracking-wide">
+              <p className="text-xs font-light leading-relaxed tracking-wide">
                 CTO - Detosphere
               </p>
             </div>
-            <span className="text-2xl font-bold ml-2 mr-6">:</span>
-            <p className="text-xl font-light leading-none tracking-wide mb-4 max-w-[900px]">
+            <span className="text-3xl font-bold ml-2 mr-6 avant-garde-bold">
+              :
+            </span>
+            <p className="text-xl font-light leading-relaxed tracking-wide mb-4 max-w-[900px]">
               I love working with Naa. She’s an amazing person first and a
               capable UI/UX Designer with impeccable work ethic. She may also,
               every once in a while, give you a protein bar or yoghurt :)
@@ -127,32 +129,36 @@ const About = () => {
           </div>
 
           <div className="flex justify-evenly py-8">
-            <div className="mb-6 w-[200px]">
-              <p className="text-xl font-light leading-none tracking-wide">
+            <div className="mb-6 w-[220px]">
+              <p className="text-xl font-light text-nowrap leading-relaxed tracking-wide">
                 Ummul-Khair Zurak
               </p>
-              <p className="text-xs font-light leading-none tracking-wide">
+              <p className="text-xs font-light leading-relaxed tracking-wide">
                 Software Dev
               </p>
             </div>
-            <span className="text-2xl font-bold ml-2 mr-6">:</span>
-            <p className="text-xl font-light leading-none tracking-wide mb-4 max-w-[900px]">
+            <span className="text-3xl font-bold ml-2 mr-6 avant-garde-bold">
+              :
+            </span>
+            <p className="text-xl font-light leading-relaxed tracking-wide mb-4 max-w-[900px]">
               Her designs are intuitive and suit the needs of users perfectly.
               Her excellent inter-personal skills coupled with her design skills
               makes her a top-notch professional.
             </p>
           </div>
           <div className="flex justify-evenly py-8">
-            <div className="mb-6 w-[200px]">
-              <p className="text-xl font-light leading-none tracking-wide">
+            <div className="mb-6 w-[220px]">
+              <p className="text-xl font-light text-nowrap leading-relaxed tracking-wide">
                 Welly Gedel
               </p>
-              <p className="text-xs font-light leading-none tracking-wide">
+              <p className="text-xs font-light leading-relaxed tracking-wide">
                 Product Owner
               </p>
             </div>
-            <span className="text-2xl font-bold ml-2 mr-6">:</span>
-            <p className="text-xl font-light leading-none tracking-wide mb-4 max-w-[900px]">
+            <span className="text-3xl font-bold ml-2 mr-6 avant-garde-bold">
+              :
+            </span>
+            <p className="text-xl font-light leading-relaxed tracking-wide mb-4 max-w-[900px]">
               Ayeley’s outstanding skills, dedication, and patience resulted in
               a product that perfectly aligned with our vision and achieved a
               high level of quality. Her work continues to be incredibly

@@ -34,7 +34,7 @@ const Navbar = () => {
                 Work
               </NavLink>
               <NavLink
-                to="/about"
+                to="/"
                 className="text-muted-foreground hover:text-foreground"
               >
                 About
