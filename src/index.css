@@ -57,9 +57,21 @@ body {
   border-bottom: 1px solid black;
 }
 
-/* Add this CSS to your Tailwind CSS file or custom CSS */
-.list-lower-alpha {
-  list-style-type: lower-alpha;
+.desired {
+  list-style-type: none; /* Remove default list style */
+  padding-left: 0; /* Remove default padding */
+}
+
+.desired li {
+  counter-increment: item; /* Increment counter */
+  margin-left: 2em; /* Add left margin for indentation */
+  position: relative; /* Position relative for pseudo-element */
+}
+
+.desired li::before {
+  content: counter(item, lower-alpha) ") "; /* Custom content: alphabetic counter with parenthesis */
+  position: absolute; /* Absolute position */
+  left: -2em; /* Position it to the left */
 }
 
 .product {

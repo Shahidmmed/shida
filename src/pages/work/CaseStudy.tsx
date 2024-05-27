@@ -97,7 +97,7 @@ const CaseStudy = () => {
                 </TabsTrigger>
               </TabsList>
               <TabsContent value="defining">
-                <div className="px-16 max-w-[1220px] mx-auto pt-8 pb-14">
+                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto pt-8 pb-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     One thing about me: I love to work on challenging projects,
                     especially those new to me.
@@ -119,7 +119,7 @@ const CaseStudy = () => {
                     but I was glad to learn and improve my UX and UI skills.
                   </p>
                 </div>
-                <div className="bg-black flex py-10 text-white justify-evenly">
+                <div className="bg-black flex py-20 text-white justify-evenly">
                   <div className="">
                     <p className="pb-2">Timeline</p>
                     <small>4 weeks (80 hours)</small>
@@ -137,7 +137,7 @@ const CaseStudy = () => {
                     <small>UX Design, Usability Testing</small>
                   </div>
                 </div>
-                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Goals and Objectives
                   </h2>
@@ -154,7 +154,7 @@ const CaseStudy = () => {
                     comfortable with the outcomes.
                   </p>
                 </div>
-                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <div>
                     <h2 className="font-avant-garde text-3xl font-medium leading-10">
                       My Design Process
@@ -171,11 +171,11 @@ const CaseStudy = () => {
                     </div>
                   </div>
                 </div>
-                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Defining and Understanding
                   </h2>
-                  <ul className="pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+                  <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
                     <li className="mb-6">
                       First things first, I had to familiarize myself with the
                       main product and ground myself by understanding the
@@ -198,7 +198,7 @@ const CaseStudy = () => {
                       ideas and specifications into effective interaction
                       designs—sounds fun, right?
                     </li>
-                  </ul>
+                  </ol>
                   <div className="py-10 flex justify-center">
                     {project.images && project.images.length > 0 && (
                       <>
@@ -222,11 +222,11 @@ const CaseStudy = () => {
                 </div>
               </TabsContent>
               <TabsContent value="developing">
-                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Defining and Understanding
                   </h2>
-                  <ul className="pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+                  <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
                     <li className="mb-6">
                       After understanding and defining my project objectives, I
                       had to determine how users would see the product
@@ -260,7 +260,7 @@ const CaseStudy = () => {
                       Ultimately, I was confident enough in my sketches to
                       develop them into digital wireframes.
                     </li>
-                  </ul>
+                  </ol>
                   <div className="py-10 flex justify-center">
                     {project.images && project.images.length > 0 && (
                       <>
@@ -272,7 +272,7 @@ const CaseStudy = () => {
                     )}
                   </div>
                 </div>
-                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Information Architecture
                   </h2>
@@ -293,7 +293,7 @@ const CaseStudy = () => {
                     </>
                   )}
                 </div>
-                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     User Journeys
                   </h2>
@@ -314,7 +314,7 @@ const CaseStudy = () => {
                     </>
                   )}
                 </div>
-                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     User Flows
                   </h2>
@@ -338,7 +338,7 @@ const CaseStudy = () => {
                     </>
                   )}
                 </div>
-                <div className="px-16 max-w-[1220px] mx-auto py-14 flex flex-col items-center justify-center">
+                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14 flex flex-col items-center justify-center">
                   <p>
                     Every design decision is meticulously tailored to enhance
                     user engagement and satisfaction.
@@ -347,11 +347,11 @@ const CaseStudy = () => {
                 </div>
               </TabsContent>
               <TabsContent value="clarity">
-                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Visual Clarity & Direction
                   </h2>
-                  <ul className="pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+                  <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
                     <li className="mb-6">
                       Designing the wireframes was a challenge, and just like
                       before, It also required a lot of iterations and research.
@@ -370,13 +370,13 @@ const CaseStudy = () => {
                       (this happened a couple of times) before the visual design
                       phase started.
                     </li>
-                  </ul>
+                  </ol>
                 </div>
-                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Low-fi Wireframes (selected frames)
                   </h2>
-                  <ul className="pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+                  <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
                     <li className="mb-6">
                       I used a week to create digital representations of my
                       paper sketches with a few changes and add ons and another
@@ -389,7 +389,7 @@ const CaseStudy = () => {
                       Lite). The screens below show the early ideas before
                       combining everything into one app.
                     </li>
-                  </ul>
+                  </ol>
                 </div>
                 <div className="py-10 flex justify-center">
                   {project.images && project.images.length > 0 && (
@@ -401,7 +401,7 @@ const CaseStudy = () => {
                     </>
                   )}
                 </div>
-                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Final Wireframes (selected frames)
                   </h2>
@@ -424,7 +424,7 @@ const CaseStudy = () => {
                 </div>
               </TabsContent>
               <TabsContent value="design">
-                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Approved Design
                   </h2>
@@ -439,7 +439,7 @@ const CaseStudy = () => {
                     View Prototype
                   </Button>
                 </div>
-                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Conclusion/Takeaway
                   </h2>
@@ -465,7 +465,7 @@ const CaseStudy = () => {
                 </div>
               </TabsContent>
               <TabsContent value="guide">
-                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Style Guide
                   </h2>
@@ -478,7 +478,7 @@ const CaseStudy = () => {
                     tasks feel manageable and easy to use.
                   </p>
                 </div>
-                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Color palette
                   </h2>
@@ -537,7 +537,7 @@ const CaseStudy = () => {
                     </div>
                   </div>
                 </div>
-                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Logo
                   </h2>
@@ -552,7 +552,7 @@ const CaseStudy = () => {
                     )}
                   </div>
                 </div>
-                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Typography
                   </h2>
@@ -578,7 +578,7 @@ const CaseStudy = () => {
                       </div>
                     ))}
                 </div>
-                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <p className="mb-5">Hierarchy</p>
                   <Table>
                     <TableHeader>
@@ -600,7 +600,7 @@ const CaseStudy = () => {
                     </TableBody>
                   </Table>
                 </div>
-                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Icons
                   </h2>
@@ -612,7 +612,7 @@ const CaseStudy = () => {
                     )}
                   </div>
                 </div>
-                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Border Radius
                   </h2>
@@ -627,7 +627,7 @@ const CaseStudy = () => {
                     )}
                   </div>
                 </div>
-                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Buttons
                   </h2>
@@ -642,7 +642,7 @@ const CaseStudy = () => {
                     )}
                   </div>
                 </div>
-                <div className="px-16 max-w-[1220px] flex mx-auto justify-evenly py-14">
+                <div className="px-16 xl2:w-[1240px] w-[1100px] flex mx-auto justify-evenly py-14">
                   <div>
                     <h2 className="font-avant-garde text-3xl font-medium leading-10">
                       Navigations
@@ -674,7 +674,7 @@ const CaseStudy = () => {
                     </div>
                   </div>
                 </div>
-                <div className="px-16 max-w-[1220px] mx-auto py-14">
+                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Illustrations
                   </h2>

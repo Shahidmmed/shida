@@ -4,15 +4,6 @@ import { getImgUrl } from "@/data/functions";
 import MiniFooter from "../layout/MiniFooter";
 import React from "react";
 import ProjectNavigation from "@/components/ProjectNavigation";
-import { Card } from "@/components/ui/card";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
 import { data } from "@/data/info";
 import { Link } from "react-router-dom";
 
@@ -99,11 +90,19 @@ const Restaurant = () => {
                       <span className="text-lg font-medium"></span>
                     )}
                   </div>
-                  <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14 flex">
+                  <div className="xl2:w-[1240px] w-[1100px] mx-auto py-16 flex">
                     <div>
                       <h2 className="font-avant-garde text-3xl font-medium leading-10">
                         Problem
                       </h2>
+                      {project.images && project.images.length > 0 && (
+                        <div className="py-4">
+                          <img
+                            src={getImgUrl(project.images[0])}
+                            alt="Low-fi Wireframes Image"
+                          />
+                        </div>
+                      )}
                       <p className="pt-8">
                         People find accessing valid Information on restaurants
                         and booking/reserving tables difficult. They are also
@@ -115,6 +114,14 @@ const Restaurant = () => {
                       <h2 className="font-avant-garde text-3xl font-medium leading-10">
                         Goal
                       </h2>
+                      {project.images && project.images.length > 0 && (
+                        <div className="py-4">
+                          <img
+                            src={getImgUrl(project.images[1])}
+                            alt="Low-fi Wireframes Image"
+                          />
+                        </div>
+                      )}
                       <p className="pt-8">
                         The goal is to design a user-friendly platfrom that is
                         simple to use but contains enough information for the
@@ -151,6 +158,14 @@ const Restaurant = () => {
                     challenges, and prioritise their needs to make the product
                     very awesome!
                   </p>
+                  {project.images && project.images.length > 0 && (
+                    <>
+                      <img
+                        src={getImgUrl(project.images[2])}
+                        alt="Low-fi Wireframes Image"
+                      />
+                    </>
+                  )}
                 </div>
               </TabsContent>
               <TabsContent value="empathising">
@@ -175,60 +190,62 @@ const Restaurant = () => {
                       Examples of questions I asked
                     </h2>
 
-                    <ul className="pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+                    <ul className=" pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+                      <li className="mb-6">How old are you?</li>
                       <li className="mb-6">
-                        First things first, I had to familiarize myself with the
-                        main product and ground myself by understanding the
-                        current state in which it was in. It's an inventory
-                        management system, and a lot was going on, but I do love
-                        a challenge, so I applied more grease to my elbow.
+                        How often do you eat at restaurants?
                       </li>
                       <li className="mb-6">
-                        It is also important to note that this is an already
-                        existing product with established ui/ux documents on
-                        research and personas that I had to understand and work
-                        with as well.
+                        Do you often make reservations before heading to a
+                        restaurant?
                       </li>
                       <li className="mb-6">
-                        The first challenge I faced was understanding the
-                        project requirements and how to apply them to my design.
-                        A consolidated list of project requirements consisting
-                        of technological limitations and expectations was sent
-                        to me by the project lead. My job was to transform a
-                        list of ideas and specifications into effective
-                        interaction designs—sounds fun, right?
+                        Have you faced any challenges so far?
                       </li>
                     </ul>
                   </div>
+                  {project.images && project.images.length > 0 && (
+                    <>
+                      <img
+                        src={getImgUrl(project.images[3])}
+                        alt="Low-fi Wireframes Image"
+                      />
+                    </>
+                  )}
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto pt-8 pb-14 flex">
+                  {project.images && project.images.length > 0 && (
+                    <>
+                      <img
+                        src={getImgUrl(project.images[4])}
+                        alt="Low-fi Wireframes Image"
+                      />
+                    </>
+                  )}
                   <div>
                     <h2 className="font-avant-garde text-3xl font-medium leading-10">
                       Key insights derived from interviews
                     </h2>
-
                     <ul className="pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
                       <li className="mb-6">
-                        First things first, I had to familiarize myself with the
-                        main product and ground myself by understanding the
-                        current state in which it was in. It's an inventory
-                        management system, and a lot was going on, but I do love
-                        a challenge, so I applied more grease to my elbow.
+                        People dont make reservations because they think it
+                        doesn't matter.
                       </li>
                       <li className="mb-6">
-                        It is also important to note that this is an already
-                        existing product with established ui/ux documents on
-                        research and personas that I had to understand and work
-                        with as well.
+                        People acquire restaurant information from blogs and
+                        restaurant websites.
                       </li>
                       <li className="mb-6">
-                        The first challenge I faced was understanding the
-                        project requirements and how to apply them to my design.
-                        A consolidated list of project requirements consisting
-                        of technological limitations and expectations was sent
-                        to me by the project lead. My job was to transform a
-                        list of ideas and specifications into effective
-                        interaction designs—sounds fun, right?
+                        People book tables and on arrival, they are told the
+                        table was never booked.
+                      </li>
+                      <li className="mb-6">
+                        The process of calling restaurants gets annoying
+                        sometimes
+                      </li>
+                      <li className="mb-6">
+                        Everything (accessing information, booking, pre-ordering
+                        etc.) occurs on the web or by calling
                       </li>
                     </ul>
                   </div>
@@ -248,20 +265,25 @@ const Restaurant = () => {
                   </p>
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <div>
-                    <h2 className="font-avant-garde text-3xl font-medium leading-10">
-                      My Design Process
-                    </h2>
-                    <div className="pt-8">
-                      {project.images && project.images.length > 0 && (
-                        <>
-                          <img
-                            src={getImgUrl(project.images[0])}
-                            alt="Design Process Image"
-                          />
-                        </>
-                      )}
-                    </div>
+                  <div className="pt-8">
+                    {project.images && project.images.length > 0 && (
+                      <>
+                        <img
+                          src={getImgUrl(project.images[5])}
+                          alt="Design Process Image"
+                        />
+                      </>
+                    )}
+                  </div>
+                  <div className="pt-8">
+                    {project.images && project.images.length > 0 && (
+                      <>
+                        <img
+                          src={getImgUrl(project.images[6])}
+                          alt="Design Process Image"
+                        />
+                      </>
+                    )}
                   </div>
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
@@ -273,22 +295,12 @@ const Restaurant = () => {
                     organised my findings by using coloured sticky notes to
                     observe similarities and recurring patterns.
                   </p>
-                  <div className="py-10 flex justify-center">
-                    {project.images && project.images.length > 0 && (
-                      <>
-                        <img
-                          src={getImgUrl(project.images[1])}
-                          alt="Transformation Image"
-                        />
-                      </>
-                    )}
-                  </div>
                 </div>
-                <div>
+                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   {project.images && project.images.length > 0 && (
                     <>
                       <img
-                        src={getImgUrl(project.images[2])}
+                        src={getImgUrl(project.images[7])}
                         alt="Scene Image"
                       />
                     </>
@@ -307,8 +319,32 @@ const Restaurant = () => {
                     solutions and user stories that helped me easily determine
                     how the platform could meet their needs.
                   </p>
+                  <div className="flex justify-center items-center pt-10">
+                    {project.images && project.images.length > 0 && (
+                      <>
+                        <img
+                          src={getImgUrl(project.images[8])}
+                          alt="Low-fi Wireframes Image"
+                        />
+                      </>
+                    )}
+                  </div>{" "}
+                  <div className="flex justify-center flex-col items-center pt-10">
+                    {project.images && project.images.length > 0 && (
+                      <>
+                        <img
+                          src={getImgUrl(project.images[9])}
+                          alt="Low-fi Wireframes Image"
+                        />
+                        <img
+                          src={getImgUrl(project.images[10])}
+                          alt="Low-fi Wireframes Image"
+                          className="pt-8"
+                        />
+                      </>
+                    )}
+                  </div>
                 </div>
-                <div>Image</div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto pt-8 pb-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Personas
@@ -318,19 +354,37 @@ const Restaurant = () => {
                     created three personas whose responses represent that of a
                     larger group of users.
                   </p>
+                  <div className="flex justify-center items-center pt-10">
+                    {project.images && project.images.length > 0 && (
+                      <>
+                        <img
+                          src={getImgUrl(project.images[11])}
+                          alt="Low-fi Wireframes Image"
+                        />
+                      </>
+                    )}
+                  </div>
                 </div>
-                <div>Image</div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Pain Points
                   </h2>
-                  <div>cards</div>
+                  <div>
+                    {project.images && project.images.length > 0 && (
+                      <>
+                        <img
+                          src={getImgUrl(project.images[12])}
+                          alt="Low-fi Wireframes Image"
+                        />
+                      </>
+                    )}
+                  </div>
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Problem Statements
                   </h2>
-                  <ul className="pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+                  <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
                     <li className="mb-6">
                       Sasha is a student who needs a way to access adequate
                       information on restaurants and make reservations
@@ -347,13 +401,13 @@ const Restaurant = () => {
                       access menus easily because her family prefers to know
                       what is on the menu before heading to the restaurant.
                     </li>
-                  </ul>
+                  </ol>
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     User Stories
                   </h2>
-                  <ul className="pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+                  <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
                     <li className="mb-6">
                       As a student who loves to spend time with family and
                       friends, I want a platform that will allow me to make
@@ -372,7 +426,7 @@ const Restaurant = () => {
                       about the restaurant, especially their menus, So that my
                       family and I know what we will get before we get there.
                     </li>
-                  </ul>
+                  </ol>
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
@@ -382,16 +436,21 @@ const Restaurant = () => {
                     I created a user journey map and flow to visualize the
                     user’s experience using the app.
                   </p>
-                </div>
-                <div>
-                  {project.images && project.images.length > 0 && (
-                    <>
-                      <img
-                        src={getImgUrl(project.images[2])}
-                        alt="Scene Image"
-                      />
-                    </>
-                  )}
+                  <div className="flex justify-center flex-col items-center pt-10">
+                    {project.images && project.images.length > 0 && (
+                      <>
+                        <img
+                          src={getImgUrl(project.images[13])}
+                          alt="Low-fi Wireframes Image"
+                        />
+                        <img
+                          src={getImgUrl(project.images[14])}
+                          alt="Low-fi Wireframes Image"
+                          className="pt-8"
+                        />
+                      </>
+                    )}
+                  </div>
                 </div>
               </TabsContent>
               <TabsContent value="ideation">
@@ -404,13 +463,11 @@ const Restaurant = () => {
                     information architecture by laying out each individual
                     screen to identify what users will need and can easily find.
                   </p>
-                  <div>Image</div>
-
                   <div className="py-10 flex justify-center">
                     {project.images && project.images.length > 0 && (
                       <>
                         <img
-                          src={getImgUrl(project.images[3])}
+                          src={getImgUrl(project.images[15])}
                           alt="Sketch Image"
                         />
                       </>
@@ -421,7 +478,7 @@ const Restaurant = () => {
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     User flow
                   </h2>
-                  <ul className="pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+                  <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
                     <li className="mb-6">
                       After understanding and defining my project objectives, I
                       had to determine how users would see the product
@@ -437,35 +494,14 @@ const Restaurant = () => {
                     <li className="mb-6">
                       Each shape is connected by an arrow.
                     </li>
-                  </ul>
+                  </ol>
                 </div>
                 <div className="py-10 flex justify-center">
                   {project.images && project.images.length > 0 && (
                     <>
                       <img
-                        src={getImgUrl(project.images[4])}
+                        src={getImgUrl(project.images[16])}
                         alt="Information Architecture Image"
-                      />
-                    </>
-                  )}
-                </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
-                    User Journeys
-                  </h2>
-                  <p className="pt-8">
-                    By understanding the user journey, their emotions, and the
-                    opportunities for improvement, i was able to structure and
-                    design to meet the needs and expectations of users and the
-                    business.
-                  </p>
-                </div>
-                <div className="py-10 flex justify-center">
-                  {project.images && project.images.length > 0 && (
-                    <>
-                      <img
-                        src={getImgUrl(project.images[5])}
-                        alt="User Journey Image"
                       />
                     </>
                   )}
@@ -481,7 +517,16 @@ const Restaurant = () => {
                     swiftly join the site’s information architecture to display
                     particular types of information on the user interface.
                   </p>
-                  <div>Image</div>
+                  <div className="py-10 flex justify-center">
+                    {project.images && project.images.length > 0 && (
+                      <>
+                        <img
+                          src={getImgUrl(project.images[17])}
+                          alt="Information Architecture Image"
+                        />
+                      </>
+                    )}
+                  </div>
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
@@ -495,13 +540,12 @@ const Restaurant = () => {
                     user interface, which I will use to conduct a research
                     study.
                   </p>
-                  <div>Image</div>
                 </div>
                 <div className="py-10 flex justify-center">
                   {project.images && project.images.length > 0 && (
                     <>
                       <img
-                        src={getImgUrl(project.images[9])}
+                        src={getImgUrl(project.images[18])}
                         alt="Final Screens Image"
                       />
                     </>
@@ -537,72 +581,25 @@ const Restaurant = () => {
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
-                    Color palette
+                    Research Questions
                   </h2>
-                  <div className="py-10 flex flex-col justify-center">
-                    <div className="flex pb-4">
-                      {project.colorPalette &&
-                        project.colorPalette.topPalette.map((color, index) => (
-                          <Card
-                            key={index}
-                            className={`h-[165px] w-[${color.width}] text-white mr-3 relative`}
-                            style={{
-                              background: color.gradient
-                                ? color.gradient
-                                : color.hex,
-                              color: color.textColor
-                                ? color.textColor
-                                : "#FFFFFF",
-                            }}
-                          >
-                            <p className="absolute top-4 right-5 text-xs font-bold">
-                              {color.title}
-                            </p>
-                            <p className="absolute bottom-1.5 left-2.5 text-xs">
-                              {color.gradient ? "Gradient" : "Hex"}:{" "}
-                              {color.gradient ? "" : color.hex}
-                            </p>
-                          </Card>
-                        ))}
-                    </div>
-                    <div className="flex">
-                      {project.colorPalette &&
-                        project.colorPalette.bottomPalette.map(
-                          (color, index) => (
-                            <Card
-                              key={index}
-                              className={`h-[99px] w-[${color.width}] text-white mr-3 relative`}
-                              style={{
-                                background: color.gradient
-                                  ? color.gradient
-                                  : color.hex,
-                                color: color.textColor
-                                  ? color.textColor
-                                  : "#FFFFFF",
-                              }}
-                            >
-                              <p className="absolute top-4 right-5 text-xs font-bold">
-                                {color.title}
-                              </p>
-                              <p className="absolute bottom-1.5 left-2.5 text-xs">
-                                {color.gradient ? "Gradient" : "Hex"}:{" "}
-                                {color.gradient ? "" : color.hex}
-                              </p>
-                            </Card>
-                          )
-                        )}
-                    </div>
-                  </div>
-                </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
-                    Logo
-                  </h2>
-                  <div className="py-10 flex justify-center">
+                  <div className="flex pt-10">
+                    <ul>
+                      <li>
+                        By the first glance of the homepage, can you get the
+                        "big picture" of what is offered on the app?
+                      </li>
+                      <li>
+                        How do you feel about the overall experience of the app?
+                      </li>
+                      <li>Did you reach your goal?</li>
+                      <li>Did you face any challenges?</li>
+                      <li> What other comments do you have</li>
+                    </ul>
                     {project.images && project.images.length > 0 && (
                       <>
                         <img
-                          src={getImgUrl(project.images[10])}
+                          src={getImgUrl(project.images[19])}
                           alt="Final Screens Image"
                         />
                       </>
@@ -611,74 +608,33 @@ const Restaurant = () => {
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
-                    Typography
+                    Participants
                   </h2>
                   <p className="pt-8">
-                    The choice of 'Albert Sans' was deliberate and driven by my
-                    desire to achieve a clean, modern, and legible design that
-                    fits perfectly with the project's objectives. I wanted to
-                    use a font that was modern, versatile and legible across
-                    various screen sizes and resolutions while also creating a
-                    sense of professionalism.
+                    With a total of 5 participants ,Three participants will
+                    complete the tasks independently, and two will be guided and
+                    given a questionnaire on their experience. Who are they?
                   </p>
-                </div>
-                <div className="text-container text-8xl">
-                  {project.typography &&
-                    project.typography.map((item, index) => (
-                      <div
-                        key={index}
-                        className={`text-item ${
-                          index % 2 === 0 ? "avant-garde-extralight" : ""
-                        }`}
-                      >
-                        {item}
-                      </div>
-                    ))}
-                </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <p className="mb-5">Hierarchy</p>
-                  <Table>
-                    <TableHeader>
-                      <TableRow>
-                        <TableHead className="">Text Type</TableHead>
-                        <TableHead>Weight</TableHead>
-                        <TableHead>Font Size</TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      {project.hierarchy &&
-                        project.hierarchy.map((item, index) => (
-                          <TableRow key={index}>
-                            <TableCell>{item.textType}</TableCell>
-                            <TableCell>{item.weight}</TableCell>
-                            <TableCell>{item.fontSize}</TableCell>
-                          </TableRow>
-                        ))}
-                    </TableBody>
-                  </Table>
-                </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
-                    Icons
-                  </h2>
-                  <div className="py-10 flex justify-center">
-                    {project.images && project.images.length > 0 && (
-                      <>
-                        <img src={getImgUrl(project.images[11])} alt="Icons" />
-                      </>
-                    )}
-                  </div>
-                </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
-                    Border Radius
-                  </h2>
+                  <ul className="pt-8">
+                    <li>
+                      Participants are people who often go to restaurants to eat
+                    </li>
+                    <li>Participants are people between the ages of 18-45</li>
+                    <li>
+                      Participants include a relatively even distribution of
+                      only two genders.
+                    </li>
+                    <li>
+                      Participants include people with different social and
+                      economic backgrounds with different abilities.
+                    </li>
+                  </ul>
                   <div className="py-10 flex justify-center">
                     {project.images && project.images.length > 0 && (
                       <>
                         <img
-                          src={getImgUrl(project.images[12])}
-                          alt="Border Radius"
+                          src={getImgUrl(project.images[20])}
+                          alt="Final Screens Image"
                         />
                       </>
                     )}
@@ -686,65 +642,64 @@ const Restaurant = () => {
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
-                    Buttons
+                    Affinity Mapping
                   </h2>
+                  <p className="pt-8">
+                    Based on my findings, I created an affinity diagram and
+                    generated actionable insights from the data received
+                  </p>
                   <div className="py-10 flex justify-center">
                     {project.images && project.images.length > 0 && (
                       <>
                         <img
-                          src={getImgUrl(project.images[13])}
-                          alt="Buttons"
+                          src={getImgUrl(project.images[21])}
+                          alt="Final Screens Image"
                         />
                       </>
                     )}
-                  </div>
-                </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] flex mx-auto justify-evenly py-14">
-                  <div>
-                    <h2 className="font-avant-garde text-3xl font-medium leading-10">
-                      Navigations
-                    </h2>
-                    <div className="py-10 flex justify-center">
-                      {project.images && project.images.length > 0 && (
-                        <>
-                          <img
-                            src={getImgUrl(project.images[14])}
-                            alt="Buttons"
-                          />
-                        </>
-                      )}
-                    </div>
-                  </div>
-                  <div>
-                    <h2 className="font-avant-garde text-base font-medium leading-10">
-                      Radio buttons
-                    </h2>
-                    <div className="py-4 flex justify-center">
-                      {project.images && project.images.length > 0 && (
-                        <>
-                          <img
-                            src={getImgUrl(project.images[15])}
-                            alt="Buttons"
-                          />
-                        </>
-                      )}
-                    </div>
                   </div>
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                  {project.images && project.images.length > 0 && (
+                    <>
+                      <img
+                        src={getImgUrl(project.images[22])}
+                        alt="Final Screens Image"
+                      />
+                    </>
+                  )}
+                </div>
+                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
-                    Illustrations
+                    Implementing Feedback
                   </h2>
-                  <div className="py-10 flex justify-center">
+                  <p className="pt-8">
+                    The feedback from the Usability test were considered and
+                    implemented.
+                  </p>
+                  <div className="py-10">
                     {project.images && project.images.length > 0 && (
                       <>
                         <img
-                          src={getImgUrl(project.images[16])}
-                          alt="Illustrations"
+                          src={getImgUrl(project.images[23])}
+                          alt="Final Screens Image"
                         />
                       </>
                     )}
                   </div>
+                </div>
+                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                  <h2 className="font-avant-garde text-3xl font-medium leading-10 pb-8">
+                    Next Steps
+                  </h2>
+                  {project.images && project.images.length > 0 && (
+                    <>
+                      <img
+                        src={getImgUrl(project.images[24])}
+                        alt="Final Screens Image"
+                      />
+                    </>
+                  )}
                 </div>
               </TabsContent>
             </Tabs>

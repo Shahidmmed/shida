@@ -139,7 +139,7 @@ const Work = () => {
         </div>
       </section>
 
-      <section className="py-8 pr-20 pl-32 mx-auto">
+      <section className="py-8 pr-20 pl-36 mx-auto">
         <div
           className="overflow-x-auto"
           style={{ scrollbarWidth: "none", WebkitOverflowScrolling: "touch" }}

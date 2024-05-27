@@ -24,7 +24,7 @@ const Report = () => {
               <img
                 src={getImgUrl(project.image)}
                 alt={project.previewText}
-                className="max-h-[300px] max-w-[400px] ml-10"
+                className="max-h-[300px] max-w-[400px]"
               />
               <div className="ml-8">
                 <p className="avant-garde-bold font-medium text-sm leading-5 tracking-wider text-left mb-2 pb-2">
@@ -43,7 +43,7 @@ const Report = () => {
                 </p>
               </div>
             </div>
-            <div className="px-16 max-w-[1220px] mx-auto py-14">
+            <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
               <h2 className="font-avant-garde text-3xl font-medium leading-10">
                 Introduction
               </h2>
@@ -88,7 +88,7 @@ const Report = () => {
                 <small>UX Design, Usability Testing</small>
               </div>
             </div>
-            <div className="px-16 max-w-[1220px] mx-auto py-14">
+            <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
               <h2 className="font-avant-garde text-3xl font-medium leading-10">
                 Summary
               </h2>
@@ -103,7 +103,7 @@ const Report = () => {
                 product user-friendly, easy to navigate and straightforward.
               </p>
             </div>
-            <div className="px-16 max-w-[1220px] mx-auto py-14">
+            <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
               {project.images && project.images.length > 0 && (
                 <>
                   <img src={getImgUrl(project.images[0])} alt="Summary Image" />
@@ -111,11 +111,11 @@ const Report = () => {
                 </>
               )}
             </div>
-            <div className="px-16 max-w-[1220px] mx-auto py-14">
+            <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
               <h2 className="font-avant-garde text-3xl font-medium leading-10">
                 Methodology
               </h2>
-              <ul className="pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+              <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
                 <li className="mb-6 list-lower-alpha">
                   A moderated usability study with a total of 6 participants
                   with backgrounds in business, sales and marketing.
@@ -144,9 +144,9 @@ const Report = () => {
                   that there were no right or wrong answers and that every
                   feedback counts.
                 </li>
-              </ul>
+              </ol>
             </div>
-            <div className="px-16 max-w-[1220px] mx-auto py-14">
+            <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
               <h2 className="font-avant-garde text-3xl font-medium leading-10">
                 Key performance indicators (KPIs)
               </h2>
@@ -158,7 +158,7 @@ const Report = () => {
                 perceived usability.
               </p>
             </div>
-            <div className="px-16 max-w-[1220px] mx-auto py-14">
+            <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
               <h2 className="font-avant-garde text-3xl font-medium leading-10">
                 Script
               </h2>
@@ -171,7 +171,7 @@ const Report = () => {
                 spoke when help was needed or when it was time to give a new
                 task during the test.
               </p>
-              <ul className="pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+              <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
                 <li className="mb-6 list-lower-alpha">
                   Conversion Rate - Participants that completed desired actions
                   during the test.
@@ -180,7 +180,7 @@ const Report = () => {
                   System Usability Scale- How easy the app is for the user
                   through the use of a questionnaire.
                 </li>
-              </ul>
+              </ol>
               <div className="mt-4">
                 <Link
                   to="#"
@@ -190,7 +190,7 @@ const Report = () => {
                 </Link>
               </div>
             </div>
-            <div className="px-16 max-w-[1220px] mx-auto py-14">
+            <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
               <h2 className="font-avant-garde text-3xl font-medium leading-10">
                 Research Questions
               </h2>
@@ -201,7 +201,7 @@ const Report = () => {
                 to the goals of each task. I allowed participants to speak their
                 minds and express themselves freely.
               </p>
-              <ul className="pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+              <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
                 <li className="mb-6 list-lower-alpha">
                   By your first glance, did you get what the product offers?
                 </li>
@@ -219,13 +219,13 @@ const Report = () => {
                   What other comments do you have? Do you have any suggestions
                   for improvement?
                 </li>
-              </ul>
+              </ol>
             </div>
-            <div className="px-16 max-w-[1220px] mx-auto py-14">
+            <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
               <h2 className="font-avant-garde text-3xl font-medium leading-10">
                 Participants
               </h2>
-              <ul className="pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+              <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
                 <li className="mb-6 list-lower-alpha">
                   All participants were business, marketing and sales
                   professionals between the ages of 22-40 with a relatively even
@@ -242,7 +242,7 @@ const Report = () => {
                   questions in detail after every task was performed. The last
                   two participated in a face-to-face test.
                 </li>
-              </ul>
+              </ol>
               <div className="flex justify-evenly">
                 <div className="flex flex-col items-center">
                   <Avatar className="h-16 w-16">
@@ -300,7 +300,7 @@ const Report = () => {
                 </div>
               </div>
             </div>
-            <div className="px-16 max-w-[1220px] mx-auto py-14">
+            <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
               <h2 className="font-avant-garde text-3xl font-medium leading-10">
                 Card Sorting
               </h2>
@@ -370,14 +370,14 @@ const Report = () => {
                 </div>
               </div>
             </div>
-            <div className="px-16 max-w-[1220px] mx-auto py-14">
+            <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
               <h2 className="font-avant-garde text-3xl font-medium leading-10">
                 Insights
               </h2>
               <p className="pt-8 font-avant-garde">
                 The test identified only a few minor problems, including:
               </p>
-              <ul className="pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+              <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
                 <li className="mb-6 list-lower-alpha">
                   Modals- the idea of modals seemed great but aren't going to be
                   practical in real time.
@@ -400,9 +400,9 @@ const Report = () => {
                   Inclusivity- some users wondered how easy the product would be
                   for people who are new to CRM’S
                 </li>
-              </ul>
+              </ol>
             </div>
-            <div className="px-16 max-w-[1220px] mx-auto py-14">
+            <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
               <h2 className="font-avant-garde text-3xl font-medium leading-10">
                 Implementing Feedback
               </h2>
@@ -424,7 +424,7 @@ const Report = () => {
                 )}
               </div>
             </div>
-            <div className="px-16 max-w-[1220px] mx-auto py-14">
+            <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
               <h2 className="font-avant-garde text-3xl font-medium leading-10">
                 Interface before the usability test.
               </h2>
@@ -439,7 +439,7 @@ const Report = () => {
                 )}
               </div>
             </div>
-            <div className="px-16 max-w-[1220px] mx-auto py-14">
+            <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
               <h2 className="font-avant-garde text-3xl font-medium leading-10">
                 This is the interface after the usability test. The modal was
                 changed into a page
@@ -455,11 +455,11 @@ const Report = () => {
                 )}
               </div>
             </div>
-            <div className="px-16 max-w-[1220px] mx-auto py-14">
+            <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
               <h2 className="font-avant-garde text-3xl font-medium leading-10">
                 Conclusion
               </h2>
-              <ul className="pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+              <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
                 <li className="mb-6 list-lower-alpha">
                   Based on the feedback from the usability test and the SUS
                   data, it can be concluded that the Leads management system I
@@ -484,7 +484,7 @@ const Report = () => {
                   from the usability study was used to inform the current design
                   iterations and improvements to the system.
                 </li>
-              </ul>
+              </ol>
             </div>
           </section>
           <ProjectNavigation currentProjectId={project.id} />

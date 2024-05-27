@@ -7,6 +7,7 @@ import CaseStudy from "./pages/work/CaseStudy";
 import Report from "./pages/work/Report";
 import ScrollToTop from "./ScrollToTop";
 import Restaurant from "./pages/work/Restaurant";
+import Thenga from "./pages/work/Thenga";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/work" element={<Work />} />
             <Route path="/work/:caseStudy" element={<CaseStudy />} />
             <Route path="/restaurant" element={<Restaurant />} />
+            <Route path="/thenga" element={<Thenga />} />
             <Route path="/work/report/:report" element={<Report />} />
             <Route path="/contact" element={<Contact />} />
           </Route>

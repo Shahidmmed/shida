@@ -11,7 +11,7 @@ import heart from "/assets/images/heart.png";
 
 const Contact = () => {
   return (
-    <div className="max-w-[1220px] px-2 mx-auto pt-20">
+    <div className="xl2:w-[1240px] w-[1100px] px-2 mx-auto pt-20">
       <div className="flex relative">
         <img src={star} alt="stars" className="absolute footer-stars" />
         <img src={hi} alt="ux" className="absolute contact-hi" />

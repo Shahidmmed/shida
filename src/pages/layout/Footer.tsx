@@ -7,7 +7,7 @@ import heart from "/assets/images/heart.png";
 
 const Footer = () => {
   return (
-    <div className="max-w-[1150px] mx-auto">
+    <div className="xl2:w-[1240px] w-[1100px] mx-auto px-12">
       <div className="mx-auto flex items-left flex-col justify-center p-10">
         <p className="avant-garde-extralight text-xl tracking-widest pb-6">
           Not you scrolling to the bottom 😌,
