@@ -10,7 +10,9 @@ const Navbar = () => {
       <header className="sticky top-0 flex h-16 items-center gap-4  bg-background px-16 md:px-16">
         <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
           <div className="flex items-center gap-2 text-black font-bold">
-            <img src={logo} alt="Logo" className="" />
+            <NavLink to="/work">
+              <img src={logo} alt="Logo" className="" />
+            </NavLink>
           </div>
         </nav>
         <Sheet>
@@ -50,7 +52,7 @@ const Navbar = () => {
         </Sheet>
         <nav
           id="topnav"
-          className="flex font-medium items-center gap-4 md:ml-auto md:gap-2 lg:gap-4 ml-auto flex-1 sm:flex-initial"
+          className="flex font-medium items-center gap-8 md:ml-auto md:gap-2 lg:gap-8 ml-auto flex-1 sm:flex-initial"
         >
           <NavLink
             to="/work"

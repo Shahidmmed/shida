@@ -4,9 +4,13 @@ import { getImgUrl } from "@/data/functions";
 import { data } from "@/data/info";
 import React from "react";
 import MiniFooter from "../layout/MiniFooter";
+import useAppearOnScroll from "@/useAppearOnScroll";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const Thenga = () => {
+  const selectors = [".appear-on-scroll", ".tab-content-appear"];
+  useAppearOnScroll(selectors);
+
   const project = data.find(
     (item) => item.type === "caseStudy" && item.id === "thenga"
   );
@@ -20,10 +24,10 @@ const Thenga = () => {
               <img
                 src={getImgUrl(project.image)}
                 alt={project.previewText}
-                className="max-h-[300px] max-w-[400px] ml-10"
+                className="appear-on-scroll max-h-[300px] max-w-[400px] ml-10"
               />
               <div className="ml-8">
-                <p className="avant-garde-bold font-medium text-sm leading-5 tracking-wider text-left mb-2 pb-2">
+                <p className="appear-on-scroll avant-garde-bold font-medium text-sm leading-5 tracking-wider text-left mb-2 pb-2">
                   {project.designTypes.map((type, index) => (
                     <React.Fragment key={index}>
                       {type}{" "}
@@ -31,10 +35,10 @@ const Thenga = () => {
                     </React.Fragment>
                   ))}
                 </p>
-                <h2 className="font-avant-garde font-semibold tracking-wider text-4xl text-left mb-2 text-nowrap">
+                <h2 className="appear-on-scroll font-avant-garde font-semibold tracking-wider text-4xl text-left mb-2 text-nowrap">
                   {project.name}
                 </h2>
-                <p className="mb-2 py-4 font-avant-garde text-sm leading-6 tracking-wider max-w-[550px]">
+                <p className="appear-on-scroll mb-2 py-4 font-avant-garde text-sm leading-6 tracking-wider max-w-[550px]">
                   {project.brief}
                 </p>
               </div>
@@ -60,12 +64,12 @@ const Thenga = () => {
                   Style Guide
                 </TabsTrigger>
               </TabsList>
-              <TabsContent value="background">
+              <TabsContent value="background" className="tab-content-appear">
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Introduction
                   </h2>
-                  <p className="py-8">
+                  <p className=" py-8">
                     When I was presented with the Thenga concept, I knew
                     immediately that it was a project I would be passionate
                     about. The idea of making e-shopping accessible and simple
@@ -107,7 +111,7 @@ const Thenga = () => {
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <div>
-                    <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                    <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                       Design Process
                     </h2>
                     <div className="flex xl2:w-[1120px] w-[980px] justify-center items-center pt-8">
@@ -118,7 +122,7 @@ const Thenga = () => {
                             alt="Strategy"
                             className="h-[150px]"
                           />
-                          <p className="ml-4 leading-loose overflow-wrap max-w-full">
+                          <p className=" ml-4 leading-loose overflow-wrap max-w-full">
                             My task was to redesign the Thenga product, which at
                             the time, was just a website. But after strategising
                             with my team, determining what we wanted to build
@@ -138,7 +142,7 @@ const Thenga = () => {
                             alt="Strategy"
                             className="h-[150px]"
                           />
-                          <p className="ml-4 leading-loose overflow-wrap max-w-full">
+                          <p className=" ml-4 leading-loose overflow-wrap max-w-full">
                             Through our discussions and brainstorming sessions,
                             we were able to come up with a unique and innovative
                             approach to the redesign that I believe will
@@ -158,7 +162,7 @@ const Thenga = () => {
                             alt="Strategy"
                             className="h-[150px]"
                           />
-                          <p className="ml-4 leading-loose overflow-wrap max-w-full">
+                          <p className=" ml-4 leading-loose overflow-wrap max-w-full">
                             As a designer, The goal for the redesign was to
                             merge aesthetics with functionality to create a
                             simple and logical digital experience that anybody
@@ -179,7 +183,7 @@ const Thenga = () => {
                             alt="Strategy"
                             className="h-[150px]"
                           />
-                          <p className="ml-4 leading-loose overflow-wrap max-w-full">
+                          <p className=" ml-4 leading-loose overflow-wrap max-w-full">
                             Lastly, I put my ideas together to create low and
                             high-fidelity prototypes to visualise the flow of
                             the product, if the features work, and how it will
@@ -194,10 +198,10 @@ const Thenga = () => {
                 </div>
 
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Challenges
                   </h2>
-                  <p className="pt-8">
+                  <p className=" pt-8">
                     Thenga is an innovative product designed to create value
                     between Ghanaian shoppers and U.K. Shops. This allows people
                     to move away from unreliable shopping experiences and enjoy
@@ -205,44 +209,44 @@ const Thenga = () => {
                     online shoppers usually face that Thenga aims to solve
                     include:
                   </p>
-                  <ul className="pt-8">
-                    <li className="mb-6">
+                  <ol className="desired pt-8">
+                    <li className=" mb-6">
                       Few payment options or no mobile money payment options
                       while shopping
                     </li>
-                    <li className="mb-6">Scam pages and dishonest vendors</li>
-                    <li className="mb-6">Shipping costs and time.</li>
-                    <li className="mb-6">
+                    <li className=" mb-6">Scam pages and dishonest vendors</li>
+                    <li className=" mb-6">Shipping costs and time.</li>
+                    <li className=" mb-6">
                       Delivery issues eg. miscommunication and poor customer
                       service
                     </li>
-                  </ul>
+                  </ol>
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Goals
                   </h2>
-                  <ul className="pt-8">
-                    <li className="mb-6">
+                  <ol className="desired pt-8">
+                    <li className=" mb-6">
                       The goal is to design a product that makes shopping easier
                       for Ghanaians and allows various payment options,
                       including mobile money payment options.
                     </li>
-                    <li className="mb-6">
+                    <li className=" mb-6">
                       The goal is to design a visually engaging interface with
                       focus of functionality and task completion
                     </li>
-                    <li className="mb-6">
+                    <li className=" mb-6">
                       The goal is to reduce the issue of scamming by allowing
                       customers to shop from authentic websites without worrying
                       about dishonesty.
                     </li>
-                    <li className="mb-6">
+                    <li className=" mb-6">
                       The goal is to assist with simple and effective shipping
                       and delivery that provides efficient communication and
                       customer service.
                     </li>
-                  </ul>
+                  </ol>
                 </div>
                 <div>
                   {project.images && project.images.length > 0 && (
@@ -255,12 +259,12 @@ const Thenga = () => {
                   )}
                 </div>
               </TabsContent>
-              <TabsContent value="journeys">
+              <TabsContent value="journeys" className="tab-content-appear">
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     User Personas
                   </h2>
-                  <p className="pt-8">
+                  <p className=" pt-8">
                     I created target audiences with different backgrounds to
                     help me gain a better understanding of the problem we were
                     solving. These personas are not specific individuals; they
@@ -284,10 +288,10 @@ const Thenga = () => {
                   </div>
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     User Journey
                   </h2>
-                  <p className="pt-8">
+                  <p className=" pt-8">
                     Based on the persona insights, I mapped out the steps a
                     potential user will take to complete their tasks and
                     visualised their feelings and emotions as they completed
@@ -314,16 +318,16 @@ const Thenga = () => {
                   </div>
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Takeaways
                   </h2>
-                  <p className="pt-8">
+                  <p className=" pt-8">
                     Designing a seamless experience that users are accustomed to
                     and allowing them to exercise significant control over their
                     actions encourages them to finish tasks quickly and
                     efficiently with little to no pain points.
                   </p>
-                  <p className="pt-8">
+                  <p className=" pt-8">
                     Even though the user may get confused during their journey,
                     it boosts the general experience of the product. Designing
                     an experience people are overly familiar with makes the
@@ -331,12 +335,12 @@ const Thenga = () => {
                   </p>
                 </div>
               </TabsContent>
-              <TabsContent value="architecture">
+              <TabsContent value="architecture" className="tab-content-appear">
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Design Process
                   </h2>
-                  <p className="pt-8">
+                  <p className=" pt-8">
                     As part of my design process, I focused on creating an
                     information architecture by carefully piecing together most
                     of the components of each screen to identify what users will
@@ -361,17 +365,21 @@ const Thenga = () => {
                   </div>
                 </div>
               </TabsContent>
-              <TabsContent value="flow">
+              <TabsContent value="flow" className="tab-content-appear">
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Design Process
                   </h2>
-                  <ul>
-                    <li>All actions are in rounded rectangles.</li>
-                    <li>All screens are in rectangles. </li>
-                    <li>All decisions are in diamonds.</li>
-                    <li>Each shape is connected by an arrow.</li>
-                  </ul>
+                  <ol className="desired pt-8">
+                    <li className=" mb-6">
+                      All actions are in rounded rectangles.
+                    </li>
+                    <li className=" mb-6">All screens are in rectangles. </li>
+                    <li className=" mb-6">All decisions are in diamonds.</li>
+                    <li className=" mb-6">
+                      Each shape is connected by an arrow.
+                    </li>
+                  </ol>
                   <div className="py-10 flex flex-col justify-center">
                     {project.images && project.images.length > 0 && (
                       <>
@@ -385,12 +393,12 @@ const Thenga = () => {
                   </div>
                 </div>
               </TabsContent>
-              <TabsContent value="wireframing">
+              <TabsContent value="wireframing" className="tab-content-appear">
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Design Process
                   </h2>
-                  <p className="pt-8">
+                  <p className=" pt-8">
                     Based on the business and user goals, I swiftly put down all
                     my ideas and joined the site's information architecture to
                     visualise the potential of the product's interface using
@@ -415,7 +423,7 @@ const Thenga = () => {
                       </TabsTrigger>
                     </TabsList>
                     <TabsContent value="website">
-                      <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14 flex">
+                      <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto flex justify-center items-center">
                         <div className="py-10">
                           {project.images && project.images.length > 0 && (
                             <>
@@ -427,11 +435,11 @@ const Thenga = () => {
                             </>
                           )}
                         </div>
-                        <div>
+                        <div className="w-1/3 pb-60">
                           <h2 className="font-avant-garde text-3xl font-medium leading-10">
                             Lo-fi💡
                           </h2>
-                          <p className="pt-8">
+                          <p className=" pt-8">
                             These Lo-fi prototypes are just quick and simple
                             versions of the final product. They were used to
                             explore the possibilities of core functionalities,
@@ -439,7 +447,7 @@ const Thenga = () => {
                           </p>
                         </div>
                       </div>
-                      <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14 flex">
+                      <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto flex justify-center items-center">
                         <div className="py-10">
                           {project.images && project.images.length > 0 && (
                             <>
@@ -451,11 +459,11 @@ const Thenga = () => {
                             </>
                           )}
                         </div>
-                        <div>
-                          <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                        <div className="w-1/3 pb-60">
+                          <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                             Visual ideation💡
                           </h2>
-                          <p className="pt-8">
+                          <p className=" pt-8">
                             These Hi-fi prototypes are also quick and simple
                             visual representations of my ideas. I focused more
                             on exploring a variety of UI elements and placements
@@ -467,10 +475,10 @@ const Thenga = () => {
                     </TabsContent>
                     <TabsContent value="extension">
                       <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                        <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                        <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                           Lo-fi💡
                         </h2>
-                        <p className="pt-8">
+                        <p className=" pt-8">
                           These Lo-fi prototypes are just quick and simple
                           versions of the final product. They were used to
                           explore the possibilities of core functionalities,
@@ -489,10 +497,10 @@ const Thenga = () => {
                         </div>
                       </div>
                       <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                        <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                        <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                           Visual ideation💡
                         </h2>
-                        <p className="pt-8">
+                        <p className=" pt-8">
                           These Hi-fi prototypes are also quick and simple
                           visual representations of my ideas. I focused more on
                           exploring a variety of UI elements and placements to
@@ -515,12 +523,12 @@ const Thenga = () => {
                   </Tabs>
                 </div>
               </TabsContent>
-              <TabsContent value="style">
+              <TabsContent value="style" className="tab-content-appear">
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Style Guide
                   </h2>
-                  <p className="pt-8">
+                  <p className=" pt-8">
                     My goal for the product's interface was to achieve a clean
                     and polished end design using warm, appealing colours,
                     vibrant components and illustrations, all working together

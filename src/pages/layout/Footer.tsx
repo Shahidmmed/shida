@@ -4,35 +4,42 @@ import star from "/assets/images/star.png";
 import hi from "/assets/images/hi.png";
 import solutions from "/assets/images/solutions.png";
 import heart from "/assets/images/heart.png";
+import useAppearOnScroll from "@/useAppearOnScroll";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
+  useAppearOnScroll([".appear-on-scroll"]);
+
   return (
     <div className="xl2:w-[1240px] w-[1100px] mx-auto px-12">
-      <div className="mx-auto flex items-left flex-col justify-center p-10">
-        <p className="avant-garde-extralight text-xl tracking-widest pb-6">
+      <div className="mx-auto flex items-left flex-col justify-center py-10">
+        <p className="appear-on-scroll font-avant-garde-book font-extrabold md:max-xl:text-base text-xl tracking-widest pb-6">
           Not you scrolling to the bottom 😌,
         </p>
-        <div className="flex relative">
+        <div className="appear-on-scroll flex relative">
           <img src={star} alt="stars" className="absolute footer-stars" />
           <img src={hi} alt="ux" className="absolute hi" />
-          <h1 className="avant-garde-bold font-extrabold  leading-none tracking-wide text-left mega-text">
+          <h1 className="avant-garde-bold font-extrabold  leading-none tracking-loose text-left mega-text">
             SAY HI
           </h1>
         </div>
-        <div>
-          <p className="avant-garde-extralight text-xl tracking-widest pt-6">
+        <div className="appear-on-scroll">
+          <p className="avant-garde-extralight md:max-xl:text-base text-xl tracking-widest pt-6">
             Reach out for design consultations, collaborations and general
             enquiries. I'm just a click away!
           </p>
-          <div className="flex justify-between max-w-[950px]">
+          <div className="flex justify-between max-w-[950px] md:max-xl:max-w-[840px]">
             <img src={heart} alt="stars" className="h-[40px]" />
             <img src={solutions} alt="ux" className="h-[40px]" />
           </div>
         </div>
-        <div className="flex pt-14">
-          <Button className="rounded-none bg-white text-base text-black px-20 py-8 border-2 border-black">
+        <div className="appear-on-scroll flex pt-14">
+          <Link
+            to="/contact"
+            className="rounded-none hover:bg-black hover:text-white bg-white text-base px-20 py-5 border-2 border-black"
+          >
             Contact
-          </Button>
+          </Link>
           <Button className="rounded-none bg-black text-base px-20 py-8 border-2 ml-6">
             About Me
           </Button>

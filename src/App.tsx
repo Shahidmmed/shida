@@ -3,11 +3,11 @@ import About from "./pages/about/About";
 import Layout from "./pages/layout/Layout";
 import Work from "./pages/work/Work";
 import Contact from "./pages/contact/Contact";
-import CaseStudy from "./pages/work/CaseStudy";
-import Report from "./pages/work/Report";
 import ScrollToTop from "./ScrollToTop";
 import Restaurant from "./pages/work/Restaurant";
 import Thenga from "./pages/work/Thenga";
+import Inventory from "./pages/work/Inventory";
+import Leads from "./pages/work/Leads";
 
 function App() {
   return (
@@ -18,10 +18,10 @@ function App() {
           <Route element={<Layout />}>
             <Route path="/" element={<About />} />
             <Route path="/work" element={<Work />} />
-            <Route path="/work/:caseStudy" element={<CaseStudy />} />
             <Route path="/restaurant" element={<Restaurant />} />
+            <Route path="/inventory" element={<Inventory />} />
             <Route path="/thenga" element={<Thenga />} />
-            <Route path="/work/report/:report" element={<Report />} />
+            <Route path="/leads" element={<Leads />} />
             <Route path="/contact" element={<Contact />} />
           </Route>
         </Routes>

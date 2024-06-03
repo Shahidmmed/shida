@@ -3,7 +3,6 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { getImgUrl } from "@/data/functions";
 import { data } from "@/data/info";
-import { useParams } from "react-router-dom";
 import MiniFooter from "../layout/MiniFooter";
 import React, { useEffect } from "react";
 import ProjectNavigation from "@/components/ProjectNavigation";
@@ -16,9 +15,11 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import useAppearOnScroll from "@/useAppearOnScroll";
 
-const CaseStudy = () => {
-  const { caseStudy } = useParams<{ caseStudy: string }>();
+const Inventory = () => {
+  const selectors = [".appear-on-scroll", ".tab-content-appear"];
+  useAppearOnScroll(selectors);
 
   useEffect(() => {
     const container = document.querySelector(".text-container") as HTMLElement;
@@ -46,7 +47,7 @@ const CaseStudy = () => {
   }, []);
 
   const project = data.find(
-    (item) => item.type === "caseStudy" && item.id === caseStudy
+    (item) => item.type === "caseStudy" && item.id === "inventory"
   );
 
   return (
@@ -54,14 +55,14 @@ const CaseStudy = () => {
       {project ? (
         <>
           <section className="mx-auto">
-            <div className="p-16 flex items-center justify-start bg-slate-100 pt-20">
+            <div className="appear-on-scroll p-16 flex items-center justify-start bg-slate-100 pt-20">
               <img
                 src={getImgUrl(project.image)}
                 alt={project.previewText}
                 className="max-h-[300px] max-w-[400px] ml-10"
               />
               <div className="ml-8">
-                <p className="avant-garde-bold font-medium text-sm leading-5 tracking-wider text-left mb-2 pb-2">
+                <p className="appear-on-scroll avant-garde-bold font-medium text-sm leading-5 tracking-wider text-left mb-2 pb-2">
                   {project.designTypes.map((type, index) => (
                     <React.Fragment key={index}>
                       {type}{" "}
@@ -69,10 +70,10 @@ const CaseStudy = () => {
                     </React.Fragment>
                   ))}
                 </p>
-                <h2 className="font-avant-garde font-semibold tracking-wider text-4xl text-left mb-2 text-nowrap">
+                <h2 className="appear-on-scroll font-avant-garde font-semibold tracking-wider text-4xl text-left mb-2 text-nowrap">
                   {project.name}
                 </h2>
-                <p className="mb-2 py-4 font-avant-garde text-sm leading-6 tracking-wider">
+                <p className="appear-on-scroll mb-2 py-4 font-avant-garde text-sm leading-6 tracking-wider">
                   {project.brief}
                 </p>
               </div>
@@ -96,7 +97,7 @@ const CaseStudy = () => {
                   Style Guide
                 </TabsTrigger>
               </TabsList>
-              <TabsContent value="defining">
+              <TabsContent value="defining" className="tab-content-appear">
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto pt-8 pb-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     One thing about me: I love to work on challenging projects,
@@ -124,11 +125,11 @@ const CaseStudy = () => {
                     <p className="pb-2">Timeline</p>
                     <small>4 weeks (80 hours)</small>
                   </div>
-                  <div>
+                  <div className="">
                     <p className="pb-2">My Role</p>
                     <small>UI/UX Designer</small>
                   </div>
-                  <div>
+                  <div className="">
                     <p className="pb-2">Tools</p>
                     <small>Figma</small>
                   </div>
@@ -163,6 +164,7 @@ const CaseStudy = () => {
                       {project.images && project.images.length > 0 && (
                         <>
                           <img
+                            className=""
                             src={getImgUrl(project.images[0])}
                             alt="Design Process Image"
                           />
@@ -203,6 +205,7 @@ const CaseStudy = () => {
                     {project.images && project.images.length > 0 && (
                       <>
                         <img
+                          className=""
                           src={getImgUrl(project.images[1])}
                           alt="Transformation Image"
                         />
@@ -214,6 +217,7 @@ const CaseStudy = () => {
                   {project.images && project.images.length > 0 && (
                     <>
                       <img
+                        className=""
                         src={getImgUrl(project.images[2])}
                         alt="Scene Image"
                       />
@@ -221,7 +225,7 @@ const CaseStudy = () => {
                   )}
                 </div>
               </TabsContent>
-              <TabsContent value="developing">
+              <TabsContent value="developing" className="tab-content-appear">
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Defining and Understanding
@@ -265,6 +269,7 @@ const CaseStudy = () => {
                     {project.images && project.images.length > 0 && (
                       <>
                         <img
+                          className=""
                           src={getImgUrl(project.images[3])}
                           alt="Sketch Image"
                         />
@@ -287,6 +292,7 @@ const CaseStudy = () => {
                   {project.images && project.images.length > 0 && (
                     <>
                       <img
+                        className=""
                         src={getImgUrl(project.images[4])}
                         alt="Information Architecture Image"
                       />
@@ -308,6 +314,7 @@ const CaseStudy = () => {
                   {project.images && project.images.length > 0 && (
                     <>
                       <img
+                        className=""
                         src={getImgUrl(project.images[5])}
                         alt="User Journey Image"
                       />
@@ -332,6 +339,7 @@ const CaseStudy = () => {
                   {project.images && project.images.length > 0 && (
                     <>
                       <img
+                        className=""
                         src={getImgUrl(project.images[6])}
                         alt="User Flows Image"
                       />
@@ -346,12 +354,12 @@ const CaseStudy = () => {
                   <p className="text-6xl">😌</p>
                 </div>
               </TabsContent>
-              <TabsContent value="clarity">
+              <TabsContent value="clarity" className="tab-content-appear">
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Visual Clarity & Direction
                   </h2>
-                  <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+                  <ul className="circle-list pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
                     <li className="mb-6">
                       Designing the wireframes was a challenge, and just like
                       before, It also required a lot of iterations and research.
@@ -370,13 +378,13 @@ const CaseStudy = () => {
                       (this happened a couple of times) before the visual design
                       phase started.
                     </li>
-                  </ol>
+                  </ul>
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Low-fi Wireframes (selected frames)
                   </h2>
-                  <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+                  <ul className="circle-list pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
                     <li className="mb-6">
                       I used a week to create digital representations of my
                       paper sketches with a few changes and add ons and another
@@ -389,12 +397,13 @@ const CaseStudy = () => {
                       Lite). The screens below show the early ideas before
                       combining everything into one app.
                     </li>
-                  </ol>
+                  </ul>
                 </div>
                 <div className="py-10 flex justify-center">
                   {project.images && project.images.length > 0 && (
                     <>
                       <img
+                        className=""
                         src={getImgUrl(project.images[7])}
                         alt="Low-fi Wireframes Image"
                       />
@@ -415,6 +424,7 @@ const CaseStudy = () => {
                     {project.images && project.images.length > 0 && (
                       <>
                         <img
+                          className=""
                           src={getImgUrl(project.images[8])}
                           alt="Final Wireframes Image"
                         />
@@ -423,7 +433,7 @@ const CaseStudy = () => {
                   </div>
                 </div>
               </TabsContent>
-              <TabsContent value="design">
+              <TabsContent value="design" className="tab-content-appear">
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Approved Design
@@ -457,6 +467,7 @@ const CaseStudy = () => {
                   {project.images && project.images.length > 0 && (
                     <>
                       <img
+                        className=""
                         src={getImgUrl(project.images[9])}
                         alt="Final Screens Image"
                       />
@@ -464,7 +475,7 @@ const CaseStudy = () => {
                   )}
                 </div>
               </TabsContent>
-              <TabsContent value="guide">
+              <TabsContent value="guide" className="tab-content-appear">
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Style Guide
@@ -545,6 +556,7 @@ const CaseStudy = () => {
                     {project.images && project.images.length > 0 && (
                       <>
                         <img
+                          className=""
                           src={getImgUrl(project.images[10])}
                           alt="Final Screens Image"
                         />
@@ -581,14 +593,14 @@ const CaseStudy = () => {
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
                   <p className="mb-5">Hierarchy</p>
                   <Table>
-                    <TableHeader>
+                    <TableHeader className="">
                       <TableRow>
                         <TableHead className="">Text Type</TableHead>
                         <TableHead>Weight</TableHead>
                         <TableHead>Font Size</TableHead>
                       </TableRow>
                     </TableHeader>
-                    <TableBody>
+                    <TableBody className="">
                       {project.hierarchy &&
                         project.hierarchy.map((item, index) => (
                           <TableRow key={index}>
@@ -620,6 +632,7 @@ const CaseStudy = () => {
                     {project.images && project.images.length > 0 && (
                       <>
                         <img
+                          className=""
                           src={getImgUrl(project.images[12])}
                           alt="Border Radius"
                         />
@@ -635,6 +648,7 @@ const CaseStudy = () => {
                     {project.images && project.images.length > 0 && (
                       <>
                         <img
+                          className=""
                           src={getImgUrl(project.images[13])}
                           alt="Buttons"
                         />
@@ -651,6 +665,7 @@ const CaseStudy = () => {
                       {project.images && project.images.length > 0 && (
                         <>
                           <img
+                            className=""
                             src={getImgUrl(project.images[14])}
                             alt="Buttons"
                           />
@@ -666,6 +681,7 @@ const CaseStudy = () => {
                       {project.images && project.images.length > 0 && (
                         <>
                           <img
+                            className=""
                             src={getImgUrl(project.images[15])}
                             alt="Buttons"
                           />
@@ -682,6 +698,7 @@ const CaseStudy = () => {
                     {project.images && project.images.length > 0 && (
                       <>
                         <img
+                          className=""
                           src={getImgUrl(project.images[16])}
                           alt="Illustrations"
                         />
@@ -710,4 +727,4 @@ const CaseStudy = () => {
   );
 };
 
-export default CaseStudy;
+export default Inventory;

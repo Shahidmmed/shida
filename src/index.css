@@ -11,6 +11,11 @@ body {
 .avant-garde-extralight {
   font-family: "ITC Avant Garde Gothic Std ExtraLight", sans-serif;
 }
+
+.font-avant-garde {
+  font-family: "ITC Avant Garde Gothic Std", sans-serif;
+}
+
 .avant-garde-bold {
   font-family: "ITC Avant Garde Gothic Std Bold", sans-serif;
 }
@@ -32,6 +37,10 @@ body {
   font-size: 2.4rem;
 }
 
+.position {
+  color: #a2a2a2;
+}
+
 .text-carousel {
   overflow: hidden;
   height: 2em;
@@ -40,12 +49,15 @@ body {
 }
 
 .text-container {
+  color: #a2a2a2;
   display: flex;
   animation: scrollText 20s linear infinite;
 }
 
 .text-item {
   margin-right: 20px;
+  font-size: 15px;
+  line-height: 18px;
   white-space: nowrap !important;
 }
 
@@ -72,6 +84,15 @@ body {
   content: counter(item, lower-alpha) ") "; /* Custom content: alphabetic counter with parenthesis */
   position: absolute; /* Absolute position */
   left: -2em; /* Position it to the left */
+}
+
+ul.circle-list {
+  list-style-type: circle;
+}
+
+ul.circle-list li::marker {
+  font-size: 25px;
+  margin-top: 2px;
 }
 
 .product {
@@ -106,8 +127,8 @@ body {
 }
 
 .ux {
-  bottom: 75%;
-  left: 98%;
+  bottom: 85%;
+  left: 99%;
 }
 
 .heart {
@@ -139,11 +160,88 @@ body {
   border: 2px solid #fff;
 }
 
+.appear-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.appear-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tab-content-appear {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.tab-content-appear.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bg-slide {
+  background: linear-gradient(to right, #dbeafe 50%, transparent 50%);
+  background-size: 200% 100%;
+  animation: bgSlide 2s forwards;
+}
+
+@keyframes bgSlide {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 -100%;
+  }
+}
+
 @keyframes scrollText {
   0% {
     transform: translateX(0%);
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 768px) {
+  @media not all and (min-width: 1280px) {
+    .hi {
+      bottom: 4%;
+      left: 61%;
+    }
+
+    .heart {
+      top: 41%;
+      left: 39%;
+    }
+
+    .footer-stars {
+      top: 1%;
+      left: -3%;
+    }
+
+    .stars {
+      top: -8%;
+      left: 5%;
+    }
+
+    .ux {
+      bottom: 85%;
+      left: 89%;
+    }
+
+    .product {
+      top: 41%;
+      left: 60%;
+      z-index: 1;
+    }
+
+    .heart {
+      top: 53%;
+      left: 41%;
+    }
   }
 }

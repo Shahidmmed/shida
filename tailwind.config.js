@@ -10,13 +10,7 @@ module.exports = {
   prefix: "",
   theme: {
     fontSize: {
-      /* 
-      
-      
-      
-      
-      
-     */ xs: "0.75rem",
+      xs: "0.75rem",
       sm: "0.9rem" /* 15px */,
       base: "1rem",
       xl: "1.25rem" /* 20px */,

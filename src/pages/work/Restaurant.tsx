@@ -5,9 +5,13 @@ import MiniFooter from "../layout/MiniFooter";
 import React from "react";
 import ProjectNavigation from "@/components/ProjectNavigation";
 import { data } from "@/data/info";
+import useAppearOnScroll from "@/useAppearOnScroll";
 import { Link } from "react-router-dom";
 
 const Restaurant = () => {
+  const selectors = [".appear-on-scroll", ".tab-content-appear"];
+  useAppearOnScroll(selectors);
+
   const project = data.find(
     (item) => item.type === "caseStudy" && item.id === "restaurant"
   );
@@ -21,10 +25,10 @@ const Restaurant = () => {
               <img
                 src={getImgUrl(project.image)}
                 alt={project.previewText}
-                className="max-h-[300px] max-w-[400px] ml-10"
+                className="appear-on-scroll max-h-[300px] max-w-[400px] ml-10"
               />
               <div className="ml-8">
-                <p className="avant-garde-bold font-medium text-sm leading-5 tracking-wider text-left mb-2 pb-2">
+                <p className="appear-on-scroll avant-garde-bold font-medium text-sm leading-5 tracking-wider text-left mb-2 pb-2">
                   {project.designTypes.map((type, index) => (
                     <React.Fragment key={index}>
                       {type}{" "}
@@ -32,10 +36,10 @@ const Restaurant = () => {
                     </React.Fragment>
                   ))}
                 </p>
-                <h2 className="font-avant-garde font-semibold tracking-wider text-4xl text-left mb-2 text-nowrap">
+                <h2 className="appear-on-scroll font-avant-garde font-semibold tracking-wider text-4xl text-left mb-2 text-nowrap">
                   {project.name}
                 </h2>
-                <p className="mb-2 py-4 font-avant-garde text-sm leading-6 tracking-wider max-w-[550px]">
+                <p className="appear-on-scroll mb-2 py-4 font-avant-garde text-sm leading-6 tracking-wider max-w-[550px]">
                   {project.brief}
                 </p>
               </div>
@@ -62,12 +66,12 @@ const Restaurant = () => {
                   Testing
                 </TabsTrigger>
               </TabsList>
-              <TabsContent value="overview">
+              <TabsContent value="overview" className="tab-content-appear">
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Introduction
                   </h2>
-                  <p className="py-8">
+                  <p className=" py-8">
                     Leads is a software solution designed to help businesses
                     organise and manage their sales leads throughout the
                     customer acquisition process. It typically includes tools
@@ -92,7 +96,7 @@ const Restaurant = () => {
                   </div>
                   <div className="xl2:w-[1240px] w-[1100px] mx-auto py-16 flex">
                     <div>
-                      <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                      <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                         Problem
                       </h2>
                       {project.images && project.images.length > 0 && (
@@ -103,7 +107,7 @@ const Restaurant = () => {
                           />
                         </div>
                       )}
-                      <p className="pt-8">
+                      <p className=" pt-8">
                         People find accessing valid Information on restaurants
                         and booking/reserving tables difficult. They are also
                         faced with poor/unreliable user experiences when using
@@ -111,7 +115,7 @@ const Restaurant = () => {
                       </p>
                     </div>
                     <div>
-                      <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                      <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                         Goal
                       </h2>
                       {project.images && project.images.length > 0 && (
@@ -122,7 +126,7 @@ const Restaurant = () => {
                           />
                         </div>
                       )}
-                      <p className="pt-8">
+                      <p className=" pt-8">
                         The goal is to design a user-friendly platfrom that is
                         simple to use but contains enough information for the
                         user to make reservations and pre-order meals.
@@ -149,10 +153,10 @@ const Restaurant = () => {
                   </div>
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Design Process
                   </h2>
-                  <p className="pt-8">
+                  <p className=" pt-8">
                     This was one of my first projects and I was very excited to
                     use my creative problem-solving skills to tackle user
                     challenges, and prioritise their needs to make the product
@@ -168,12 +172,12 @@ const Restaurant = () => {
                   )}
                 </div>
               </TabsContent>
-              <TabsContent value="empathising">
+              <TabsContent value="empathising" className="tab-content-appear">
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto pt-8 pb-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Qualitative Research
                   </h2>
-                  <p className="pt-8">
+                  <p className=" pt-8">
                     I interviewed seven potential users with different
                     backgrounds to talk about restaurants and their booking
                     processes, what challenges they faced and what they would
@@ -186,20 +190,20 @@ const Restaurant = () => {
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto pt-8 pb-14 flex">
                   <div>
-                    <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                    <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                       Examples of questions I asked
                     </h2>
 
                     <ul className=" pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
-                      <li className="mb-6">How old are you?</li>
-                      <li className="mb-6">
+                      <li className=" mb-6">How old are you?</li>
+                      <li className=" mb-6">
                         How often do you eat at restaurants?
                       </li>
-                      <li className="mb-6">
+                      <li className=" mb-6">
                         Do you often make reservations before heading to a
                         restaurant?
                       </li>
-                      <li className="mb-6">
+                      <li className=" mb-6">
                         Have you faced any challenges so far?
                       </li>
                     </ul>
@@ -223,27 +227,27 @@ const Restaurant = () => {
                     </>
                   )}
                   <div>
-                    <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                    <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                       Key insights derived from interviews
                     </h2>
                     <ul className="pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
-                      <li className="mb-6">
+                      <li className=" mb-6">
                         People dont make reservations because they think it
                         doesn't matter.
                       </li>
-                      <li className="mb-6">
+                      <li className=" mb-6">
                         People acquire restaurant information from blogs and
                         restaurant websites.
                       </li>
-                      <li className="mb-6">
+                      <li className=" mb-6">
                         People book tables and on arrival, they are told the
                         table was never booked.
                       </li>
-                      <li className="mb-6">
+                      <li className=" mb-6">
                         The process of calling restaurants gets annoying
                         sometimes
                       </li>
-                      <li className="mb-6">
+                      <li className=" mb-6">
                         Everything (accessing information, booking, pre-ordering
                         etc.) occurs on the web or by calling
                       </li>
@@ -251,10 +255,10 @@ const Restaurant = () => {
                   </div>
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Quantitative Research
                   </h2>
-                  <p className="pt-8">
+                  <p className=" pt-8">
                     I did an online survey using Google Forms to gain insights
                     from more people within the short time I had. I also used
                     this opportunity to observe patterns and similarities
@@ -287,10 +291,10 @@ const Restaurant = () => {
                   </div>
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Feedback Analysis
                   </h2>
-                  <p className="pt-8">
+                  <p className=" pt-8">
                     After gathering all of the data from the research, i
                     organised my findings by using coloured sticky notes to
                     observe similarities and recurring patterns.
@@ -307,12 +311,12 @@ const Restaurant = () => {
                   )}
                 </div>
               </TabsContent>
-              <TabsContent value="defining">
+              <TabsContent value="defining" className="tab-content-appear">
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto pt-8 pb-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Empathy Maps
                   </h2>
-                  <p className="pt-8">
+                  <p className=" pt-8">
                     I created aggregated empathy maps to understand users
                     further and to illustrate their thoughts, motivations,
                     emotions, and behaviours. This enabled me to create possible
@@ -346,10 +350,10 @@ const Restaurant = () => {
                   </div>
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto pt-8 pb-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Personas
                   </h2>
-                  <p className="pt-8">
+                  <p className=" pt-8">
                     With the data collected from the interviews and survey, I
                     created three personas whose responses represent that of a
                     larger group of users.
@@ -366,7 +370,7 @@ const Restaurant = () => {
                   </div>
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Pain Points
                   </h2>
                   <div>
@@ -381,22 +385,22 @@ const Restaurant = () => {
                   </div>
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Problem Statements
                   </h2>
                   <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
-                    <li className="mb-6">
+                    <li className=" mb-6">
                       Sasha is a student who needs a way to access adequate
                       information on restaurants and make reservations
                       seamlessly because she finds calling the restaurants
                       irritating.
                     </li>
-                    <li className="mb-6">
+                    <li className=" mb-6">
                       Freedom is a hardworking entrepreneur who needs a way to
                       make reservations without using websites or web apps
                       because they are slow and unresponsive.
                     </li>
-                    <li className="mb-6">
+                    <li className=" mb-6">
                       Sarah is a working mother who needs a reliable platform to
                       access menus easily because her family prefers to know
                       what is on the menu before heading to the restaurant.
@@ -404,23 +408,23 @@ const Restaurant = () => {
                   </ol>
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     User Stories
                   </h2>
                   <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
-                    <li className="mb-6">
+                    <li className=" mb-6">
                       As a student who loves to spend time with family and
                       friends, I want a platform that will allow me to make
                       table reservations easily, So that I won't have to keep
                       calling a restaurant when I want to make a reservation.
                     </li>
-                    <li className="mb-6">
+                    <li className=" mb-6">
                       As an Entrepreneur who loves to work, I want a product
                       that sends confirmation texts, emails or notifications
                       after making a reservation; So I can be sure that my
                       booking has been recorded.
                     </li>
-                    <li className="mb-6">
+                    <li className=" mb-6">
                       As a working mother who loves to take her family on dates,
                       I want a platform that provides all the necessary details
                       about the restaurant, especially their menus, So that my
@@ -429,10 +433,10 @@ const Restaurant = () => {
                   </ol>
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Journey Map
                   </h2>
-                  <p className="pt-8">
+                  <p className=" pt-8">
                     I created a user journey map and flow to visualize the
                     user’s experience using the app.
                   </p>
@@ -453,12 +457,12 @@ const Restaurant = () => {
                   </div>
                 </div>
               </TabsContent>
-              <TabsContent value="ideation">
+              <TabsContent value="ideation" className="tab-content-appear">
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Information Architecture
                   </h2>
-                  <p className="pt-8">
+                  <p className=" pt-8">
                     I created a structure for the Resto mobile app using an
                     information architecture by laying out each individual
                     screen to identify what users will need and can easily find.
@@ -475,23 +479,23 @@ const Restaurant = () => {
                   </div>
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     User flow
                   </h2>
                   <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
-                    <li className="mb-6">
+                    <li className=" mb-6">
                       After understanding and defining my project objectives, I
                       had to determine how users would see the product
                       (visuals), how users may act within the product
                       (architecture and flows) and how users may perceive and
                       engage with my design (user journeys).
                     </li>
-                    <li className="mb-6">
+                    <li className=" mb-6">
                       All actions are in rounded rectangles.
                     </li>
-                    <li className="mb-6"> All screens are in rectangles.</li>
-                    <li className="mb-6">All decisions are in diamonds.</li>
-                    <li className="mb-6">
+                    <li className=" mb-6"> All screens are in rectangles.</li>
+                    <li className=" mb-6">All decisions are in diamonds.</li>
+                    <li className=" mb-6">
                       Each shape is connected by an arrow.
                     </li>
                   </ol>
@@ -507,12 +511,12 @@ const Restaurant = () => {
                   )}
                 </div>
               </TabsContent>
-              <TabsContent value="design">
+              <TabsContent value="design" className="tab-content-appear">
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Low Fidelity Wireframes
                   </h2>
-                  <p className="pt-8">
+                  <p className=" pt-8">
                     I created low-fidelity wireframes using Figma, so I could
                     swiftly join the site’s information architecture to display
                     particular types of information on the user interface.
@@ -529,10 +533,10 @@ const Restaurant = () => {
                   </div>
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     High Fidelity Wireframes
                   </h2>
-                  <p className="pt-8">
+                  <p className=" pt-8">
                     After creating low-fidelity prototypes and establishing the
                     main ideas of the mobile app, I picked the best design
                     patterns and created High-Fidelity wireframes. These
@@ -552,12 +556,12 @@ const Restaurant = () => {
                   )}
                 </div>
               </TabsContent>
-              <TabsContent value="testing">
+              <TabsContent value="testing" className="tab-content-appear">
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Usability Testing
                   </h2>
-                  <p className="pt-8">
+                  <p className=" pt-8">
                     I performed both moderated and unmoderated usability study
                     which included 5 participants with different backgrounds.
                     Before going ahead with the final designs, I needed to
@@ -569,10 +573,10 @@ const Restaurant = () => {
                   </p>
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Research Goal
                   </h2>
-                  <p className="pt-8">
+                  <p className=" pt-8">
                     The goal of this research is to figure out if users can
                     complete the core tasks within the app efficiently and
                     whether or not they understand the interface and its
@@ -580,7 +584,7 @@ const Restaurant = () => {
                   </p>
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Research Questions
                   </h2>
                   <div className="flex pt-10">
@@ -607,10 +611,10 @@ const Restaurant = () => {
                   </div>
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Participants
                   </h2>
-                  <p className="pt-8">
+                  <p className=" pt-8">
                     With a total of 5 participants ,Three participants will
                     complete the tasks independently, and two will be guided and
                     given a questionnaire on their experience. Who are they?
@@ -641,10 +645,10 @@ const Restaurant = () => {
                   </div>
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Affinity Mapping
                   </h2>
-                  <p className="pt-8">
+                  <p className=" pt-8">
                     Based on my findings, I created an affinity diagram and
                     generated actionable insights from the data received
                   </p>
@@ -670,10 +674,10 @@ const Restaurant = () => {
                   )}
                 </div>
                 <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Implementing Feedback
                   </h2>
-                  <p className="pt-8">
+                  <p className=" pt-8">
                     The feedback from the Usability test were considered and
                     implemented.
                   </p>

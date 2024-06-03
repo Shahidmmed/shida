@@ -1,22 +1,41 @@
 import { ArrowUpCircleIcon } from "lucide-react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 
-const ScrollToTop = () => {
-  const [showScrollTopButton, setShowScrollTopButton] = useState(false);
+const ScrollToTop: React.FC = () => {
+  const [isVisible, setIsVisible] = useState(false);
 
-  const scrollTop = () => {
-    console.log("ScrollY:", window.scrollY);
-    setShowScrollTopButton(window.scrollY > 300);
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.pageYOffset > 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", toggleVisibility);
+
+    return () => {
+      window.removeEventListener("scroll", toggleVisibility);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
-
-  window.addEventListener("scroll", scrollTop);
 
   return (
     <div>
-      {showScrollTopButton && (
-        <div className="top-btn-position top-btn-style" onClick={scrollTop}>
+      {isVisible && (
+        <button
+          className="fixed bottom-4 right-4 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition duration-300"
+          onClick={scrollToTop}
+        >
           <ArrowUpCircleIcon size={32} />
-        </div>
+        </button>
       )}
     </div>
   );
