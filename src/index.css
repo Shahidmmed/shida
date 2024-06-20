@@ -136,6 +136,10 @@ ul.circle-list li::marker {
   left: 39%;
 }
 
+.link-txt:hover {
+  -webkit-text-stroke: 0px;
+}
+
 .top-btn-position {
   position: fixed;
   bottom: 15px;
