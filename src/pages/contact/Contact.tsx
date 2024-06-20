@@ -14,7 +14,7 @@ const Contact = () => {
   useAppearOnScroll([".appear-on-scroll"]);
 
   return (
-    <div className="xl2:w-[1240px] w-[1100px] px-2 mx-auto pt-20">
+    <div className="xl2:w-[1240px] w-[1100px] max-sm:w-full max-sm:pt-8 px-2 mx-auto pt-20">
       <div className="appear-on-scroll flex relative">
         <img src={star} alt="stars" className="absolute footer-stars" />
         <img src={hi} alt="ux" className="absolute contact-hi" />
@@ -30,11 +30,11 @@ const Contact = () => {
         />
       </div>
       <div className="flex flex-col items-end">
-        <p className="appear-on-scroll font-avant-garde text-base font-light leading-6 tracking-wide text-right px-4 pt-4">
+        <p className="appear-on-scroll font-avant-garde text-base font-light leading-6 tracking-wide max-sm:text-left max-sm:px-1 text-right px-4 pt-4">
           Reach out for design consultations, collaborations and general
           enquiries. I'm just a click away!
         </p>
-        <div className="appear-on-scroll flex justify-between w-[725px] items-end">
+        <div className="appear-on-scroll flex justify-between w-[725px] max-sm:w-full items-end">
           <img src={heart} alt="stars" className="h-[40px] -mt-2" />
           <img src={solutions} alt="ux" className="h-[40px]" />
         </div>

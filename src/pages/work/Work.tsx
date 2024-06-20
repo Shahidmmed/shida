@@ -61,14 +61,14 @@ const Work = () => {
     <div className="pt-20">
       <section className="pb-16">
         <div className="flex items-center flex-col justify-center">
-          <div className="md:max-xl:max-w-[580px] appear-on-scroll flex relative">
+          <div className="md:max-xl:max-w-[580px] max-sm:w-full appear-on-scroll flex relative">
             <img
               src={star}
               alt="stars"
               className="md:max-xl:h-12 absolute stars"
             />
             <img src={ux} alt="ux" className="md:max-xl:h-8 absolute ux" />
-            <h1 className="md:max-xl:max-w-[575px] max-w-[780px] z-10 font-avant-garde mb-6 font-semibold md:max-xl:text-2xl text-4xl leading-tight tracking-wider text-center">
+            <h1 className="md:max-xl:max-w-[575px] max-w-[780px] max-sm:w-full max-sm:text-2xl  z-10 font-avant-garde mb-6 font-semibold md:max-xl:text-2xl text-4xl leading-tight tracking-wider text-center">
               I Create, Manage, and Market Products
             </h1>
             <img
@@ -87,7 +87,7 @@ const Work = () => {
           </div>
 
           <div className="appear-on-scroll flex relative">
-            <p className="text-center max-w-[850px] avant-garde-extralight text-base z-10 m-8">
+            <p className="text-center max-w-[850px] avant-garde-extralight max-sm:text-sm text-base z-10 m-8">
               I craft digital experiences using storytelling and modern
               approaches to connect individuals with your business and products.
             </p>
@@ -115,16 +115,16 @@ const Work = () => {
         </div>
       </section>
       <section className="bg-black text-white py-20 px-16 flex items-center flex-col justify-center mx-auto">
-        <div className="space-y-12">
+        <div className="work-items space-y-12">
           {data.map((item, index) => (
-            <div key={index} className="flex work-container">
+            <div key={index} className="work-item flex work-container">
               <Card
-                className="appear-on-scroll border-0 md:max-2xl:w-[500px] md:max-xl:w-[415px] md bg-cover bg-center rounded-none"
+                className="work-img appear-on-scroll border-0 md:max-2xl:w-[500px] md:max-xl:w-[415px] md bg-cover bg-center rounded-none"
                 style={{
                   backgroundImage: `url(${getImgUrl(item.previewImg)})`,
                 }}
               ></Card>
-              <div className="px-4 py-8 md:max-2xl:max-w-[520px] md:max-xl:w-[450px] ml-8">
+              <div className="work-info px-4 py-8 md:max-2xl:max-w-[520px] md:max-xl:w-[450px] ml-8">
                 <p className="appear-on-scroll font-avant-garde font-medium text-xs leading-5 tracking-widest text-left mb-2 pb-2">
                   {item.designTypes.map((type, index) => (
                     <React.Fragment key={index}>
@@ -132,7 +132,7 @@ const Work = () => {
                     </React.Fragment>
                   ))}
                 </p>
-                <h2 className="appear-on-scroll font-avant-garde font-semibold tracking-wider work-text text-left mb-2 text-nowrap">
+                <h2 className="appear-on-scroll font-avant-garde font-semibold tracking-wider work-text max-sm:text-wrap max-sm:text-3xl text-left mb-2 text-nowrap">
                   {item.name}
                 </h2>
                 <p className="appear-on-scroll mb-2 py-4 font-avant-garde text-sm avant-garde-extralight leading-6 tracking-wider">
@@ -140,7 +140,7 @@ const Work = () => {
                 </p>
                 <Link
                   to={`/${item.id}`}
-                  className="appear-on-scroll hover:bg-white hover:text-black inline-block bg-black  md:max-2xl:px-24 md:max-xl:px-16 md:max-2xl:py-6 md:max-xl:py-4 border text-base border-white rounded-none text-white"
+                  className="appear-on-scroll hover:bg-white hover:text-black inline-block bg-black px-20 py-4 md:max-2xl:px-24 md:max-xl:px-16 md:max-2xl:py-6 md:max-xl:py-4 border text-base border-white rounded-none text-white"
                 >
                   {item.type === "report" ? "View Report" : "Case Study"}
                 </Link>
@@ -150,7 +150,7 @@ const Work = () => {
         </div>
       </section>
 
-      <section className="py-8 pr-20 pl-36 mx-auto">
+      <section className="py-8 pr-20 xl:pl-36 pl-4 mx-auto">
         <div
           className="overflow-x-auto"
           style={{ scrollbarWidth: "none", WebkitOverflowScrolling: "touch" }}
@@ -159,7 +159,7 @@ const Work = () => {
             {moreWork.map((work, index) => (
               <div key={index}>
                 <Card
-                  className="border-0 md:max-2xl:w-[260px] md:max-2xl:h-[250px] md:max-xl:w-[205px] md:max-xl:h-[205px] mr-10 bg-cover bg-center rounded-none"
+                  className="border-0 md:max-2xl:w-[260px] w-[250px] h-[205px] md:max-2xl:h-[250px] md:max-xl:w-[205px] md:max-xl:h-[205px] mr-10 bg-cover bg-center rounded-none"
                   style={{
                     backgroundImage: `url(${getImgUrl(work.img)})`,
                   }}

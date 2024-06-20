@@ -21,13 +21,13 @@ const Restaurant = () => {
       {project ? (
         <>
           <section className="mx-auto">
-            <div className="p-16 flex items-center justify-start bg-slate-100 pt-20">
+            <div className="p-16 max-sm:p-8 flex max-sm:flex-col items-center justify-start bg-slate-100 pt-20">
               <img
                 src={getImgUrl(project.image)}
                 alt={project.previewText}
-                className="appear-on-scroll max-h-[300px] max-w-[400px] ml-10"
+                className="appear-on-scroll max-h-[300px] max-w-[400px] ml-10 max-sm:ml-0"
               />
-              <div className="ml-8">
+              <div className="ml-8 max-sm:ml-1 max-sm:w-full">
                 <p className="appear-on-scroll avant-garde-bold font-medium text-sm leading-5 tracking-wider text-left mb-2 pb-2">
                   {project.designTypes.map((type, index) => (
                     <React.Fragment key={index}>
@@ -36,7 +36,7 @@ const Restaurant = () => {
                     </React.Fragment>
                   ))}
                 </p>
-                <h2 className="appear-on-scroll font-avant-garde font-semibold tracking-wider text-4xl text-left mb-2 text-nowrap">
+                <h2 className="appear-on-scroll font-avant-garde font-semibold tracking-wider max-sm:text-3xl text-4xl text-left mb-2 text-nowrap">
                   {project.name}
                 </h2>
                 <p className="appear-on-scroll mb-2 py-4 font-avant-garde text-sm leading-6 tracking-wider max-w-[550px]">
@@ -67,7 +67,7 @@ const Restaurant = () => {
                 </TabsTrigger>
               </TabsList>
               <TabsContent value="overview" className="tab-content-appear">
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Introduction
                   </h2>
@@ -94,7 +94,7 @@ const Restaurant = () => {
                       <span className="text-lg font-medium"></span>
                     )}
                   </div>
-                  <div className="xl2:w-[1240px] w-[1100px] mx-auto py-16 flex">
+                  <div className="xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-16 flex">
                     <div>
                       <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                         Problem
@@ -152,7 +152,7 @@ const Restaurant = () => {
                     <small>UX Design, Usability Testing</small>
                   </div>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Design Process
                   </h2>
@@ -173,7 +173,7 @@ const Restaurant = () => {
                 </div>
               </TabsContent>
               <TabsContent value="empathising" className="tab-content-appear">
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto pt-8 pb-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto pt-8 pb-14">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Qualitative Research
                   </h2>
@@ -188,13 +188,13 @@ const Restaurant = () => {
                     through with restaurants and their booking systems.
                   </p>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto pt-8 pb-14 flex">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto pt-8 pb-14 flex">
                   <div>
                     <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                       Examples of questions I asked
                     </h2>
 
-                    <ul className=" pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+                    <ul className=" pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                       <li className=" mb-6">How old are you?</li>
                       <li className=" mb-6">
                         How often do you eat at restaurants?
@@ -217,7 +217,7 @@ const Restaurant = () => {
                     </>
                   )}
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto pt-8 pb-14 flex">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto pt-8 pb-14 flex">
                   {project.images && project.images.length > 0 && (
                     <>
                       <img
@@ -230,7 +230,7 @@ const Restaurant = () => {
                     <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                       Key insights derived from interviews
                     </h2>
-                    <ul className="pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+                    <ul className="pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                       <li className=" mb-6">
                         People dont make reservations because they think it
                         doesn't matter.
@@ -254,7 +254,7 @@ const Restaurant = () => {
                     </ul>
                   </div>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Quantitative Research
                   </h2>
@@ -268,7 +268,7 @@ const Restaurant = () => {
                     the findings received:
                   </p>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <div className="pt-8">
                     {project.images && project.images.length > 0 && (
                       <>
@@ -290,7 +290,7 @@ const Restaurant = () => {
                     )}
                   </div>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Feedback Analysis
                   </h2>
@@ -300,7 +300,7 @@ const Restaurant = () => {
                     observe similarities and recurring patterns.
                   </p>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   {project.images && project.images.length > 0 && (
                     <>
                       <img
@@ -312,7 +312,7 @@ const Restaurant = () => {
                 </div>
               </TabsContent>
               <TabsContent value="defining" className="tab-content-appear">
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto pt-8 pb-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto pt-8 pb-14">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Empathy Maps
                   </h2>
@@ -349,7 +349,7 @@ const Restaurant = () => {
                     )}
                   </div>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto pt-8 pb-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto pt-8 pb-14">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Personas
                   </h2>
@@ -369,7 +369,7 @@ const Restaurant = () => {
                     )}
                   </div>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Pain Points
                   </h2>
@@ -384,11 +384,11 @@ const Restaurant = () => {
                     )}
                   </div>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Problem Statements
                   </h2>
-                  <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+                  <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                     <li className=" mb-6">
                       Sasha is a student who needs a way to access adequate
                       information on restaurants and make reservations
@@ -407,11 +407,11 @@ const Restaurant = () => {
                     </li>
                   </ol>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     User Stories
                   </h2>
-                  <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+                  <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                     <li className=" mb-6">
                       As a student who loves to spend time with family and
                       friends, I want a platform that will allow me to make
@@ -432,7 +432,7 @@ const Restaurant = () => {
                     </li>
                   </ol>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Journey Map
                   </h2>
@@ -458,7 +458,7 @@ const Restaurant = () => {
                 </div>
               </TabsContent>
               <TabsContent value="ideation" className="tab-content-appear">
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Information Architecture
                   </h2>
@@ -478,11 +478,11 @@ const Restaurant = () => {
                     )}
                   </div>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     User flow
                   </h2>
-                  <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+                  <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                     <li className=" mb-6">
                       After understanding and defining my project objectives, I
                       had to determine how users would see the product
@@ -512,7 +512,7 @@ const Restaurant = () => {
                 </div>
               </TabsContent>
               <TabsContent value="design" className="tab-content-appear">
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Low Fidelity Wireframes
                   </h2>
@@ -532,7 +532,7 @@ const Restaurant = () => {
                     )}
                   </div>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     High Fidelity Wireframes
                   </h2>
@@ -557,7 +557,7 @@ const Restaurant = () => {
                 </div>
               </TabsContent>
               <TabsContent value="testing" className="tab-content-appear">
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Usability Testing
                   </h2>
@@ -572,7 +572,7 @@ const Restaurant = () => {
                     them to suit their needs.
                   </p>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Research Goal
                   </h2>
@@ -583,7 +583,7 @@ const Restaurant = () => {
                     processes
                   </p>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Research Questions
                   </h2>
@@ -610,7 +610,7 @@ const Restaurant = () => {
                     )}
                   </div>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Participants
                   </h2>
@@ -644,7 +644,7 @@ const Restaurant = () => {
                     )}
                   </div>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Affinity Mapping
                   </h2>
@@ -663,7 +663,7 @@ const Restaurant = () => {
                     )}
                   </div>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   {project.images && project.images.length > 0 && (
                     <>
                       <img
@@ -673,7 +673,7 @@ const Restaurant = () => {
                     </>
                   )}
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Implementing Feedback
                   </h2>
@@ -692,7 +692,7 @@ const Restaurant = () => {
                     )}
                   </div>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10 pb-8">
                     Next Steps
                   </h2>

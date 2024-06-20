@@ -20,13 +20,13 @@ const Thenga = () => {
       {project ? (
         <>
           <section className="mx-auto">
-            <div className="p-16 flex items-center justify-start bg-slate-100 pt-20">
+            <div className="p-16 max-sm:p-8 flex max-sm:flex-col items-center justify-start bg-slate-100 pt-20">
               <img
                 src={getImgUrl(project.image)}
                 alt={project.previewText}
-                className="appear-on-scroll max-h-[300px] max-w-[400px] ml-10"
+                className="appear-on-scroll max-h-[300px] max-w-[400px] ml-10 max-sm:ml-0"
               />
-              <div className="ml-8">
+              <div className="ml-8 max-sm:ml-1 max-sm:w-full">
                 <p className="appear-on-scroll avant-garde-bold font-medium text-sm leading-5 tracking-wider text-left mb-2 pb-2">
                   {project.designTypes.map((type, index) => (
                     <React.Fragment key={index}>
@@ -35,7 +35,7 @@ const Thenga = () => {
                     </React.Fragment>
                   ))}
                 </p>
-                <h2 className="appear-on-scroll font-avant-garde font-semibold tracking-wider text-4xl text-left mb-2 text-nowrap">
+                <h2 className="appear-on-scroll font-avant-garde font-semibold tracking-wider max-sm:text-3xl text-4xl text-left mb-2 text-nowrap">
                   {project.name}
                 </h2>
                 <p className="appear-on-scroll mb-2 py-4 font-avant-garde text-sm leading-6 tracking-wider max-w-[550px]">
@@ -65,7 +65,7 @@ const Thenga = () => {
                 </TabsTrigger>
               </TabsList>
               <TabsContent value="background" className="tab-content-appear">
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full  mx-auto py-14 max-sm:py-7 ">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Introduction
                   </h2>
@@ -109,7 +109,7 @@ const Thenga = () => {
                     <small>UX Design, Usability Testing</small>
                   </div>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7 ">
                   <div>
                     <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                       Design Process
@@ -122,7 +122,7 @@ const Thenga = () => {
                             alt="Strategy"
                             className="h-[150px]"
                           />
-                          <p className=" ml-4 leading-loose overflow-wrap max-w-full">
+                          <p className="ml-4 max-sm:ml-0 leading-loose overflow-wrap max-w-full">
                             My task was to redesign the Thenga product, which at
                             the time, was just a website. But after strategising
                             with my team, determining what we wanted to build
@@ -142,7 +142,7 @@ const Thenga = () => {
                             alt="Strategy"
                             className="h-[150px]"
                           />
-                          <p className=" ml-4 leading-loose overflow-wrap max-w-full">
+                          <p className=" ml-4 max-sm:ml-0 leading-loose overflow-wrap max-w-full">
                             Through our discussions and brainstorming sessions,
                             we were able to come up with a unique and innovative
                             approach to the redesign that I believe will
@@ -162,7 +162,7 @@ const Thenga = () => {
                             alt="Strategy"
                             className="h-[150px]"
                           />
-                          <p className=" ml-4 leading-loose overflow-wrap max-w-full">
+                          <p className=" ml-4 max-sm:ml-0 leading-loose overflow-wrap max-w-full">
                             As a designer, The goal for the redesign was to
                             merge aesthetics with functionality to create a
                             simple and logical digital experience that anybody
@@ -183,7 +183,7 @@ const Thenga = () => {
                             alt="Strategy"
                             className="h-[150px]"
                           />
-                          <p className=" ml-4 leading-loose overflow-wrap max-w-full">
+                          <p className=" ml-4 max-sm:ml-0 leading-loose overflow-wrap max-w-full">
                             Lastly, I put my ideas together to create low and
                             high-fidelity prototypes to visualise the flow of
                             the product, if the features work, and how it will
@@ -197,7 +197,7 @@ const Thenga = () => {
                   </div>
                 </div>
 
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full  mx-auto py-14 max-sm:py-7 ">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Challenges
                   </h2>
@@ -222,7 +222,7 @@ const Thenga = () => {
                     </li>
                   </ol>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full  mx-auto py-14 max-sm:py-7 ">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Goals
                   </h2>
@@ -260,7 +260,7 @@ const Thenga = () => {
                 </div>
               </TabsContent>
               <TabsContent value="journeys" className="tab-content-appear">
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full  mx-auto py-14 max-sm:py-7 ">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     User Personas
                   </h2>
@@ -287,7 +287,7 @@ const Thenga = () => {
                     )}
                   </div>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full  mx-auto py-14 max-sm:py-7 ">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     User Journey
                   </h2>
@@ -317,7 +317,7 @@ const Thenga = () => {
                     )}
                   </div>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full  mx-auto py-14 max-sm:py-7 ">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Takeaways
                   </h2>
@@ -336,7 +336,7 @@ const Thenga = () => {
                 </div>
               </TabsContent>
               <TabsContent value="architecture" className="tab-content-appear">
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full  mx-auto py-14 max-sm:py-7 ">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Design Process
                   </h2>
@@ -366,7 +366,7 @@ const Thenga = () => {
                 </div>
               </TabsContent>
               <TabsContent value="flow" className="tab-content-appear">
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full  mx-auto py-14 max-sm:py-7 ">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Design Process
                   </h2>
@@ -394,7 +394,7 @@ const Thenga = () => {
                 </div>
               </TabsContent>
               <TabsContent value="wireframing" className="tab-content-appear">
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full  mx-auto py-14 max-sm:py-7 ">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Design Process
                   </h2>
@@ -412,7 +412,7 @@ const Thenga = () => {
                     that suited the product's requirements.
                   </p>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full  mx-auto py-14 max-sm:py-7 ">
                   <Tabs defaultValue="website" className="w-full">
                     <TabsList className="grid w-full grid-cols-4 h-16 mb-14">
                       <TabsTrigger value="website" className="py-4">
@@ -423,7 +423,7 @@ const Thenga = () => {
                       </TabsTrigger>
                     </TabsList>
                     <TabsContent value="website">
-                      <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto flex justify-center items-center">
+                      <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full  mx-auto flex justify-center items-center">
                         <div className="py-10">
                           {project.images && project.images.length > 0 && (
                             <>
@@ -447,7 +447,7 @@ const Thenga = () => {
                           </p>
                         </div>
                       </div>
-                      <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto flex justify-center items-center">
+                      <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full  mx-auto flex justify-center items-center">
                         <div className="py-10">
                           {project.images && project.images.length > 0 && (
                             <>
@@ -474,7 +474,7 @@ const Thenga = () => {
                       </div>
                     </TabsContent>
                     <TabsContent value="extension">
-                      <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                      <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full  mx-auto py-14 max-sm:py-7 ">
                         <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                           Lo-fi💡
                         </h2>
@@ -496,7 +496,7 @@ const Thenga = () => {
                           )}
                         </div>
                       </div>
-                      <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                      <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full  mx-auto py-14 max-sm:py-7 ">
                         <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                           Visual ideation💡
                         </h2>
@@ -524,7 +524,7 @@ const Thenga = () => {
                 </div>
               </TabsContent>
               <TabsContent value="style" className="tab-content-appear">
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full  mx-auto py-14 max-sm:py-7 ">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Style Guide
                   </h2>
@@ -541,7 +541,7 @@ const Thenga = () => {
                     consistent and coherent.
                   </p>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full  mx-auto py-14 max-sm:py-7 ">
                   <Tabs defaultValue="website" className="w-full">
                     <TabsList className="grid w-full grid-cols-4 h-16 mb-14">
                       <TabsTrigger value="website" className="py-4">

@@ -11,9 +11,9 @@ const Footer = () => {
   useAppearOnScroll([".appear-on-scroll"]);
 
   return (
-    <div className="xl2:w-[1240px] w-[1100px] mx-auto px-12">
+    <div className="xl2:w-[1240px] w-[1100px] mx-auto px-12 max-sm:w-full max-sm:px-8">
       <div className="mx-auto flex items-left flex-col justify-center py-10">
-        <p className="appear-on-scroll font-avant-garde-book font-extrabold md:max-xl:text-base text-xl tracking-widest pb-6">
+        <p className="appear-on-scroll font-avant-garde-book font-extrabold md:max-xl:text-base max-sm:text-sm text-xl tracking-widest pb-6">
           Not you scrolling to the bottom 😌,
         </p>
         <div className="appear-on-scroll flex relative">
@@ -24,7 +24,7 @@ const Footer = () => {
           </h1>
         </div>
         <div className="appear-on-scroll">
-          <p className="avant-garde-extralight md:max-xl:text-base text-xl tracking-widest pt-6">
+          <p className="avant-garde-extralight md:max-xl:text-base text-xl max-sm:text-wrap max-sm:text-sm max-sm:tracking-wide tracking-widest pt-6">
             Reach out for design consultations, collaborations and general
             enquiries. I'm just a click away!
           </p>
@@ -33,14 +33,14 @@ const Footer = () => {
             <img src={solutions} alt="ux" className="h-[40px]" />
           </div>
         </div>
-        <div className="appear-on-scroll flex pt-14">
+        <div className="appear-on-scroll flex pt-14 max-sm:pt-8">
           <Link
             to="/contact"
-            className="rounded-none hover:bg-black hover:text-white bg-white text-base px-20 py-5 border-2 border-black"
+            className="rounded-none hover:bg-black hover:text-white bg-white text-base max-sm:px-11 px-20 py-5 border-2 border-black"
           >
             Contact
           </Link>
-          <Button className="rounded-none bg-black text-base px-20 py-8 border-2 ml-6">
+          <Button className="rounded-none bg-black text-base px-20 py-8 max-sm:px-11 max-sm:ml-3 border-2 ml-6">
             About Me
           </Button>
         </div>

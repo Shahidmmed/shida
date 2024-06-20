@@ -21,13 +21,13 @@ const Leads = () => {
       {project ? (
         <>
           <section className="mx-auto">
-            <div className="p-12 flex items-center justify-center bg-slate-100 pt-20">
+            <div className="p-12 max-sm:p-6 flex max-sm:flex-col items-center justify-center bg-slate-100 pt-20">
               <img
                 src={getImgUrl(project.image)}
                 alt={project.previewText}
                 className="max-h-[300px] max-w-[400px]"
               />
-              <div className="ml-8">
+              <div className="ml-8 max-sm:w-full max-sm:ml-1">
                 <p className="avant-garde-bold font-medium text-sm leading-5 tracking-wider text-left mb-2 pb-2">
                   {project.designTypes.map((type, index) => (
                     <React.Fragment key={index}>
@@ -36,7 +36,7 @@ const Leads = () => {
                     </React.Fragment>
                   ))}
                 </p>
-                <h2 className="font-avant-garde font-semibold tracking-wider text-4xl text-left mb-2 text-nowrap">
+                <h2 className="font-avant-garde font-semibold tracking-wider max-sm:text-3xl text-4xl text-left mb-2 text-nowrap">
                   {project.name}
                 </h2>
                 <p className="mb-2 py-4 font-avant-garde text-sm leading-6 tracking-wider max-w-[550px]">
@@ -44,7 +44,7 @@ const Leads = () => {
                 </p>
               </div>
             </div>
-            <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+            <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
               <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
                 Introduction
               </h2>
@@ -71,7 +71,7 @@ const Leads = () => {
                 )}
               </div>
             </div>
-            <div className="bg-black flex py-20 text-white justify-evenly">
+            <div className="bg-black flex max-sm:w-full py-20 text-white justify-evenly">
               <div className="appear-on-scroll">
                 <p className="pb-2">Timeline</p>
                 <small>4 weeks (80 hours)</small>
@@ -89,7 +89,7 @@ const Leads = () => {
                 <small>UX Design, Usability Testing</small>
               </div>
             </div>
-            <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+            <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
               <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
                 Summary
               </h2>
@@ -104,7 +104,7 @@ const Leads = () => {
                 product user-friendly, easy to navigate and straightforward.
               </p>
             </div>
-            <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+            <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
               {project.images && project.images.length > 0 && (
                 <>
                   <img
@@ -120,11 +120,11 @@ const Leads = () => {
                 </>
               )}
             </div>
-            <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+            <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
               <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
                 Methodology
               </h2>
-              <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+              <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                 <li className="appear-on-scroll mb-6 list-lower-alpha">
                   A moderated usability study with a total of 6 participants
                   with backgrounds in business, sales and marketing.
@@ -155,7 +155,7 @@ const Leads = () => {
                 </li>
               </ol>
             </div>
-            <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+            <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
               <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
                 Key performance indicators (KPIs)
               </h2>
@@ -167,7 +167,7 @@ const Leads = () => {
                 perceived usability.
               </p>
             </div>
-            <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+            <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
               <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
                 Script
               </h2>
@@ -180,7 +180,7 @@ const Leads = () => {
                 spoke when help was needed or when it was time to give a new
                 task during the test.
               </p>
-              <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+              <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                 <li className="appear-on-scroll mb-6 list-lower-alpha">
                   Conversion Rate - Participants that completed desired actions
                   during the test.
@@ -199,7 +199,7 @@ const Leads = () => {
                 </Link>
               </div>
             </div>
-            <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+            <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
               <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
                 Research Questions
               </h2>
@@ -210,7 +210,7 @@ const Leads = () => {
                 to the goals of each task. I allowed participants to speak their
                 minds and express themselves freely.
               </p>
-              <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+              <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                 <li className="appear-on-scroll mb-6 list-lower-alpha">
                   By your first glance, did you get what the product offers?
                 </li>
@@ -230,11 +230,11 @@ const Leads = () => {
                 </li>
               </ol>
             </div>
-            <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+            <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
               <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
                 Participants
               </h2>
-              <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+              <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                 <li className="appear-on-scroll mb-6 list-lower-alpha">
                   All participants were business, marketing and sales
                   professionals between the ages of 22-40 with a relatively even
@@ -309,7 +309,7 @@ const Leads = () => {
                 </div>
               </div>
             </div>
-            <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+            <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
               <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
                 Card Sorting
               </h2>
@@ -379,14 +379,14 @@ const Leads = () => {
                 </div>
               </div>
             </div>
-            <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+            <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
               <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
                 Insights
               </h2>
               <p className="appear-on-scroll pt-8 font-avant-garde">
                 The test identified only a few minor problems, including:
               </p>
-              <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+              <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                 <li className="appear-on-scroll mb-6 list-lower-alpha">
                   Modals- the idea of modals seemed great but aren't going to be
                   practical in real time.
@@ -411,7 +411,7 @@ const Leads = () => {
                 </li>
               </ol>
             </div>
-            <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+            <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
               <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
                 Implementing Feedback
               </h2>
@@ -434,7 +434,7 @@ const Leads = () => {
                 )}
               </div>
             </div>
-            <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+            <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
               <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
                 Interface before the usability test.
               </h2>
@@ -450,7 +450,7 @@ const Leads = () => {
                 )}
               </div>
             </div>
-            <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+            <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
               <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
                 This is the interface after the usability test. The modal was
                 changed into a page
@@ -467,11 +467,11 @@ const Leads = () => {
                 )}
               </div>
             </div>
-            <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+            <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
               <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
                 Conclusion
               </h2>
-              <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+              <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                 <li className="appear-on-scroll mb-6 list-lower-alpha">
                   Based on the feedback from the usability test and the SUS
                   data, it can be concluded that the Leads management system I

@@ -206,6 +206,101 @@ ul.circle-list li::marker {
   }
 }
 
+@media (max-width: 450px) {
+  .work-item {
+    flex-direction: column;
+    width: 390px;
+  }
+
+  .work-img {
+    height: 360px;
+  }
+
+  .work-info {
+    margin: 0;
+  }
+}
+
+@media (max-width: 400px) {
+}
+
+@media not all and (min-width: 640px) {
+  .work-item {
+    flex-direction: column;
+    width: 350px;
+  }
+
+  .work-img {
+    height: 300px;
+  }
+
+  .work-info {
+    margin: 0;
+  }
+
+  .review > .item:nth-child(-n + 2) {
+    display: inline-flex;
+    flex: 1;
+  }
+
+  .giga-text {
+    font-size: 6.5rem;
+  }
+
+  .mega-text {
+    font-size: 6rem;
+  }
+
+  .hi {
+    bottom: -8%;
+    left: 90%;
+    height: 40px;
+  }
+
+  .contact-hi {
+    bottom: 7%;
+    left: 77%;
+    height: 40px;
+  }
+
+  .heart {
+    top: 41%;
+    left: 39%;
+    height: 40px;
+  }
+
+  .footer-stars {
+    height: 40px;
+    top: 1%;
+    left: -3%;
+  }
+
+  .stars {
+    height: 40px;
+    top: -5%;
+    left: 0%;
+  }
+
+  .ux {
+    bottom: 85%;
+    left: 89%;
+    height: 40px;
+  }
+
+  .product {
+    top: 56%;
+    left: 66%;
+    z-index: 1;
+    height: 30px;
+  }
+
+  .heart {
+    top: 53%;
+    left: 41%;
+    height: 40px;
+  }
+}
+
 @media (min-width: 768px) {
   @media not all and (min-width: 1280px) {
     .hi {

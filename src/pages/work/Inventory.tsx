@@ -55,13 +55,13 @@ const Inventory = () => {
       {project ? (
         <>
           <section className="mx-auto">
-            <div className="appear-on-scroll p-16 flex items-center justify-start bg-slate-100 pt-20">
+            <div className="appear-on-scroll p-16 max-sm:p-8 flex max-sm:flex-col items-center justify-start bg-slate-100 pt-20">
               <img
                 src={getImgUrl(project.image)}
                 alt={project.previewText}
-                className="max-h-[300px] max-w-[400px] ml-10"
+                className="max-h-[300px] max-w-[400px] ml-10 max-sm:ml-0"
               />
-              <div className="ml-8">
+              <div className="ml-8 max-sm:w-full max-sm:ml-1">
                 <p className="appear-on-scroll avant-garde-bold font-medium text-sm leading-5 tracking-wider text-left mb-2 pb-2">
                   {project.designTypes.map((type, index) => (
                     <React.Fragment key={index}>
@@ -70,7 +70,7 @@ const Inventory = () => {
                     </React.Fragment>
                   ))}
                 </p>
-                <h2 className="appear-on-scroll font-avant-garde font-semibold tracking-wider text-4xl text-left mb-2 text-nowrap">
+                <h2 className="appear-on-scroll font-avant-garde font-semibold tracking-wider max-sm:text-3xl max-sm:text-wrap text-4xl text-left mb-2 text-nowrap">
                   {project.name}
                 </h2>
                 <p className="appear-on-scroll mb-2 py-4 font-avant-garde text-sm leading-6 tracking-wider">
@@ -98,7 +98,7 @@ const Inventory = () => {
                 </TabsTrigger>
               </TabsList>
               <TabsContent value="defining" className="tab-content-appear">
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto pt-8 pb-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto pt-8 pb-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     One thing about me: I love to work on challenging projects,
                     especially those new to me.
@@ -138,7 +138,7 @@ const Inventory = () => {
                     <small>UX Design, Usability Testing</small>
                   </div>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Goals and Objectives
                   </h2>
@@ -155,7 +155,7 @@ const Inventory = () => {
                     comfortable with the outcomes.
                   </p>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <div>
                     <h2 className="font-avant-garde text-3xl font-medium leading-10">
                       My Design Process
@@ -173,11 +173,11 @@ const Inventory = () => {
                     </div>
                   </div>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Defining and Understanding
                   </h2>
-                  <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+                  <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                     <li className="mb-6">
                       First things first, I had to familiarize myself with the
                       main product and ground myself by understanding the
@@ -226,11 +226,11 @@ const Inventory = () => {
                 </div>
               </TabsContent>
               <TabsContent value="developing" className="tab-content-appear">
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Defining and Understanding
                   </h2>
-                  <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+                  <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                     <li className="mb-6">
                       After understanding and defining my project objectives, I
                       had to determine how users would see the product
@@ -277,7 +277,7 @@ const Inventory = () => {
                     )}
                   </div>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Information Architecture
                   </h2>
@@ -299,7 +299,7 @@ const Inventory = () => {
                     </>
                   )}
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     User Journeys
                   </h2>
@@ -321,7 +321,7 @@ const Inventory = () => {
                     </>
                   )}
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     User Flows
                   </h2>
@@ -346,7 +346,7 @@ const Inventory = () => {
                     </>
                   )}
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14 flex flex-col items-center justify-center">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7 flex flex-col items-center justify-center">
                   <p>
                     Every design decision is meticulously tailored to enhance
                     user engagement and satisfaction.
@@ -355,11 +355,11 @@ const Inventory = () => {
                 </div>
               </TabsContent>
               <TabsContent value="clarity" className="tab-content-appear">
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Visual Clarity & Direction
                   </h2>
-                  <ul className="circle-list pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+                  <ul className="circle-list pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                     <li className="mb-6">
                       Designing the wireframes was a challenge, and just like
                       before, It also required a lot of iterations and research.
@@ -380,11 +380,11 @@ const Inventory = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Low-fi Wireframes (selected frames)
                   </h2>
-                  <ul className="circle-list pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8">
+                  <ul className="circle-list pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                     <li className="mb-6">
                       I used a week to create digital representations of my
                       paper sketches with a few changes and add ons and another
@@ -410,7 +410,7 @@ const Inventory = () => {
                     </>
                   )}
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Final Wireframes (selected frames)
                   </h2>
@@ -434,7 +434,7 @@ const Inventory = () => {
                 </div>
               </TabsContent>
               <TabsContent value="design" className="tab-content-appear">
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Approved Design
                   </h2>
@@ -445,11 +445,11 @@ const Inventory = () => {
                     functionalities. The mockups below represent the approved
                     designs by business before testing.
                   </p>
-                  <Button className="rounded-none bg-black px-16 py-6 border mt-6">
+                  <Button className="rounded-none bg-black px-16 max-sm:px-8 py-6 border mt-6">
                     View Prototype
                   </Button>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Conclusion/Takeaway
                   </h2>
@@ -476,7 +476,7 @@ const Inventory = () => {
                 </div>
               </TabsContent>
               <TabsContent value="guide" className="tab-content-appear">
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Style Guide
                   </h2>
@@ -489,7 +489,7 @@ const Inventory = () => {
                     tasks feel manageable and easy to use.
                   </p>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Color palette
                   </h2>
@@ -548,7 +548,7 @@ const Inventory = () => {
                     </div>
                   </div>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Logo
                   </h2>
@@ -564,7 +564,7 @@ const Inventory = () => {
                     )}
                   </div>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Typography
                   </h2>
@@ -590,7 +590,7 @@ const Inventory = () => {
                       </div>
                     ))}
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <p className="mb-5">Hierarchy</p>
                   <Table>
                     <TableHeader className="">
@@ -612,7 +612,7 @@ const Inventory = () => {
                     </TableBody>
                   </Table>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Icons
                   </h2>
@@ -624,7 +624,7 @@ const Inventory = () => {
                     )}
                   </div>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Border Radius
                   </h2>
@@ -640,7 +640,7 @@ const Inventory = () => {
                     )}
                   </div>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Buttons
                   </h2>
@@ -656,7 +656,7 @@ const Inventory = () => {
                     )}
                   </div>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] flex mx-auto justify-evenly py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full flex mx-auto justify-evenly py-14 max-sm:py-7">
                   <div>
                     <h2 className="font-avant-garde text-3xl font-medium leading-10">
                       Navigations
@@ -690,7 +690,7 @@ const Inventory = () => {
                     </div>
                   </div>
                 </div>
-                <div className="px-16 xl2:w-[1240px] w-[1100px] mx-auto py-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Illustrations
                   </h2>

@@ -7,9 +7,9 @@ const MiniFooter = () => {
   useAppearOnScroll([".appear-on-scroll"]);
   return (
     <div className="max-w-[1150px] mx-auto">
-      <footer className="flex justify-between py-6">
+      <footer className="flex justify-between max-sm:flex-col py-6">
         <div className="underline appear-on-scroll">Naayettey07@gmail.com</div>
-        <div className="flex justify-evenly">
+        <div className="flex justify-evenly max-sm:justify-normal">
           <a
             href="www.linkedin.com/in/naa-ayeley-ayettey/"
             target="_blank"
