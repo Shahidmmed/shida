@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import MiniFooter from "./MiniFooter";
 import star from "/assets/images/star.png";
 import hi from "/assets/images/hi.png";
@@ -40,9 +39,12 @@ const Footer = () => {
           >
             Contact
           </Link>
-          <Button className="rounded-none bg-black hover:text-black text-base px-20 py-8 max-sm:px-11 max-sm:ml-3 border-2 ml-6">
+          <Link
+            to="/about"
+            className="rounded-none bg-black hover:bg-slate-800/80 text-base text-white px-20 py-5 max-sm:px-11 max-sm:ml-3 border-2 ml-6"
+          >
             About Me
-          </Button>
+          </Link>
         </div>
       </div>
       <MiniFooter />

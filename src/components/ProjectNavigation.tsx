@@ -22,14 +22,14 @@ const ProjectNavigation: React.FC<ProjectNavigationProps> = ({
   const nextProject = data[nextIndex];
 
   return (
-    <div className="max-w-[1220px] mx-auto mt-10">
+    <div className="max-w-[1220px] mx-auto mt-10 max-sm:w-full">
       <p className="appear-on-scroll text-lg font-medium ml-6 text-customGray">
         View more projects
       </p>
       <div className="appear-on-scroll flex justify-between items-center mt-8">
         <Link
           to={`/${prevProject.id}`}
-          className="flex items-center text-3xl font-medium"
+          className="flex items-center max-sm:text-base text-3xl font-medium"
         >
           <ChevronLeft className="mr-2" />
           {prevProject.name}
@@ -37,7 +37,7 @@ const ProjectNavigation: React.FC<ProjectNavigationProps> = ({
 
         <Link
           to={`/${nextProject.id}`}
-          className="flex items-center text-3xl font-medium"
+          className="flex items-center max-sm:text-base max-sm:text-nowrap text-3xl font-medium"
         >
           {nextProject.name}
           <ChevronRight className="ml-2" />

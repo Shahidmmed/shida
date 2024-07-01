@@ -16,7 +16,7 @@ const Navbar = () => {
           </div>
         </nav>
         <Sheet>
-          <div className="flex items-center gap-2 text-black font-bold">
+          <div className="md:hidden flex items-center gap-2 text-black font-bold">
             <NavLink to="/work">
               <img src={logo} alt="Logo" className="" />
             </NavLink>
