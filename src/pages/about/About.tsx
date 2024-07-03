@@ -6,6 +6,7 @@ import kite2 from "/assets/images/kite2.png";
 import heart from "/assets/images/heart-kiss.png";
 import whiskers from "/assets/images/whiskers.png";
 import whiskers2 from "/assets/images/whiskers2.png";
+import tanjiro from "/assets/images/tanjiro.png";
 import useAppearOnScroll from "@/useAppearOnScroll";
 
 const About = () => {
@@ -44,6 +45,11 @@ const About = () => {
                 src={heart}
                 alt="heart"
                 className="h-12 absolute z-10 heart-kiss"
+              />
+              <img
+                src={tanjiro}
+                alt="tanjiro"
+                className="h-12 absolute z-10 tanjiro"
               />
             </div>
           </div>

@@ -80,7 +80,7 @@ const Work = () => {
 
           <div className="appear-on-scroll flex justify-center items-center">
             <img src={whiskers} alt="whiskers" className="h-8" />
-            <h5 className="text-center font-bold my-4 text-sm tracking-widest">
+            <h5 className="text-center font-bold my-4 text-xs tracking-widest">
               Hi! I'm Ayeley
             </h5>
             <img src={whiskers2} alt="whiskers" className="h-8" />
@@ -119,8 +119,7 @@ const Work = () => {
           {data.map((item, index) => (
             <div key={index} className="work-item flex work-container">
               <Card
-                className="work-img appear-on-scroll border-0 md:max-2xl:w-[500px] md:max-xl:w-[415px] md bg-cover bg-center rounded-none"
-                style={{
+                  className="work-img appear-on-scroll border-0 md:max-2xl:w-[500px] md:max-xl:w-[415px] w-[500px] md bg-cover bg-center rounded-none"                style={{
                   backgroundImage: `url(${getImgUrl(item.previewImg)})`,
                 }}
               ></Card>
@@ -135,7 +134,7 @@ const Work = () => {
                 <h2 className="appear-on-scroll font-avant-garde font-semibold tracking-wider work-text max-sm:text-wrap max-sm:text-3xl text-left mb-2 text-nowrap">
                   {item.name}
                 </h2>
-                <p className="appear-on-scroll mb-2 py-4 font-avant-garde text-sm avant-garde-extralight leading-6 tracking-wider">
+                <p className="appear-on-scroll mb-2 py-4 text-sm avant-garde-extralight leading-6 tracking-wider">
                   {item.brief}
                 </p>
                 <Link
