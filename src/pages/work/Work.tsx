@@ -119,7 +119,7 @@ const Work = () => {
           {data.map((item, index) => (
             <div key={index} className="work-item flex work-container">
               <Card
-                  className="work-img appear-on-scroll border-0 md:max-2xl:w-[500px] md:max-xl:w-[415px] w-[500px] md bg-cover bg-center rounded-none"                style={{
+                  className="work-img appear-on-scroll border-0 md:max-2xl:w-[500px] md:max-xl:w-[415px] md:w-[500px] md bg-cover bg-center rounded-none"                style={{
                   backgroundImage: `url(${getImgUrl(item.previewImg)})`,
                 }}
               ></Card>

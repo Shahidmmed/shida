@@ -46,7 +46,7 @@ const Restaurant = () => {
             </div>
 
             <Tabs defaultValue="overview" className="w-full">
-              <TabsList className="sticky top-0 z-10 grid w-full grid-cols-6 h-16 px-24 mb-14">
+              <TabsList className="sticky top-0 z-10 grid w-full grid-cols-6 h-16 px-24 mb-14  max-lg:overflow-x-auto max-lg:overflow-y-hidden max-lg:flex max-lg:w-full max-lg:px-12 max-lg:justify-evenly">
                 <TabsTrigger value="overview" className="py-4">
                   Overview
                 </TabsTrigger>
