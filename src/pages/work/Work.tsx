@@ -68,7 +68,7 @@ const Work = () => {
               className="md:max-xl:h-12 absolute stars"
             />
             <img src={ux} alt="ux" className="md:max-xl:h-8 absolute ux" />
-            <h1 className="md:max-xl:max-w-[575px] max-w-[780px] max-sm:w-full max-sm:text-2xl  z-10 font-avant-garde mb-6 font-semibold md:max-xl:text-2xl text-4xl leading-tight tracking-wider text-center">
+            <h1 className="md:max-xl:max-w-[575px] max-w-[780px] max-sm:w-full max-sm:text-[25px]  z-10 font-avant-garde mb-6 font-semibold md:max-xl:text-2xl text-4xl leading-[53PX] tracking-wider text-center">
               I Create, Manage, and Market Products
             </h1>
             <img
@@ -87,7 +87,7 @@ const Work = () => {
           </div>
 
           <div className="appear-on-scroll flex relative">
-            <p className="text-center max-w-[850px] avant-garde-extralight max-sm:text-sm text-base z-10 m-8">
+            <p className="text-center max-w-[850px] avant-garde-extralight leading-[32px] max-sm:leading-[20px] max-sm:text-xs text-base z-10 m-8">
               I craft digital experiences using storytelling and modern
               approaches to connect individuals with your business and products.
             </p>
@@ -119,7 +119,8 @@ const Work = () => {
           {data.map((item, index) => (
             <div key={index} className="work-item flex work-container">
               <Card
-                  className="work-img appear-on-scroll border-0 md:max-2xl:w-[500px] md:max-xl:w-[415px] md:w-[500px] md bg-cover bg-center rounded-none"                style={{
+                className="work-img appear-on-scroll border-0 md:max-2xl:w-[500px] md:max-xl:w-[415px] md:w-[500px] md bg-cover bg-center rounded-none"
+                style={{
                   backgroundImage: `url(${getImgUrl(item.previewImg)})`,
                 }}
               ></Card>
@@ -131,10 +132,10 @@ const Work = () => {
                     </React.Fragment>
                   ))}
                 </p>
-                <h2 className="appear-on-scroll font-avant-garde font-semibold tracking-wider work-text max-sm:text-wrap max-sm:text-3xl text-left mb-2 text-nowrap">
+                <h2 className="appear-on-scroll font-avant-garde font-semibold tracking-wider work-text max-sm:text-nowrap max-sm:text-[25px] text-left mb-2 text-nowrap">
                   {item.name}
                 </h2>
-                <p className="appear-on-scroll mb-2 py-4 text-sm avant-garde-extralight leading-6 tracking-wider">
+                <p className="appear-on-scroll mb-2 py-4 text-sm max-sm:text-xs avant-garde-extralight leading-7 tracking-wider">
                   {item.brief}
                 </p>
                 <Link
@@ -149,29 +150,33 @@ const Work = () => {
         </div>
       </section>
 
-      <section className="py-8 pr-20 xl:pl-36 pl-4 mx-auto">
+      <section className="py-8 pr-20 xl:pl-36 max-sm:pb-0 pl-4 mx-auto">
         <div
           className="overflow-x-auto"
           style={{ scrollbarWidth: "none", WebkitOverflowScrolling: "touch" }}
         >
-          <div className="appear-on-scroll flex justify-evenly py-10">
+          <div className="appear-on-scroll flex max-sm:py-0 justify-evenly py-10">
             {moreWork.map((work, index) => (
               <div key={index}>
                 <Card
-                  className="border-0 md:max-2xl:w-[260px] w-[250px] h-[205px] md:max-2xl:h-[250px] md:max-xl:w-[205px] md:max-xl:h-[205px] mr-10 bg-cover bg-center rounded-none"
+                  className="border-0 md:max-2xl:w-[260px] w-[250px] h-[205px] max-sm:w-[150px] max-sm:h-[150px] md:max-2xl:h-[250px] md:max-xl:w-[205px] md:max-xl:h-[205px] mr-10 bg-cover bg-center rounded-none"
                   style={{
                     backgroundImage: `url(${getImgUrl(work.img)})`,
                   }}
                 ></Card>
-                <p className="md:max-2xl:max-w-[250px] md:max-xl:max-w-[205px] text-xl md:max-xl:text-base pt-6 font-avant-garde-thin font-thin leading-6 tracking-wide text-gray-400">
+                <a
+                  href={work.link}
+                  target="_blank"
+                  className="md:max-2xl:max-w-[250px] md:max-xl:max-w-[205px] text-xl max-sm:text-xs md:max-xl:text-base pt-6 font-avant-garde-thin font-thin leading-6 tracking-wide text-gray-400"
+                >
                   {work.name}
-                </p>
+                </a>
               </div>
             ))}
           </div>
         </div>
       </section>
-      <hr className="my-6 border-t border-gray-300 mx-24" />
+      <hr className="my-6 border-t border-gray-300 mx-24 max-sm:mx-4" />
       <Footer />
     </div>
   );

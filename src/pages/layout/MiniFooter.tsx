@@ -8,7 +8,9 @@ const MiniFooter = () => {
   return (
     <div className="max-w-[1150px] max-sm:w-full mx-auto">
       <footer className="flex justify-between max-sm:flex-col py-6 max-sm:px-8">
-        <div className="underline appear-on-scroll">Naayettey07@gmail.com</div>
+        <div className="underline appear-on-scroll">
+          <a href="mailto:Naayettey07@gmail.com">Naayettey07@gmail.com</a>
+        </div>
         <div className="flex justify-evenly max-sm:justify-normal">
           <a
             href="www.linkedin.com/in/naa-ayeley-ayettey/"

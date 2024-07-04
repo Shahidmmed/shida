@@ -28,7 +28,7 @@ const Leads = () => {
                 className="max-h-[300px] max-w-[400px]"
               />
               <div className="ml-8 max-sm:w-full max-sm:ml-1">
-                <p className="avant-garde-bold font-medium text-sm leading-5 tracking-wider text-left mb-2 pb-2">
+                <p className="avant-garde-bold font-medium text-[#484A56] text-sm leading-5 tracking-wider text-left mb-2 pb-2">
                   {project.designTypes.map((type, index) => (
                     <React.Fragment key={index}>
                       {type}{" "}
@@ -36,10 +36,10 @@ const Leads = () => {
                     </React.Fragment>
                   ))}
                 </p>
-                <h2 className="font-avant-garde font-semibold tracking-wider max-sm:text-3xl text-4xl text-left mb-2 text-nowrap">
+                <h2 className="font-avant-garde font-semibold text-[#484A56] tracking-wider max-sm:text-3xl text-4xl text-left mb-2 text-nowrap">
                   {project.name}
                 </h2>
-                <p className="mb-2 py-4 font-avant-garde text-sm leading-6 tracking-wider max-w-[550px]">
+                <p className="mb-2 py-4 font-avant-garde text-sm text-[#484A56] leading-6 tracking-wider max-w-[550px]">
                   {project.brief}
                 </p>
               </div>

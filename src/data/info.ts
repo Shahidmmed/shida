@@ -301,21 +301,26 @@ export const moreWork = [
   {
     img: "previewImgs/finder.png",
     name: "Property & Roomie Finder",
+    link: "https://www.figma.com/proto/h9ckwczIQ88i7DKSberTlZ/Bebia-Meda?page-id=538%3A4295&type=design&node-id=538-4782&viewport=868%2C418%2C0.05&t=YkqtAIDqiLe82V6f-1&scaling=scale-down&starting-point-node-id=538%3A4582",
   },
   {
     img: "previewImgs/members.png",
     name: "Members Management App",
+    link: "https://www.figma.com/proto/pAtYFmrgJHXImrrbBmoczJ/CANCHAM?page-id=0%3A1&type=design&node-id=2-9&viewport=258%2C336%2C0.07&t=srwXh6bS7FVOQqXT-1&scaling=scale-down&starting-point-node-id=2%3A9&show-proto-sidebar=1",
   },
   {
     img: "previewImgs/payup.png",
     name: "Pay Up Website",
+    link: "https://www.figma.com/proto/tVN7l3qXcs5B2RcYfjIolc/PAYUP-WEB?page-id=0%3A1&node-id=58-2&viewport=523%2C-105%2C0.05&scaling=scale-down&starting-point-node-id=58%3A2&show-proto-sidebar=1&fuid=860195332150006297",
   },
   {
     img: "previewImgs/nca.png",
     name: "NCA Website",
+    link: "https://www.figma.com/proto/SVpRI2XKuXh65tvsqZ2heM/Astra-%26-NCA?page-id=18%3A176&node-id=18-221&viewport=402%2C333%2C0.08&t=hcdpihrGTHfAv5mw-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=18%3A221",
   },
   {
     img: "previewImgs/ehealth.png",
     name: "Ehealth Website",
+    link: "https://www.figma.com/proto/NvssV5x7bjMjvaBtN1sbGb/eHealth-Suite?page-id=0%3A1&type=design&node-id=4-5&viewport=275%2C148%2C0.03&t=uVSbpk4630yUKeqr-1&scaling=scale-down&starting-point-node-id=4%3A5",
   },
 ];

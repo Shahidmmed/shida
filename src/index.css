@@ -9,7 +9,7 @@
 } */
 
 body {
-  font-family: 'ITC Avant Garde Std Bk', sans-serif;
+  font-family: "ITC Avant Garde Std Bk", sans-serif;
   font-weight: normal;
   font-style: normal;
 }
@@ -19,7 +19,7 @@ body {
 }
 
 .font-avant-garde {
-  font-family: 'ITC Avant Garde Std Bk', sans-serif;
+  font-family: "ITC Avant Garde Std Bk", sans-serif;
 }
 
 .avant-garde-bold {
@@ -69,6 +69,11 @@ body {
 
 .border-black {
   -webkit-text-stroke: 1px #000000;
+}
+
+.lucide-x {
+  height: 2.5rem !important;
+  width: 2.5rem;
 }
 
 #topnav a.active {
@@ -134,7 +139,7 @@ ul.circle-list li::marker {
 
 .tanjiro {
   bottom: 0%;
-    left: -3%;
+  left: -3%;
 }
 
 .ux {
@@ -293,25 +298,25 @@ ul.circle-list li::marker {
   .stars {
     height: 40px;
     top: -5%;
-    left: 0%;
+    left: 3%;
   }
 
   .ux {
-    bottom: 85%;
-    left: 89%;
+    bottom: 80%;
+    left: 88%;
     height: 40px;
   }
 
   .product {
-    top: 56%;
-    left: 66%;
+    top: 62%;
+    left: 70%;
     z-index: 1;
-    height: 30px;
+    height: 25px;
   }
 
   .heart {
     top: 53%;
-    left: 41%;
+    left: 58%;
     height: 40px;
   }
 }

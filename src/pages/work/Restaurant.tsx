@@ -28,7 +28,7 @@ const Restaurant = () => {
                 className="appear-on-scroll max-h-[300px] max-w-[400px] ml-10 max-sm:ml-0"
               />
               <div className="ml-8 max-sm:ml-1 max-sm:w-full">
-                <p className="appear-on-scroll avant-garde-bold font-medium text-sm leading-5 tracking-wider text-left mb-2 pb-2">
+                <p className="appear-on-scroll text-[#484A56] avant-garde-bold font-medium text-sm leading-5 tracking-wider text-left mb-2 pb-2">
                   {project.designTypes.map((type, index) => (
                     <React.Fragment key={index}>
                       {type}{" "}
@@ -36,10 +36,10 @@ const Restaurant = () => {
                     </React.Fragment>
                   ))}
                 </p>
-                <h2 className="appear-on-scroll font-avant-garde font-semibold tracking-wider max-sm:text-3xl text-4xl text-left mb-2 text-nowrap">
+                <h2 className="appear-on-scroll text-[#484A56] font-avant-garde font-semibold tracking-wider max-sm:text-3xl text-4xl text-left mb-2 text-nowrap">
                   {project.name}
                 </h2>
-                <p className="appear-on-scroll mb-2 py-4 font-avant-garde text-sm leading-6 tracking-wider max-w-[550px]">
+                <p className="appear-on-scroll text-[#484A56] mb-2 py-4 font-avant-garde text-sm leading-6 tracking-wider max-w-[550px]">
                   {project.brief}
                 </p>
               </div>
