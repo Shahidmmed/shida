@@ -25,7 +25,7 @@ const Restaurant = () => {
               <img
                 src={getImgUrl(project.image)}
                 alt={project.previewText}
-                className="appear-on-scroll max-h-[300px] max-w-[400px] ml-10 max-sm:ml-0"
+                className="appear-on-scroll max-h-[300px] max-w-[400px] max-sm:w-[340px] ml-10 max-sm:ml-0"
               />
               <div className="ml-8 max-sm:ml-1 max-sm:w-full">
                 <p className="appear-on-scroll text-[#484A56] avant-garde-bold font-medium text-sm leading-5 tracking-wider text-left mb-2 pb-2">
@@ -134,7 +134,7 @@ const Restaurant = () => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-black flex py-20 text-white justify-evenly">
+                <div className="bg-black max-sm:px-4 sm:flex max-sm:grid max-sm:grid-cols-4 max-sm:py-10  flex py-20 text-white justify-evenly">
                   <div className="">
                     <p className="pb-2">Timeline</p>
                     <small>4 weeks (80 hours)</small>

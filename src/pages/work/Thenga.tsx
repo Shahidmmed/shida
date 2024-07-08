@@ -24,7 +24,7 @@ const Thenga = () => {
               <img
                 src={getImgUrl(project.image)}
                 alt={project.previewText}
-                className="appear-on-scroll max-h-[300px] max-w-[400px] ml-10 max-sm:ml-0"
+                className="appear-on-scroll max-h-[300px] max-w-[400px] max-sm:w-[340px] max-sm:mb-6 ml-10 max-sm:ml-0"
               />
               <div className="ml-8 max-sm:ml-1 max-sm:w-full">
                 <p className="appear-on-scroll text-[#484A56] avant-garde-bold font-medium text-sm leading-5 tracking-wider text-left mb-2 pb-2">
@@ -91,7 +91,7 @@ const Thenga = () => {
                     could.
                   </p>
                 </div>
-                <div className="bg-black flex py-20 text-white justify-evenly">
+                <div className="bg-black max-sm:px-4 max-sm:py-10  sm:flex max-sm:grid max-sm:grid-cols-4 flex py-20 text-white justify-evenly">
                   <div className="">
                     <p className="pb-2">Timeline</p>
                     <small>4 weeks (80 hours)</small>
@@ -114,15 +114,15 @@ const Thenga = () => {
                     <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                       Design Process
                     </h2>
-                    <div className="flex xl2:w-[1120px] w-[980px] justify-center items-center pt-8">
+                    <div className="flex xl2:w-[1120px] w-[980px] max-sm:w-full max-sm:items-start justify-center items-center pt-8">
                       {project.images && project.images.length > 0 && (
                         <>
                           <img
                             src={getImgUrl(project.images[0])}
                             alt="Strategy"
-                            className="h-[150px]"
+                            className="h-[150px] max-sm:h-16 max-sm:pr-4"
                           />
-                          <p className="ml-4 max-sm:ml-0 leading-9 text-xl overflow-wrap max-w-full">
+                          <p className="ml-4 max-sm:ml-0 max-sm:leading-7 leading-9 text-xl overflow-wrap max-w-full">
                             My task was to redesign the Thenga product, which at
                             the time, was just a website. But after strategising
                             with my team, determining what we wanted to build
@@ -134,15 +134,15 @@ const Thenga = () => {
                         </>
                       )}
                     </div>
-                    <div className="flex xl2:w-[1120px] w-[980px] justify-center items-center pt-8">
+                    <div className="flex xl2:w-[1120px] w-[980px] max-sm:w-full max-sm:items-start justify-center items-center pt-8">
                       {project.images && project.images.length > 0 && (
                         <>
                           <img
                             src={getImgUrl(project.images[1])}
                             alt="Strategy"
-                            className="h-[150px]"
+                            className="h-[150px] max-sm:h-16 max-sm:pr-4"
                           />
-                          <p className=" ml-4 max-sm:ml-0 leading-9 text-xl overflow-wrap max-w-full">
+                          <p className=" ml-4 max-sm:ml-0 max-sm:leading-7 leading-9 text-xl overflow-wrap max-w-full">
                             Through our discussions and brainstorming sessions,
                             we were able to come up with a unique and innovative
                             approach to the redesign that I believe will
@@ -154,15 +154,15 @@ const Thenga = () => {
                         </>
                       )}
                     </div>
-                    <div className="flex xl2:w-[1120px] w-[980px] justify-center items-center pt-8">
+                    <div className="flex xl2:w-[1120px] w-[980px] max-sm:w-full max-sm:items-start justify-center items-center pt-8">
                       {project.images && project.images.length > 0 && (
                         <>
                           <img
                             src={getImgUrl(project.images[2])}
                             alt="Strategy"
-                            className="h-[150px]"
+                            className="h-[150px] max-sm:h-16 max-sm:pr-4"
                           />
-                          <p className=" ml-4 max-sm:ml-0 leading-9 text-xl overflow-wrap max-w-full">
+                          <p className=" ml-4 max-sm:ml-0 max-sm:leading-7 leading-9 text-xl overflow-wrap max-w-full">
                             As a designer, The goal for the redesign was to
                             merge aesthetics with functionality to create a
                             simple and logical digital experience that anybody
@@ -175,15 +175,15 @@ const Thenga = () => {
                         </>
                       )}
                     </div>
-                    <div className="flex xl2:w-[1120px] w-[980px] justify-center items-center pt-8">
+                    <div className="flex xl2:w-[1120px] w-[980px] max-sm:w-full max-sm:items-start justify-center items-center pt-8">
                       {project.images && project.images.length > 0 && (
                         <>
                           <img
                             src={getImgUrl(project.images[3])}
                             alt="Strategy"
-                            className="h-[150px]"
+                            className="h-[150px] max-sm:h-16 max-sm:pr-4"
                           />
-                          <p className=" ml-4 max-sm:ml-0 leading-9 text-xl overflow-wrap max-w-full">
+                          <p className=" ml-4 max-sm:ml-0 max-sm:leading-7 leading-9 text-xl overflow-wrap max-w-full">
                             Lastly, I put my ideas together to create low and
                             high-fidelity prototypes to visualise the flow of
                             the product, if the features work, and how it will

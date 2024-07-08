@@ -59,7 +59,7 @@ const Inventory = () => {
               <img
                 src={getImgUrl(project.image)}
                 alt={project.previewText}
-                className="max-h-[300px] max-w-[400px] ml-10 max-sm:ml-0"
+                className="max-h-[300px] max-w-[400px] max-sm:w-[340px] ml-10 max-sm:ml-0"
               />
               <div className="ml-8 max-sm:w-full max-sm:ml-1">
                 <p className="appear-on-scroll avant-garde-bold text-[#484A56] font-medium text-sm leading-5 tracking-wider text-left mb-2 pb-2">
@@ -121,7 +121,7 @@ const Inventory = () => {
                     improve my UX and UI skills.
                   </p>
                 </div>
-                <div className="bg-black flex py-20 text-white justify-evenly">
+                <div className="bg-black max-sm:px-4 sm:flex max-sm:grid max-sm:grid-cols-4 max-sm:py-10 flex py-20 text-white justify-evenly">
                   <div className="">
                     <p className="pb-2">Timeline</p>
                     <small>4 weeks (80 hours)</small>

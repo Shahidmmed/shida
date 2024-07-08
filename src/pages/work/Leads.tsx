@@ -25,7 +25,7 @@ const Leads = () => {
               <img
                 src={getImgUrl(project.image)}
                 alt={project.previewText}
-                className="max-h-[300px] max-w-[400px]"
+                className="max-h-[300px] max-w-[400px] max-sm:w-[340px]"
               />
               <div className="ml-8 max-sm:w-full max-sm:ml-1">
                 <p className="avant-garde-bold font-medium text-[#484A56] text-sm leading-5 tracking-wider text-left mb-2 pb-2">
@@ -71,7 +71,7 @@ const Leads = () => {
                 )}
               </div>
             </div>
-            <div className="bg-black flex max-sm:w-full py-20 text-white justify-evenly">
+            <div className="bg-black max-sm:px-4 sm:flex max-sm:grid max-sm:grid-cols-4 max-sm:py-10  max-sm:w-full py-20 text-white justify-evenly">
               <div className="appear-on-scroll">
                 <p className="pb-2">Timeline</p>
                 <small>4 weeks (80 hours)</small>

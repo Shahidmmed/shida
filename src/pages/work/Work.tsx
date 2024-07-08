@@ -68,7 +68,7 @@ const Work = () => {
               className="md:max-xl:h-12 absolute stars"
             />
             <img src={ux} alt="ux" className="md:max-xl:h-8 absolute ux" />
-            <h1 className="md:max-xl:max-w-[575px] max-w-[780px] max-sm:w-full max-sm:text-[25px] max-sm:leading-[37px] z-10 font-avant-garde mb-6 font-semibold md:max-xl:text-2xl text-4xl leading-[53PX] tracking-wider text-center">
+            <h1 className="md:max-xl:max-w-[575px] max-w-[780px] max-sm:w-full max-sm:text-[25px] max-sm:leading-[42px] z-10 font-avant-garde mb-6 font-semibold md:max-xl:text-2xl text-4xl leading-[53PX] tracking-wider text-center">
               I Create, Manage, and Market Products
             </h1>
             <img
@@ -87,7 +87,7 @@ const Work = () => {
           </div>
 
           <div className="appear-on-scroll flex relative">
-            <p className="text-center max-w-[850px] avant-garde-extralight leading-[32px] max-sm:leading-[20px] max-sm:text-xs text-base z-10 m-8">
+            <p className="text-center max-w-[850px] text-[#403f3f] avant-garde-extralight font-bold leading-[32px] max-sm:leading-[20px] max-sm:text-xs text-base z-10 m-8">
               I craft digital experiences using storytelling and modern
               approaches to connect individuals with your business and products.
             </p>
