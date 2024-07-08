@@ -263,6 +263,16 @@ ul.circle-list li::marker {
 }
 
 @media not all and (min-width: 640px) {
+  h2 {
+    font-size: 25px !important;
+  }
+
+  p,
+  li {
+    font-size: 13px !important;
+    line-height: px !important;
+  }
+
   .work-item {
     flex-direction: column;
     width: 350px;

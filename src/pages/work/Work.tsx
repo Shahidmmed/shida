@@ -68,7 +68,7 @@ const Work = () => {
               className="md:max-xl:h-12 absolute stars"
             />
             <img src={ux} alt="ux" className="md:max-xl:h-8 absolute ux" />
-            <h1 className="md:max-xl:max-w-[575px] max-w-[780px] max-sm:w-full max-sm:text-[25px]  z-10 font-avant-garde mb-6 font-semibold md:max-xl:text-2xl text-4xl leading-[53PX] tracking-wider text-center">
+            <h1 className="md:max-xl:max-w-[575px] max-w-[780px] max-sm:w-full max-sm:text-[25px] max-sm:leading-[37px] z-10 font-avant-garde mb-6 font-semibold md:max-xl:text-2xl text-4xl leading-[53PX] tracking-wider text-center">
               I Create, Manage, and Market Products
             </h1>
             <img

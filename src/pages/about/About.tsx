@@ -56,9 +56,9 @@ const About = () => {
         </div>
         <div className="appear-on-scroll max-sm:px-8 max-sm:text-wrap sm:flex max-w-[1200px] w-[1120px] max-sm:w-full max-sm:pt-8 px-2 mx-auto justify-between items-center pt-12">
           <div className="max-sm:flex max-sm:items-center max-sm:pb-4">
-            <p className="avant-garde-bold max-sm:pr-6 font-bold max-sm:text-left text-6xl max-sm:text-4xl text-black leading-none ">
+            <h3 className="avant-garde-bold max-sm:pr-6 font-bold max-sm:text-left text-6xl max-sm:text-4xl text-black leading-none ">
               Innovation
-            </p>
+            </h3>
             <img
               src={kite}
               alt="orange kite"
@@ -70,9 +70,9 @@ const About = () => {
             alt="orange kite"
             className="max-sm:hidden h-10 max-sm:h-8"
           />
-          <p className="avant-garde-bold max-sm:text-right max-sm:pb-4 font-bold text-6xl max-sm:text-4xl text-white leading-none  border-black">
+          <h3 className="avant-garde-bold max-sm:text-right max-sm:pb-4 font-bold text-6xl max-sm:text-4xl text-white leading-none  border-black">
             Strategy
-          </p>
+          </h3>
           <img
             src={kite2}
             alt="green kite"
@@ -84,9 +84,9 @@ const About = () => {
               alt="green kite"
               className="max-sm:pr-6 h-10 max-sm:h-8"
             />
-            <p className="avant-garde-bold max-sm:text-left font-bold text-6xl max-sm:text-4xl text-black leading-none ">
+            <h3 className="avant-garde-bold max-sm:text-left font-bold text-6xl max-sm:text-4xl text-black leading-none ">
               Design
-            </p>
+            </h3>
           </div>
         </div>
       </section>
