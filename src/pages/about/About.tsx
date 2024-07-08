@@ -35,7 +35,7 @@ const About = () => {
                 and improving myself and my skills, and when I'm not online, I'm
                 probably binge-watching a TV show or taking a nap.
               </p>
-              <Button className="rounded-none bg-black text-base px-20 py-8 border mt-6">
+              <Button className="rounded-none bg-black hover:bg-slate-800/80 text-base text-white px-20 py-5 max-sm:px-10 max-sm:ml-3 border-2 ml-6">
                 My Resume
               </Button>
             </div>

@@ -1,12 +1,20 @@
-import { ArrowUpCircleIcon } from "lucide-react";
+import { ChevronsUp } from "lucide-react";
 import React, { useEffect, useState } from "react";
 
 const ScrollToTop: React.FC = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
+    window.onscroll = function () {
+      console.log("first");
+      console.log("ScrollY 1: ", window.scrollY, window.pageYOffset);
+    };
+
+    console.log("ScrollY: ", window.scrollY, window.pageYOffset);
     const toggleVisibility = () => {
-      if (window.pageYOffset > 300) {
+      console.log("ScrollY: ", window.scrollY);
+      if (window.scrollY || window.pageYOffset > 300) {
+        console.log("first");
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -30,12 +38,15 @@ const ScrollToTop: React.FC = () => {
   return (
     <div>
       {isVisible && (
-        <button
-          className="fixed bottom-4 right-4 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition duration-300"
-          onClick={scrollToTop}
-        >
-          <ArrowUpCircleIcon size={32} />
-        </button>
+        <>
+          <button
+            className="fixed bottom-4 right-4 z-50 flex items-center flex-col justify-center text-black p-3 bg-transparent transition duration-300"
+            onClick={scrollToTop}
+          >
+            <ChevronsUp size={32} />
+            Back to the top
+          </button>
+        </>
       )}
     </div>
   );

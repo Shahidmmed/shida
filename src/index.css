@@ -71,6 +71,24 @@ body {
   -webkit-text-stroke: 1px #000000;
 }
 
+.data-\[state\=active\]\:bg-white[data-state="active"] {
+  background-color: #f3f4f6 !important;
+}
+
+.data-\[state\=active\]\:shadow-sm[data-state="active"] {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 26%) !important;
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  font-weight: bold;
+}
+
+button[role="tab"] {
+  -webkit-appearance: button;
+  background-color: #f3f4f6 !important;
+  background-image: none;
+}
+
 .lucide-x {
   height: 2.5rem !important;
   width: 2.5rem;
