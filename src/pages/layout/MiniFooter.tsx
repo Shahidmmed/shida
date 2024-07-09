@@ -15,7 +15,7 @@ const MiniFooter = () => {
         </div>
         <div className="flex justify-evenly max-sm:justify-normal">
           <a
-            href="www.linkedin.com/in/naa-ayeley-ayettey/"
+            href="https://www.linkedin.com/in/naa-ayeley-ayettey/"
             target="_blank"
             rel="noopener noreferrer"
             className="appear-on-scroll mr-4"

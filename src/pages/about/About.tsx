@@ -98,28 +98,28 @@ const About = () => {
             </h3>
             <hr className="border-white w-5/6 mt-0" />
           </div>
-          <p className="appear-on-scroll max-sm:text-base avant-garde-extralight text-xl tracking-wide">
+          <p className="text-white appear-on-scroll max-sm:text-base avant-garde-extralight text-xl tracking-wide">
             My key areas of expertise are in Design, Management, Marketing and
             Strategy. Below is a more granular breakdown of my skill-set and
             services.
           </p>
-          <p className="appear-on-scroll max-sm:text-base avant-garde-extralight text-blue-500 tracking-wide text-xl">
+          <p className=" appear-on-scroll max-sm:text-base avant-garde-extralight text-blue-500 tracking-wide text-xl">
             What i am good at (but not limited to) :
           </p>
-          <p className="appear-on-scroll max-sm:text-base avant-garde-extralight mb-6 leading-normal tracking-wide text-xl text-left">
+          <p className="text-white appear-on-scroll max-sm:text-base avant-garde-extralight mb-6 leading-normal tracking-wide text-xl text-left">
             <span className="font-black">Design & Strategy: </span> Design
             Thinking, UI/UX Design, Product Strategy & Management, Creative
             Direction
           </p>
-          <p className="appear-on-scroll max-sm:text-base avant-garde-extralight mb-6 text-xl tracking-wide leading-normal  text-left">
+          <p className="text-white appear-on-scroll max-sm:text-base avant-garde-extralight mb-6 text-xl tracking-wide leading-normal  text-left">
             <span className="font-black">Research & Evaluation: </span>Market &
             User Research, User Interviews, Usability Testing
           </p>
-          <p className="appear-on-scroll max-sm:text-base avant-garde-extralight mb-6 text-xl tracking-wide leading-normal  text-left">
+          <p className="text-white appear-on-scroll max-sm:text-base avant-garde-extralight mb-6 text-xl tracking-wide leading-normal  text-left">
             <span className="font-black">Prototyping & Design: </span>
             Wireframing, Prototyping, Visual Design & Style Guides
           </p>
-          <p className="appear-on-scroll max-sm:text-base avant-garde-extralight mb-6 text-xl tracking-wide leading-normal  text-left">
+          <p className="text-white appear-on-scroll max-sm:text-base avant-garde-extralight mb-6 text-xl tracking-wide leading-normal  text-left">
             <span className="font-black">Digital Marketing & Branding: </span>
             Social Media Management, SEO, Copy & Content Writing
           </p>
