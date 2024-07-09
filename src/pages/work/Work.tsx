@@ -159,7 +159,7 @@ const Work = () => {
             {moreWork.map((work, index) => (
               <div key={index}>
                 <Card
-                  className="border-0 md:max-2xl:w-[260px] w-[250px] h-[205px] max-sm:w-[150px] max-sm:h-[150px] md:max-2xl:h-[250px] md:max-xl:w-[205px] md:max-xl:h-[205px] mr-10 bg-cover bg-center rounded-none"
+                  className="border-0 mb-4 md:max-2xl:w-[260px] w-[250px] h-[205px] max-sm:w-[150px] max-sm:h-[150px] md:max-2xl:h-[250px] md:max-xl:w-[205px] md:max-xl:h-[205px] mr-10 bg-cover bg-center rounded-none"
                   style={{
                     backgroundImage: `url(${getImgUrl(work.img)})`,
                   }}
@@ -167,7 +167,7 @@ const Work = () => {
                 <a
                   href={work.link}
                   target="_blank"
-                  className="md:max-2xl:max-w-[250px] md:max-xl:max-w-[205px] text-xl max-sm:text-xs md:max-xl:text-base pt-6 font-avant-garde-thin font-thin leading-6 tracking-wide text-gray-400"
+                  className="md:max-2xl:max-w-[250px] md:max-xl:max-w-[205px] text-xl max-sm:text-xs md:max-xl:text-base mt-2 pt-6 font-avant-garde-thin font-thin leading-6 tracking-wide text-gray-400"
                 >
                   {work.name}
                 </a>

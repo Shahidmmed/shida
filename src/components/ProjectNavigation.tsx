@@ -37,7 +37,7 @@ const ProjectNavigation: React.FC<ProjectNavigationProps> = ({
 
         <Link
           to={`/${nextProject.id}`}
-          className="flex items-center max-sm:text-base max-sm:text-nowrap text-3xl font-medium"
+          className="flex items-center max-sm:text-base max-sm:text-wrap text-3xl font-medium"
         >
           {nextProject.name}
           <ChevronRight className="ml-2" />

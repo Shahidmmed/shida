@@ -21,14 +21,14 @@ const Restaurant = () => {
       {project ? (
         <>
           <section className="mx-auto">
-            <div className="p-16 max-sm:p-8 flex max-sm:flex-col items-center justify-start bg-slate-100 pt-20">
+            <div className="p-16 max-sm:p-8 flex max-sm:flex-col items-center justify-start bg-[#F3F4F6] pt-20">
               <img
                 src={getImgUrl(project.image)}
                 alt={project.previewText}
                 className="appear-on-scroll max-h-[300px] max-w-[400px] max-sm:w-[340px] ml-10 max-sm:ml-0"
               />
               <div className="ml-8 max-sm:ml-1 max-sm:w-full">
-                <p className="appear-on-scroll text-[#484A56] avant-garde-bold font-medium text-sm leading-5 tracking-wider text-left mb-2 pb-2">
+                <p className="appear-on-scroll text-[#484A56] font-bold text-sm leading-5 tracking-wider text-left mb-2 pb-2">
                   {project.designTypes.map((type, index) => (
                     <React.Fragment key={index}>
                       {type}{" "}

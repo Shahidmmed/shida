@@ -14,6 +14,10 @@ export const data = [
     images: [
       "reports/summary1.png",
       "reports/summary2.png",
+      "reports/participants.png",
+      "reports/challenges.png",
+      "reports/comments.png",
+      "reports/recommendations.png",
       "reports/feedback.png",
       "reports/interface.png",
       "reports/interface-tested.png",

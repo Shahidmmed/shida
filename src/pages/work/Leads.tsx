@@ -1,5 +1,3 @@
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
-import { Card, CardTitle } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { getImgUrl } from "@/data/functions";
 import { data } from "@/data/info";
@@ -21,14 +19,14 @@ const Leads = () => {
       {project ? (
         <>
           <section className="mx-auto">
-            <div className="p-12 max-sm:p-6 flex max-sm:flex-col items-center justify-center bg-slate-100 pt-20">
+            <div className="p-12 max-sm:p-6 flex max-sm:flex-col items-center justify-center bg-[#F3F4F6] pt-20">
               <img
                 src={getImgUrl(project.image)}
                 alt={project.previewText}
                 className="max-h-[300px] max-w-[400px] max-sm:w-[340px]"
               />
               <div className="ml-8 max-sm:w-full max-sm:ml-1">
-                <p className="avant-garde-bold font-medium text-[#484A56] text-sm leading-5 tracking-wider text-left mb-2 pb-2">
+                <p className="font-bold text-[#484A56] text-sm leading-5 tracking-wider text-left mb-2 pb-2">
                   {project.designTypes.map((type, index) => (
                     <React.Fragment key={index}>
                       {type}{" "}
@@ -253,60 +251,15 @@ const Leads = () => {
                 </li>
               </ol>
               <div className="appear-on-scroll flex justify-evenly">
-                <div className="flex flex-col items-center">
-                  <Avatar className="h-16 w-16">
-                    <AvatarImage
-                      src="https://github.com/shadcn.png"
-                      alt="@shadcn"
+                {project.images && project.images.length > 0 && (
+                  <>
+                    <img
+                      src={getImgUrl(project.images[2])}
+                      alt="Feedback Image"
+                      className="appear-on-scroll"
                     />
-                  </Avatar>
-                  <p>Leslie</p>
-                </div>
-                <div className="flex flex-col items-center">
-                  <Avatar className="h-16 w-16">
-                    <AvatarImage
-                      src="https://github.com/shadcn.png"
-                      alt="@shadcn"
-                    />
-                  </Avatar>
-                  <p>Nana Yaw</p>
-                </div>
-                <div className="flex flex-col items-center">
-                  <Avatar className="h-16 w-16">
-                    <AvatarImage
-                      src="https://github.com/shadcn.png"
-                      alt="@shadcn"
-                    />
-                  </Avatar>
-                  <p>Sandra</p>
-                </div>
-                <div className="flex flex-col items-center">
-                  <Avatar className="h-16 w-16">
-                    <AvatarImage
-                      src="https://github.com/shadcn.png"
-                      alt="@shadcn"
-                    />
-                  </Avatar>
-                  <p>Victoria</p>
-                </div>
-                <div className="flex flex-col items-center">
-                  <Avatar className="h-16 w-16">
-                    <AvatarImage
-                      src="https://github.com/shadcn.png"
-                      alt="@shadcn"
-                    />
-                  </Avatar>
-                  <p>Maame Ansah</p>
-                </div>
-                <div className="flex flex-col items-center">
-                  <Avatar className="h-16 w-16">
-                    <AvatarImage
-                      src="https://github.com/shadcn.png"
-                      alt="@shadcn"
-                    />
-                  </Avatar>
-                  <p>Nicholas</p>
-                </div>
+                  </>
+                )}
               </div>
             </div>
             <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
@@ -320,62 +273,44 @@ const Leads = () => {
               </p>
               <div className="pt-8">
                 <p className="appear-on-scroll font-bold">Challenges</p>
-                <div className="appear-on-scroll grid flex-1 items-start gap-4 py-4 sm:py-6 md:gap-8 lg:grid-cols-3 xl:grid-cols-3">
-                  {project.challenges?.map((challenge, index) => (
+                <div className="pt-6">
+                  {project.images && project.images.length > 0 && (
                     <>
-                      <Card
-                        key={index}
-                        className="w-[310px] h-[150px] bg-blue-200 rounded-none flex flex-col items-center justify-center"
-                      >
-                        <CardTitle className="text-lg p-4">
-                          {challenge.name}
-                        </CardTitle>
-                        <p className="text-center max-w-[300px] text-sm">
-                          {challenge.challenge}
-                        </p>
-                      </Card>
+                      <img
+                        src={getImgUrl(project.images[3])}
+                        alt="Feedback Image"
+                        className="appear-on-scroll"
+                      />
                     </>
-                  ))}
+                  )}
                 </div>
                 <div className="pt-8">
                   <p className="appear-on-scroll font-bold">Comments</p>
-                  <div className="appear-on-scroll grid flex-1 items-start gap-4 py-4 sm:py-6 md:gap-8 lg:grid-cols-3 xl:grid-cols-3">
-                    {project.comments?.map((comment, index) => (
+                  <div className="pt-6">
+                    {project.images && project.images.length > 0 && (
                       <>
-                        <Card
-                          key={index}
-                          className="w-[310px] h-[150px] bg-blue-500 rounded-none flex flex-col items-center justify-center"
-                        >
-                          <CardTitle className="text-lg p-4">
-                            {comment.name}
-                          </CardTitle>
-                          <p className="text-center max-w-[300px] text-sm">
-                            {comment.comment}
-                          </p>
-                        </Card>
+                        <img
+                          src={getImgUrl(project.images[4])}
+                          alt="Feedback Image"
+                          className="appear-on-scroll"
+                        />
                       </>
-                    ))}
+                    )}
                   </div>
                 </div>
               </div>
               <div className="pt-8">
                 <p className="appear-on-scroll font-bold">Recommendations</p>
-                <div className="appear-on-scroll grid flex-1 items-start gap-4 py-4 sm:py-6 md:gap-8 lg:grid-cols-3 xl:grid-cols-3">
-                  {project.recommendations?.map((recommendation, index) => (
+                <div className="pt-6">
+                  {project.images && project.images.length > 0 && (
                     <>
-                      <Card
-                        key={index}
-                        className="w-[310px] h-[150px] bg-emerald-500 rounded-none flex flex-col items-center justify-center"
-                      >
-                        <CardTitle className="text-lg p-4">
-                          {recommendation.name}
-                        </CardTitle>
-                        <p className="text-center max-w-[300px] text-sm">
-                          {recommendation.recommendation}
-                        </p>
-                      </Card>
+                      <img
+                        src={getImgUrl(project.images[5])}
+                        alt="Feedback Image"
+                        className="appear-on-scroll"
+                      />
                     </>
-                  ))}
+                  )}
                 </div>
               </div>
             </div>
@@ -426,7 +361,7 @@ const Leads = () => {
                 {project.images && project.images.length > 0 && (
                   <>
                     <img
-                      src={getImgUrl(project.images[2])}
+                      src={getImgUrl(project.images[6])}
                       alt="Feedback Image"
                       className="appear-on-scroll"
                     />
@@ -442,7 +377,7 @@ const Leads = () => {
                 {project.images && project.images.length > 0 && (
                   <>
                     <img
-                      src={getImgUrl(project.images[3])}
+                      src={getImgUrl(project.images[7])}
                       alt="Feedback Image"
                       className="appear-on-scroll"
                     />
@@ -459,7 +394,7 @@ const Leads = () => {
                 {project.images && project.images.length > 0 && (
                   <>
                     <img
-                      src={getImgUrl(project.images[4])}
+                      src={getImgUrl(project.images[8])}
                       alt="Feedback Image"
                       className="appear-on-scroll"
                     />
