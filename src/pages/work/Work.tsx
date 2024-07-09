@@ -153,7 +153,7 @@ const Work = () => {
       <section className="py-8 pr-20 xl:pl-36 max-sm:pb-0 pl-4 max-sm:w-full">
         <div
           style={{ scrollbarWidth: "none", WebkitOverflowScrolling: "touch" }}
-          className=" overflow-x-auto appear-on-scroll flex max-sm:py-0 items-center justify-evenly py-10 max-sm:w-full max-sm:ml-5"
+          className="hide-scrollbar overflow-x-auto appear-on-scroll flex max-sm:py-0 items-center justify-evenly py-10 max-sm:w-full max-sm:ml-5"
         >
           {moreWork.map((work, index) => (
             <div key={index}>

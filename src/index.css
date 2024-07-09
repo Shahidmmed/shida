@@ -93,6 +93,11 @@ button[role="tab"] {
   background-image: none;
 }
 
+.hide-scrollbar::-webkit-scrollbar {
+  /*Chrome, Safari, Edge*/
+  display: none;
+}
+
 .lucide-x {
   height: 2.5rem !important;
   width: 2.5rem;
