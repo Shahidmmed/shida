@@ -86,7 +86,7 @@ const Restaurant = () => {
                     {project.prototype ? (
                       <Link
                         to={project.prototype}
-                        className="rounded-none bg-black px-12 py-4 border mt-6 text-white"
+                        className="rounded-none bg-black hover:bg-white hover:text-black hover:border-black  px-12 py-4 border mt-6 text-white"
                       >
                         View Prototype
                       </Link>

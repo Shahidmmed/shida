@@ -97,7 +97,7 @@ const Work = () => {
               className="md:max-xl:h-8 heart absolute"
             />
           </div>
-          <Button className="appear-on-scroll text-center rounded-none bg-black px-28 py-6 m-8">
+          <Button className="appear-on-scroll text-center rounded-none bg-black hover:bg-white hover:text-black hover:border-black hover:border px-28 py-6 m-8">
             My Work
           </Button>
         </div>

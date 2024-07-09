@@ -41,7 +41,7 @@ const Footer = () => {
           </Link>
           <Link
             to="/about"
-            className="rounded-none bg-black hover:bg-slate-800/80 text-base text-white px-20 py-5 max-sm:px-10 max-sm:ml-3 border-2 ml-6"
+            className="rounded-none bg-black hover:bg-white hover:text-black hover:border-black hover:border text-base text-white px-20 py-5 max-sm:px-10 max-sm:ml-3 border-2 ml-6"
           >
             About Me
           </Link>

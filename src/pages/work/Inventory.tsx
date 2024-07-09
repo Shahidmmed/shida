@@ -62,7 +62,7 @@ const Inventory = () => {
                 className="max-h-[300px] max-w-[400px] max-sm:w-[340px] ml-10 max-sm:ml-0"
               />
               <div className="ml-8 max-sm:w-full max-sm:ml-1">
-                <p className="font-bold text-[#484A56] font-medium text-sm leading-5 tracking-wider text-left mb-2 pb-2">
+                <p className="font-bold text-[#484A56] text-sm leading-5 tracking-wider text-left mb-2 pb-2">
                   {project.designTypes.map((type, index) => (
                     <React.Fragment key={index}>
                       {type}{" "}
@@ -447,7 +447,7 @@ const Inventory = () => {
                     functionalities. The mockups below represent the approved
                     designs by business before testing.
                   </p>
-                  <Button className="rounded-none bg-black px-16 max-sm:px-8 py-6 border mt-6">
+                  <Button className="rounded-none bg-black hover:bg-white hover:text-black hover:border-black hover:border px-16 max-sm:px-8 py-6 border mt-6">
                     View Prototype
                   </Button>
                 </div>

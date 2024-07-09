@@ -60,7 +60,7 @@ const Leads = () => {
                 {project.prototype ? (
                   <Link
                     to={project.prototype}
-                    className="rounded-none appear-on-scroll bg-black px-12 py-4 border mt-6 text-white"
+                    className="rounded-none appear-on-scroll hover:bg-white hover:text-black hover:border-black  px-12 py-4 border mt-6 text-white"
                   >
                     View Prototype
                   </Link>
@@ -191,7 +191,7 @@ const Leads = () => {
               <div className="mt-4">
                 <Link
                   to="#"
-                  className="rounded-none appear-on-scroll bg-black px-12 py-4 border mt-6 text-white"
+                  className="rounded-none appear-on-scroll bg-black hover:bg-white hover:text-black hover:border-black  px-12 py-4 border mt-6 text-white"
                 >
                   View Script
                 </Link>

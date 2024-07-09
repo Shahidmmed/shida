@@ -55,7 +55,7 @@ const Contact = () => {
             <Textarea id="description" className="min-h-32" />
           </div>
         </div>
-        <Button className="appear-on-scrollrounded-none bg-black px-16 py-6 border mt-6">
+        <Button className="appear-on-scrollrounded-none bg-black hover:bg-white hover:text-black hover:border-black  px-16 py-6 border mt-6">
           Send Message
         </Button>
       </div>
