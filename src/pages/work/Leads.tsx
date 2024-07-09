@@ -406,31 +406,64 @@ const Leads = () => {
               <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
                 Conclusion
               </h2>
-              <ol className="desired pt-8 max-sm:pt-4 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
-                <li className="appear-on-scroll mb-6 max-sm:mb-3 list-lower-alpha text-xl leading-9">
-                  Based on the feedback from the usability test and the SUS
-                  data, it can be concluded that the Leads management system I
-                  designed has a logical user flow with an overall good user
-                  interface. The product was comprehensible and usable to most
-                  participants, with a high conversion rate. However, some areas
-                  needed improvement, particularly with the contacts and leads
-                  features and some user interface components.
-                </li>
-                <li className="appear-on-scroll mb-6 max-sm:mb-3 list-lower-alpha text-xl leading-9">
-                  Additionally, some users requested a more responsive prototype
-                  which I will continue to work on to make this prototype and
-                  future prototypes easier to use. The study also revealed that
-                  users valued the categorisations of leads and the colours used
-                  to differentiate items.
-                </li>
-                <li className="appear-on-scroll mb-6 max-sm:mb-3 list-lower-alpha text-xl leading-9">
-                  Overall, the leads management system has a solid foundation in
-                  terms of usability, but there is room for improvement (on my
-                  part) regarding the prototype's responsiveness to enhance the
-                  user experience during a usability test. The feedback gathered
-                  from the usability study was used to inform the current design
-                  iterations and improvements to the system.
-                </li>
+              <ol className="list-none pt-8 max-sm:pt-4 font-avant-garde text-base font-light leading-6 ml-1 max-sm:ml-1">
+                <div className="flex">
+                  {project.images && project.images.length > 0 && (
+                    <>
+                      <img
+                        src={getImgUrl(project.images[9])}
+                        alt="Feedback Image"
+                        className="w-20 h-20 mt-2 mr-3"
+                      />
+                    </>
+                  )}
+                  <li className="appear-on-scroll mb-6 max-sm:mb-3 text-xl leading-9">
+                    Based on the feedback from the usability test and the SUS
+                    data, it can be concluded that the Leads management system I
+                    designed has a logical user flow with an overall good user
+                    interface. The product was comprehensible and usable to most
+                    participants, with a high conversion rate. However, some
+                    areas needed improvement, particularly with the contacts and
+                    leads features and some user interface components.
+                  </li>
+                </div>
+                <div className="flex">
+                  {project.images && project.images.length > 0 && (
+                    <>
+                      <img
+                        src={getImgUrl(project.images[10])}
+                        alt="Feedback Image"
+                        className="w-10 h-14 mt-2 mr-3"
+                      />
+                    </>
+                  )}
+                  <li className="appear-on-scroll mb-6 max-sm:mb-3 list-lower-alpha text-xl leading-9">
+                    Additionally, some users requested a more responsive
+                    prototype which I will continue to work on to make this
+                    prototype and future prototypes easier to use. The study
+                    also revealed that users valued the categorisations of leads
+                    and the colours used to differentiate items.
+                  </li>
+                </div>
+                <div className="flex">
+                  {project.images && project.images.length > 0 && (
+                    <>
+                      <img
+                        src={getImgUrl(project.images[11])}
+                        alt="Feedback Image"
+                        className="w-10 h-14 mt-2 mr-3"
+                      />
+                    </>
+                  )}
+                  <li className="appear-on-scroll mb-6 max-sm:mb-3 list-lower-alpha text-xl leading-9">
+                    Overall, the leads management system has a solid foundation
+                    in terms of usability, but there is room for improvement (on
+                    my part) regarding the prototype's responsiveness to enhance
+                    the user experience during a usability test. The feedback
+                    gathered from the usability study was used to inform the
+                    current design iterations and improvements to the system.
+                  </li>
+                </div>
               </ol>
             </div>
           </section>

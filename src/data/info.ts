@@ -21,6 +21,9 @@ export const data = [
       "reports/feedback.png",
       "reports/interface.png",
       "reports/interface-tested.png",
+      "reports/one.png",
+      "reports/two.png",
+      "reports/three.png",
     ],
     challenges: [
       {
