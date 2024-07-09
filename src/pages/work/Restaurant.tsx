@@ -114,7 +114,7 @@ const Restaurant = () => {
                         online platforms.
                       </p>
                     </div>
-                    <div>
+                    <div className="max-sm:ml-3">
                       <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                         Goal
                       </h2>
@@ -123,6 +123,7 @@ const Restaurant = () => {
                           <img
                             src={getImgUrl(project.images[1])}
                             alt="Low-fi Wireframes Image"
+                            className=" max-sm:mt-7"
                           />
                         </div>
                       )}
@@ -215,6 +216,7 @@ const Restaurant = () => {
                       <img
                         src={getImgUrl(project.images[3])}
                         alt="Low-fi Wireframes Image"
+                        className="max-sm:h-44 max-sm:mt-56"
                       />
                     </>
                   )}
@@ -225,6 +227,7 @@ const Restaurant = () => {
                       <img
                         src={getImgUrl(project.images[4])}
                         alt="Low-fi Wireframes Image"
+                        className="max-sm:h-44 max-sm:mt-56"
                       />
                     </>
                   )}

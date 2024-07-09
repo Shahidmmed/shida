@@ -1,6 +1,11 @@
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import { NavLink } from "react-router-dom";
 import logo from "/assets/images/Logo.svg";
 import minilogo from "/assets/images/Logo.png";
@@ -17,9 +22,9 @@ const Navbar = () => {
           </div>
         </nav>
         <Sheet>
-          <div className="md:hidden flex items-center justify-between text-black font-bold">
+          <div className="md:hidden flex items-center justify-between mr-3 text-black font-bold">
             <NavLink to="/work">
-              <img src={minilogo} alt="Logo" className="h-10" />
+              <img src={minilogo} alt="Logo" className="h-8" />
             </NavLink>
           </div>
           <SheetTrigger asChild>
@@ -28,7 +33,7 @@ const Navbar = () => {
               size="icon"
               className="shrink-0 md:hidden border-0"
             >
-              <Menu className="h-8 w-8" />
+              <Menu className="h-6 w-6" />
               <span className="sr-only">Toggle navigation menu</span>
             </Button>
           </SheetTrigger>
@@ -38,21 +43,27 @@ const Navbar = () => {
                 <img src={logo} alt="Logo" className="" />
                 <span></span>
               </div>
-              <NavLink to="/work" className="hover:text-foreground">
-                Work
-              </NavLink>
-              <NavLink
-                to="/"
-                className="text-muted-foreground hover:text-foreground"
-              >
-                About
-              </NavLink>
-              <NavLink
-                to="/contact"
-                className="text-muted-foreground hover:text-foreground"
-              >
-                Contact
-              </NavLink>
+              <SheetClose asChild>
+                <NavLink to="/work" className="hover:text-foreground">
+                  Work
+                </NavLink>
+              </SheetClose>
+              <SheetClose asChild>
+                <NavLink
+                  to="/"
+                  className="text-muted-foreground hover:text-foreground"
+                >
+                  About
+                </NavLink>
+              </SheetClose>
+              <SheetClose asChild>
+                <NavLink
+                  to="/contact"
+                  className="text-muted-foreground hover:text-foreground"
+                >
+                  Contact
+                </NavLink>
+              </SheetClose>
             </nav>
           </SheetContent>
         </Sheet>

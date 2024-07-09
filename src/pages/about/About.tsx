@@ -35,7 +35,7 @@ const About = () => {
                 and improving myself and my skills, and when I'm not online, I'm
                 probably binge-watching a TV show or taking a nap.
               </p>
-              <Button className="max-sm:hidden rounded-none bg-black hover:bg-white hover:text-black hover:border-black hover:border text-base text-white px-20 py-8 border mt-6">
+              <Button className="max-sm:hidden rounded-none bg-black hover:bg-white hover:text-black hover:border-black hover:border text-base text-white px-20 py-7 border mt-6">
                 My Resume
               </Button>
             </div>
@@ -44,12 +44,12 @@ const About = () => {
               <img
                 src={heart}
                 alt="heart"
-                className="h-12 absolute z-10 heart-kiss"
+                className="h-14 absolute z-10 heart-kiss"
               />
               <img
                 src={tanjiro}
                 alt="tanjiro"
-                className="h-12 absolute z-10 tanjiro"
+                className="h-14 absolute z-10 tanjiro"
               />
             </div>
           </div>
@@ -124,7 +124,7 @@ const About = () => {
             Social Media Management, SEO, Copy & Content Writing
           </p>
 
-          <Button className="appear-on-scroll rounded-none bg-white hover:bg-black hover:text-white hover:border-white hover:border text-base px-20 py-8 text-black border">
+          <Button className="appear-on-scroll rounded-none bg-white hover:bg-black hover:text-white hover:border-white hover:border text-base px-18 py-7 text-black border">
             My Resume
           </Button>
         </div>

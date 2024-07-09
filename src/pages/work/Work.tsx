@@ -150,30 +150,28 @@ const Work = () => {
         </div>
       </section>
 
-      <section className="py-8 pr-20 xl:pl-36 max-sm:pb-0 pl-4 mx-auto">
+      <section className="py-8 pr-20 xl:pl-36 max-sm:pb-0 pl-4 max-sm:w-full">
         <div
-          className="overflow-x-auto"
           style={{ scrollbarWidth: "none", WebkitOverflowScrolling: "touch" }}
+          className=" overflow-x-auto appear-on-scroll flex max-sm:py-0 items-center justify-evenly py-10 max-sm:w-full max-sm:ml-5"
         >
-          <div className="appear-on-scroll flex max-sm:py-0 justify-evenly py-10">
-            {moreWork.map((work, index) => (
-              <div key={index}>
-                <Card
-                  className="border-0 mb-4 md:max-2xl:w-[260px] w-[250px] h-[205px] max-sm:w-[150px] max-sm:h-[150px] md:max-2xl:h-[250px] md:max-xl:w-[205px] md:max-xl:h-[205px] mr-10 bg-cover bg-center rounded-none"
-                  style={{
-                    backgroundImage: `url(${getImgUrl(work.img)})`,
-                  }}
-                ></Card>
-                <a
-                  href={work.link}
-                  target="_blank"
-                  className="md:max-2xl:max-w-[250px] md:max-xl:max-w-[205px] text-xl max-sm:text-xs md:max-xl:text-base mt-2 pt-6 font-avant-garde-thin font-thin leading-6 tracking-wide text-gray-400"
-                >
-                  {work.name}
-                </a>
-              </div>
-            ))}
-          </div>
+          {moreWork.map((work, index) => (
+            <div key={index}>
+              <Card
+                className="border-0 mb-4 md:max-2xl:w-[260px] w-[250px] h-[205px] max-sm:w-[150px] max-sm:h-[150px] md:max-2xl:h-[250px] md:max-xl:w-[205px] md:max-xl:h-[205px] mr-10 bg-cover bg-center rounded-none"
+                style={{
+                  backgroundImage: `url(${getImgUrl(work.img)})`,
+                }}
+              ></Card>
+              <a
+                href={work.link}
+                target="_blank"
+                className="md:max-2xl:max-w-[250px] md:max-xl:max-w-[205px] text-xl max-sm:text-xs md:max-xl:text-base mt-2 pt-6 font-avant-garde-thin font-thin leading-6 tracking-wide text-gray-400"
+              >
+                {work.name}
+              </a>
+            </div>
+          ))}
         </div>
       </section>
       <hr className="my-6 border-t border-gray-300 mx-24 max-sm:mx-4" />

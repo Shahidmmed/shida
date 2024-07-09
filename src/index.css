@@ -14,6 +14,10 @@ body {
   font-style: normal;
 }
 
+b {
+  font-family: "ITC Avant Garde Std Bk", sans-serif !important;
+}
+
 .avant-garde-extralight {
   font-family: "ITC Avant Garde Std XLt", sans-serif;
 }
@@ -343,7 +347,7 @@ ul.circle-list li::marker {
   }
 
   .heart {
-    top: 53%;
+    top: 71%;
     left: 58%;
     height: 40px;
   }

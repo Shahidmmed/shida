@@ -29,6 +29,9 @@ module.exports = {
       },
     },
     extend: {
+      padding: {
+        18: "4.5rem",
+      },
       screens: {
         xl2: "1450px", // Add custom breakpoint for screens larger than 1450px
       },

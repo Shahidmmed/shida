@@ -35,13 +35,13 @@ const Footer = () => {
         <div className="appear-on-scroll flex pt-14 max-sm:pt-8">
           <Link
             to="/contact"
-            className="rounded-none hover:bg-black link-txt hover:text-white bg-white max-sm:px-10 px-20 py-5 border border-black"
+            className="rounded-none hover:bg-black link-txt hover:text-white bg-white max-sm:px-10 px-20 py-4 border border-black"
           >
             Contact
           </Link>
           <Link
-            to="/about"
-            className="rounded-none bg-black hover:bg-white hover:text-black hover:border-black hover:border text-base text-white px-20 py-5 max-sm:px-10 max-sm:ml-3 border-2 ml-6"
+            to="/"
+            className="rounded-none bg-black hover:bg-white hover:text-black hover:border-black hover:border text-base text-white px-20 py-4 max-sm:px-10 max-sm:ml-3 border-1 ml-6"
           >
             About Me
           </Link>
