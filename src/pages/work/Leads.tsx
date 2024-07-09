@@ -164,20 +164,6 @@ const Leads = () => {
                 used a standardised questionnaire to measure my product's
                 perceived usability.
               </p>
-            </div>
-            <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-              <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
-                Script
-              </h2>
-              <p className="appear-on-scroll pt-8 max-sm:pt-4">
-                I prepared a short and simple script which contained a set of
-                pre-defined tasks participants followed. Participants were not
-                informed on how many tasks they were completing because I didn't
-                want to overwhelm or underwhelm them before the test started.
-                Participants completed their tasks independently, and I only
-                spoke when help was needed or when it was time to give a new
-                task during the test.
-              </p>
               <ol className="desired pt-8 max-sm:pt-4 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                 <li className="appear-on-scroll mb-6 max-sm:mb-3 list-lower-alpha text-xl leading-9">
                   Conversion Rate - Participants that completed desired actions
@@ -188,6 +174,20 @@ const Leads = () => {
                   through the use of a questionnaire.
                 </li>
               </ol>
+            </div>
+            <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
+              <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
+                Script
+              </h2>
+              <p className="appear-on-scroll py-8 max-sm:py-4">
+                I prepared a short and simple script which contained a set of
+                pre-defined tasks participants followed. Participants were not
+                informed on how many tasks they were completing because I didn't
+                want to overwhelm or underwhelm them before the test started.
+                Participants completed their tasks independently, and I only
+                spoke when help was needed or when it was time to give a new
+                task during the test.
+              </p>
               <div className="mt-4">
                 <Link
                   to="#"

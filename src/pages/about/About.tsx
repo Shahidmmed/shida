@@ -82,7 +82,7 @@ const About = () => {
             <img
               src={kite2}
               alt="green kite"
-              className="max-sm:pr-6 h-10 max-sm:h-8"
+              className="sm:hidden max-sm:pr-6 h-10 max-sm:h-8"
             />
             <h3 className="avant-garde-bold max-sm:text-left font-bold text-6xl max-sm:text-4xl text-black leading-none ">
               Design
