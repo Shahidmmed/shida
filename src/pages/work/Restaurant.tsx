@@ -25,7 +25,7 @@ const Restaurant = () => {
               <img
                 src={getImgUrl(project.image)}
                 alt={project.previewText}
-                className="appear-on-scroll max-h-[300px] max-w-[400px] max-sm:w-[340px] ml-10 max-sm:ml-0"
+                className="appear-on-scroll max-h-[300px] max-w-[400px] max-sm:w-[320px] ml-10 max-sm:ml-0"
               />
               <div className="ml-8 max-sm:ml-1 max-sm:w-full">
                 <p className="appear-on-scroll text-[#484A56] font-bold text-sm leading-5 tracking-wider text-left mb-2 pb-2">
@@ -138,19 +138,21 @@ const Restaurant = () => {
                 <div className="bg-black max-sm:px-4 sm:flex max-sm:grid max-sm:grid-cols-4 max-sm:py-10  flex py-20 text-white justify-evenly">
                   <div className="text-center">
                     <div className="pb-2">Timeline</div>
-                    <small>4 weeks (80 hours)</small>
+                    <small className="text-sm">4 weeks (80 hours)</small>
                   </div>
                   <div className="text-center">
                     <div className="pb-2">My Role</div>
-                    <small>UI/UX Designer</small>
+                    <small className="text-sm">UI/UX Designer</small>
                   </div>
                   <div className="text-center">
                     <div className="pb-2">Tools</div>
-                    <small>Figma</small>
+                    <small className="text-sm">Figma</small>
                   </div>
                   <div className="text-center">
                     <div className="pb-2">Tasks</div>
-                    <small>UX Design, Usability Testing</small>
+                    <small className="text-sm">
+                      UX Design, Usability Testing
+                    </small>
                   </div>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">

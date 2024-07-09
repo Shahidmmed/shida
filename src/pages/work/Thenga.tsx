@@ -24,7 +24,7 @@ const Thenga = () => {
               <img
                 src={getImgUrl(project.image)}
                 alt={project.previewText}
-                className="appear-on-scroll max-h-[300px] max-w-[400px] max-sm:w-[340px] max-sm:mb-6ml-10 max-sm:ml-0"
+                className="appear-on-scroll max-h-[300px] max-w-[400px] max-sm:w-[320px] max-sm:mb-6ml-10 max-sm:ml-0"
               />
               <div className="ml-8 max-sm:ml-1 max-sm:w-full">
                 <p className="appear-on-scroll text-[#484A56] font-bold text-sm leading-5 tracking-wider text-left mb-2 pb-2">
@@ -94,19 +94,21 @@ const Thenga = () => {
                 <div className="bg-black max-sm:px-4 max-sm:py-10  sm:flex max-sm:grid max-sm:grid-cols-4 flex py-20 text-white justify-evenly">
                   <div className="text-center">
                     <div className="pb-2">Timeline</div>
-                    <small>4 weeks (80 hours)</small>
+                    <small className="text-sm">4 weeks (80 hours)</small>
                   </div>
                   <div className="text-center">
                     <div className="pb-2">My Role</div>
-                    <small>UI/UX Designer</small>
+                    <small className="text-sm">UI/UX Designer</small>
                   </div>
                   <div className="text-center">
                     <div className="pb-2">Tools</div>
-                    <small>Figma</small>
+                    <small className="text-sm">Figma</small>
                   </div>
                   <div className="text-center">
                     <div className="pb-2">Tasks</div>
-                    <small>UX Design, Usability Testing</small>
+                    <small className="text-sm">
+                      UX Design, Usability Testing
+                    </small>
                   </div>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7 ">
@@ -423,7 +425,7 @@ const Thenga = () => {
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full  mx-auto py-14 max-sm:py-7 ">
                   <Tabs defaultValue="website" className="w-full">
-                    <TabsList className="grid w-full grid-cols-4 h-16 mb-14">
+                    <TabsList className="grid w-full grid-cols-4 max-sm:grid-cols-2 h-16 mb-14">
                       <TabsTrigger value="website" className="py-4">
                         Website Wireframes
                       </TabsTrigger>
@@ -432,7 +434,7 @@ const Thenga = () => {
                       </TabsTrigger>
                     </TabsList>
                     <TabsContent value="website">
-                      <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full  mx-auto flex justify-center items-center">
+                      <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full  mx-auto flex max-sm:flex-col-reverse justify-center items-center">
                         <div className="py-10">
                           {project.images && project.images.length > 0 && (
                             <>
@@ -444,7 +446,7 @@ const Thenga = () => {
                             </>
                           )}
                         </div>
-                        <div className="w-1/3 pb-60">
+                        <div className="w-1/3 max-sm:w-full max-sm:pb-0 pb-60">
                           <h2 className="font-avant-garde text-3xl font-medium leading-10">
                             Lo-fi💡
                           </h2>
@@ -456,7 +458,7 @@ const Thenga = () => {
                           </p>
                         </div>
                       </div>
-                      <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full  mx-auto flex justify-center items-center">
+                      <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full max-sm:flex-col-reverse mx-auto flex justify-center items-center">
                         <div className="py-10">
                           {project.images && project.images.length > 0 && (
                             <>
@@ -468,7 +470,7 @@ const Thenga = () => {
                             </>
                           )}
                         </div>
-                        <div className="w-1/3 pb-60">
+                        <div className="w-1/3 max-sm:w-full max-sm:pb-0 pb-60">
                           <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                             Visual ideation💡
                           </h2>
@@ -552,7 +554,7 @@ const Thenga = () => {
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full  mx-auto py-14 max-sm:py-7 ">
                   <Tabs defaultValue="website" className="w-full">
-                    <TabsList className="grid w-full grid-cols-4 h-16 mb-14">
+                    <TabsList className="grid w-full grid-cols-4 max-sm:grid-cols-2 h-16 mb-14">
                       <TabsTrigger value="website" className="py-4">
                         Website Style Guide
                       </TabsTrigger>

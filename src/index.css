@@ -284,7 +284,7 @@ ul.circle-list li::marker {
   p,
   li {
     font-size: 13px !important;
-    line-height: px !important;
+    line-height: 20px !important;
   }
 
   .work-item {
