@@ -71,7 +71,7 @@ const Restaurant = () => {
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Introduction
                   </h2>
-                  <p className="py-8  text-xl leading-9">
+                  <p className="py-8 max-sm:py-4  text-xl leading-9">
                     Leads is a software solution designed to help businesses
                     organise and manage their sales leads throughout the
                     customer acquisition process. It typically includes tools
@@ -107,7 +107,7 @@ const Restaurant = () => {
                           />
                         </div>
                       )}
-                      <p className="pt-8 text-xl leading-9">
+                      <p className="pt-8 max-sm:pt-4 text-xl leading-9">
                         People find accessing valid Information on restaurants
                         and booking/reserving tables difficult. They are also
                         faced with poor/unreliable user experiences when using
@@ -127,7 +127,7 @@ const Restaurant = () => {
                           />
                         </div>
                       )}
-                      <p className="pt-8 text-xl leading-9">
+                      <p className="pt-8 max-sm:pt-4 text-xl leading-9">
                         The goal is to design a user-friendly platfrom that is
                         simple to use but contains enough information for the
                         user to make reservations and pre-order meals.
@@ -136,20 +136,20 @@ const Restaurant = () => {
                   </div>
                 </div>
                 <div className="bg-black max-sm:px-4 sm:flex max-sm:grid max-sm:grid-cols-4 max-sm:py-10  flex py-20 text-white justify-evenly">
-                  <div className="">
-                    <p className="pb-2">Timeline</p>
+                  <div className="text-center">
+                    <div className="pb-2">Timeline</div>
                     <small>4 weeks (80 hours)</small>
                   </div>
-                  <div>
-                    <p className="pb-2">My Role</p>
+                  <div className="text-center">
+                    <div className="pb-2">My Role</div>
                     <small>UI/UX Designer</small>
                   </div>
-                  <div>
-                    <p className="pb-2">Tools</p>
+                  <div className="text-center">
+                    <div className="pb-2">Tools</div>
                     <small>Figma</small>
                   </div>
-                  <div className="">
-                    <p className="pb-2">Tasks</p>
+                  <div className="text-center">
+                    <div className="pb-2">Tasks</div>
                     <small>UX Design, Usability Testing</small>
                   </div>
                 </div>
@@ -157,7 +157,7 @@ const Restaurant = () => {
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Design Process
                   </h2>
-                  <p className="pt-8 text-xl leading-9">
+                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
                     This was one of my first projects and I was very excited to
                     use my creative problem-solving skills to tackle user
                     challenges, and prioritise their needs to make the product
@@ -174,11 +174,11 @@ const Restaurant = () => {
                 </div>
               </TabsContent>
               <TabsContent value="empathising" className="tab-content-appear">
-                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto pt-8 pb-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto pt-8 max-sm:pt-4 pb-14">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Qualitative Research
                   </h2>
-                  <p className="pt-8 text-xl leading-9">
+                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
                     I interviewed seven potential users with different
                     backgrounds to talk about restaurants and their booking
                     processes, what challenges they faced and what they would
@@ -189,24 +189,24 @@ const Restaurant = () => {
                     through with restaurants and their booking systems.
                   </p>
                 </div>
-                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto pt-8 pb-14 flex">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto pt-8 max-sm:pt-4 pb-14 flex">
                   <div>
                     <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                       Examples of questions I asked
                     </h2>
 
-                    <ul className=" pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
-                      <li className="mb-6 text-xl leading-9">
+                    <ul className=" pt-8 max-sm:pt-4 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
+                      <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                         How old are you?
                       </li>
-                      <li className="mb-6 text-xl leading-9">
+                      <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                         How often do you eat at restaurants?
                       </li>
-                      <li className="mb-6 text-xl leading-9">
+                      <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                         Do you often make reservations before heading to a
                         restaurant?
                       </li>
-                      <li className="mb-6 text-xl leading-9">
+                      <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                         Have you faced any challenges so far?
                       </li>
                     </ul>
@@ -221,7 +221,7 @@ const Restaurant = () => {
                     </>
                   )}
                 </div>
-                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto pt-8 pb-14 flex">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto pt-8 max-sm:pt-4 pb-14 flex">
                   {project.images && project.images.length > 0 && (
                     <>
                       <img
@@ -235,24 +235,24 @@ const Restaurant = () => {
                     <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                       Key insights derived from interviews
                     </h2>
-                    <ul className="pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
-                      <li className="mb-6 text-xl leading-9">
+                    <ul className="pt-8 max-sm:pt-4 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
+                      <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                         People dont make reservations because they think it
                         doesn't matter.
                       </li>
-                      <li className="mb-6 text-xl leading-9">
+                      <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                         People acquire restaurant information from blogs and
                         restaurant websites.
                       </li>
-                      <li className="mb-6 text-xl leading-9">
+                      <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                         People book tables and on arrival, they are told the
                         table was never booked.
                       </li>
-                      <li className="mb-6 text-xl leading-9">
+                      <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                         The process of calling restaurants gets annoying
                         sometimes
                       </li>
-                      <li className="mb-6 text-xl leading-9">
+                      <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                         Everything (accessing information, booking, pre-ordering
                         etc.) occurs on the web or by calling
                       </li>
@@ -263,7 +263,7 @@ const Restaurant = () => {
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Quantitative Research
                   </h2>
-                  <p className="pt-8 text-xl leading-9">
+                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
                     I did an online survey using Google Forms to gain insights
                     from more people within the short time I had. I also used
                     this opportunity to observe patterns and similarities
@@ -274,7 +274,7 @@ const Restaurant = () => {
                   </p>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <div className="pt-8">
+                  <div className="pt-8 max-sm:pt-4">
                     {project.images && project.images.length > 0 && (
                       <>
                         <img
@@ -284,7 +284,7 @@ const Restaurant = () => {
                       </>
                     )}
                   </div>
-                  <div className="pt-8">
+                  <div className="pt-8 max-sm:pt-4">
                     {project.images && project.images.length > 0 && (
                       <>
                         <img
@@ -299,7 +299,7 @@ const Restaurant = () => {
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Feedback Analysis
                   </h2>
-                  <p className="pt-8 text-xl leading-9">
+                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
                     After gathering all of the data from the research, i
                     organised my findings by using coloured sticky notes to
                     observe similarities and recurring patterns.
@@ -317,11 +317,11 @@ const Restaurant = () => {
                 </div>
               </TabsContent>
               <TabsContent value="defining" className="tab-content-appear">
-                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto pt-8 pb-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto pt-8 max-sm:pt-4 pb-14">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Empathy Maps
                   </h2>
-                  <p className="pt-8 text-xl leading-9">
+                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
                     I created aggregated empathy maps to understand users
                     further and to illustrate their thoughts, motivations,
                     emotions, and behaviours. This enabled me to create possible
@@ -348,17 +348,17 @@ const Restaurant = () => {
                         <img
                           src={getImgUrl(project.images[10])}
                           alt="Low-fi Wireframes Image"
-                          className="pt-8"
+                          className="pt-8 max-sm:pt-4"
                         />
                       </>
                     )}
                   </div>
                 </div>
-                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto pt-8 pb-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto pt-8 max-sm:pt-4 pb-14">
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Personas
                   </h2>
-                  <p className="pt-8 text-xl leading-9">
+                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
                     With the data collected from the interviews and survey, I
                     created three personas whose responses represent that of a
                     larger group of users.
@@ -393,19 +393,19 @@ const Restaurant = () => {
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Problem Statements
                   </h2>
-                  <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
-                    <li className="mb-6 text-xl leading-9">
+                  <ol className="desired pt-8 max-sm:pt-4 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
+                    <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       Sasha is a student who needs a way to access adequate
                       information on restaurants and make reservations
                       seamlessly because she finds calling the restaurants
                       irritating.
                     </li>
-                    <li className="mb-6 text-xl leading-9">
+                    <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       Freedom is a hardworking entrepreneur who needs a way to
                       make reservations without using websites or web apps
                       because they are slow and unresponsive.
                     </li>
-                    <li className="mb-6 text-xl leading-9">
+                    <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       Sarah is a working mother who needs a reliable platform to
                       access menus easily because her family prefers to know
                       what is on the menu before heading to the restaurant.
@@ -416,20 +416,20 @@ const Restaurant = () => {
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     User Stories
                   </h2>
-                  <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
-                    <li className="mb-6 text-xl leading-9">
+                  <ol className="desired pt-8 max-sm:pt-4 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
+                    <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       As a student who loves to spend time with family and
                       friends, I want a platform that will allow me to make
                       table reservations easily, So that I won't have to keep
                       calling a restaurant when I want to make a reservation.
                     </li>
-                    <li className="mb-6 text-xl leading-9">
+                    <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       As an Entrepreneur who loves to work, I want a product
                       that sends confirmation texts, emails or notifications
                       after making a reservation; So I can be sure that my
                       booking has been recorded.
                     </li>
-                    <li className="mb-6 text-xl leading-9">
+                    <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       As a working mother who loves to take her family on dates,
                       I want a platform that provides all the necessary details
                       about the restaurant, especially their menus, So that my
@@ -441,7 +441,7 @@ const Restaurant = () => {
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Journey Map
                   </h2>
-                  <p className="pt-8 text-xl leading-9">
+                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
                     I created a user journey map and flow to visualize the
                     user’s experience using the app.
                   </p>
@@ -455,7 +455,7 @@ const Restaurant = () => {
                         <img
                           src={getImgUrl(project.images[14])}
                           alt="Low-fi Wireframes Image"
-                          className="pt-8"
+                          className="pt-8 max-sm:pt-4"
                         />
                       </>
                     )}
@@ -467,7 +467,7 @@ const Restaurant = () => {
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Information Architecture
                   </h2>
-                  <p className="pt-8 text-xl leading-9">
+                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
                     I created a structure for the Resto mobile app using an
                     information architecture by laying out each individual
                     screen to identify what users will need and can easily find.
@@ -487,25 +487,25 @@ const Restaurant = () => {
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     User flow
                   </h2>
-                  <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
-                    <li className="mb-6 text-xl leading-9">
+                  <ol className="desired pt-8 max-sm:pt-4 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
+                    <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       After understanding and defining my project objectives, I
                       had to determine how users would see the product
                       (visuals), how users may act within the product
                       (architecture and flows) and how users may perceive and
                       engage with my design (user journeys).
                     </li>
-                    <li className="mb-6 text-xl leading-9">
+                    <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       All actions are in rounded rectangles.
                     </li>
-                    <li className="mb-6 text-xl leading-9">
+                    <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       {" "}
                       All screens are in rectangles.
                     </li>
-                    <li className="mb-6 text-xl leading-9">
+                    <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       All decisions are in diamonds.
                     </li>
-                    <li className="mb-6 text-xl leading-9">
+                    <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       Each shape is connected by an arrow.
                     </li>
                   </ol>
@@ -526,7 +526,7 @@ const Restaurant = () => {
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Low Fidelity Wireframes
                   </h2>
-                  <p className="pt-8 text-xl leading-9">
+                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
                     I created low-fidelity wireframes using Figma, so I could
                     swiftly join the site’s information architecture to display
                     particular types of information on the user interface.
@@ -546,7 +546,7 @@ const Restaurant = () => {
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     High Fidelity Wireframes
                   </h2>
-                  <p className="pt-8 text-xl leading-9">
+                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
                     After creating low-fidelity prototypes and establishing the
                     main ideas of the mobile app, I picked the best design
                     patterns and created High-Fidelity wireframes. These
@@ -571,7 +571,7 @@ const Restaurant = () => {
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Usability Testing
                   </h2>
-                  <p className="pt-8 text-xl leading-9">
+                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
                     I performed both moderated and unmoderated usability study
                     which included 5 participants with different backgrounds.
                     Before going ahead with the final designs, I needed to
@@ -586,7 +586,7 @@ const Restaurant = () => {
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Research Goal
                   </h2>
-                  <p className="pt-8 text-xl leading-9">
+                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
                     The goal of this research is to figure out if users can
                     complete the core tasks within the app efficiently and
                     whether or not they understand the interface and its
@@ -624,12 +624,12 @@ const Restaurant = () => {
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Participants
                   </h2>
-                  <p className="pt-8 text-xl leading-9">
+                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
                     With a total of 5 participants ,Three participants will
                     complete the tasks independently, and two will be guided and
                     given a questionnaire on their experience. Who are they?
                   </p>
-                  <ul className="pt-8">
+                  <ul className="pt-8 max-sm:pt-4">
                     <li>
                       Participants are people who often go to restaurants to eat
                     </li>
@@ -658,7 +658,7 @@ const Restaurant = () => {
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Affinity Mapping
                   </h2>
-                  <p className="pt-8 text-xl leading-9">
+                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
                     Based on my findings, I created an affinity diagram and
                     generated actionable insights from the data received
                   </p>
@@ -687,7 +687,7 @@ const Restaurant = () => {
                   <h2 className=" font-avant-garde text-3xl font-medium leading-10">
                     Implementing Feedback
                   </h2>
-                  <p className="pt-8 text-xl leading-9">
+                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
                     The feedback from the Usability test were considered and
                     implemented.
                   </p>

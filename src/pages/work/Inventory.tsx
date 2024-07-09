@@ -98,12 +98,12 @@ const Inventory = () => {
                 </TabsTrigger>
               </TabsList>
               <TabsContent value="defining" className="tab-content-appear">
-                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto pt-8 pb-14">
+                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto pt-8 max-sm:pt-4 pb-14">
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     One thing about me: I love to work on challenging projects,
                     especially those new to me.
                   </h2>
-                  <p className="pt-8 text-xl leading-9">
+                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
                     The stress is definitely there, but the sheer determination
                     to see a project through is stronger and always wins, and
                     that's how we got here: the exciting task of transforming a
@@ -122,20 +122,20 @@ const Inventory = () => {
                   </p>
                 </div>
                 <div className="bg-black max-sm:px-4 sm:flex max-sm:grid max-sm:grid-cols-4 max-sm:py-10 flex py-20 text-white justify-evenly">
-                  <div className="">
-                    <p className="pb-2">Timeline</p>
+                  <div className="text-center">
+                    <div className="pb-2">Timeline</div>
                     <small>4 weeks (80 hours)</small>
                   </div>
-                  <div className="">
-                    <p className="pb-2">My Role</p>
+                  <div className="text-center">
+                    <div className="pb-2">My Role</div>
                     <small>UI/UX Designer</small>
                   </div>
-                  <div className="">
-                    <p className="pb-2">Tools</p>
+                  <div className="text-center">
+                    <div className="pb-2">Tools</div>
                     <small>Figma</small>
                   </div>
-                  <div className="">
-                    <p className="pb-2">Tasks</p>
+                  <div className="text-center">
+                    <div className="pb-2">Tasks</div>
                     <small>UX Design, Usability Testing</small>
                   </div>
                 </div>
@@ -143,7 +143,7 @@ const Inventory = () => {
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Goals and Objectives
                   </h2>
-                  <p className="pt-8 text-xl leading-9">
+                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
                     My task was to design a functional mobile app that will help
                     users track inventory data and sales data, point of sale,
                     manage staff members and view reports. The primary objective
@@ -161,7 +161,7 @@ const Inventory = () => {
                     <h2 className="font-avant-garde text-3xl font-medium leading-10">
                       My Design Process
                     </h2>
-                    <div className="pt-8">
+                    <div className="pt-8 max-sm:pt-4">
                       {project.images && project.images.length > 0 && (
                         <>
                           <img
@@ -178,21 +178,21 @@ const Inventory = () => {
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Defining and Understanding
                   </h2>
-                  <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
-                    <li className="mb-6 text-xl leading-9">
+                  <ol className="desired pt-8 max-sm:pt-4 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
+                    <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       First things first, I had to familiarize myself with the
                       main product and ground myself by understanding the
                       current state in which it was in. It's an inventory
                       management system, and a lot was going on, but I do love a
                       challenge, so I applied more grease to my elbow.
                     </li>
-                    <li className="mb-6 text-xl leading-9">
+                    <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       It is also important to note that this is an already
                       existing product with established ui/ux documents on
                       research and personas that I had to understand and work
                       with as well.
                     </li>
-                    <li className="mb-6 text-xl leading-9">
+                    <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       The first challenge I faced was understanding the project
                       requirements and how to apply them to my design. A
                       consolidated list of project requirements consisting of
@@ -232,15 +232,15 @@ const Inventory = () => {
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Defining and Understanding
                   </h2>
-                  <ol className="desired pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
-                    <li className="mb-6 text-xl leading-9">
+                  <ol className="desired pt-8 max-sm:pt-4 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
+                    <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       After understanding and defining my project objectives, I
                       had to determine how users would see the product
                       (visuals), how users may act within the product
                       (architecture and flows) and how users may perceive and
                       engage with my design (user journeys).
                     </li>
-                    <li className="mb-6 text-xl leading-9">
+                    <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       I began fleshing out the specifications with paper
                       sketches, figuring out where to put different content and
                       how to blend visual elements into the design to boost the
@@ -248,7 +248,7 @@ const Inventory = () => {
                       architecture as well—sounds complex, but that's literally
                       the job😭.)
                     </li>
-                    <li className="mb-6 text-xl leading-9">
+                    <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       The first challenge I faced was understanding the project
                       requirements and how to apply them to my design. A
                       consolidated list of project requirements consisting of
@@ -257,7 +257,7 @@ const Inventory = () => {
                       ideas and specifications into effective interaction
                       designs—sounds fun, right?
                     </li>
-                    <li className="mb-6 text-xl leading-9">
+                    <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       To ensure my ideas didn't miss any marks, I shared my
                       initial ideas with my technical lead to brainstorm further
                       and ask questions to help my wireframe design process. I
@@ -283,7 +283,7 @@ const Inventory = () => {
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Information Architecture
                   </h2>
-                  <p className="pt-8 text-xl leading-9">
+                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
                     As a budding UX professional, my expertise lies in
                     structuring and organizing digital content and interactions
                     to ensure my ideas are organised into key sections and
@@ -305,7 +305,7 @@ const Inventory = () => {
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     User Journeys
                   </h2>
-                  <p className="pt-8 text-xl leading-9">
+                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
                     By understanding the user journey, their emotions, and the
                     opportunities for improvement, i was able to structure and
                     design to meet the needs and expectations of users and the
@@ -327,7 +327,7 @@ const Inventory = () => {
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     User Flows
                   </h2>
-                  <p className="pt-8 text-xl leading-9">
+                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
                     I created this user flow to help me and my team navigate the
                     core functions of recording a sale and generating invoices
                     on our app. It's important to note that the app is primarily
@@ -361,8 +361,8 @@ const Inventory = () => {
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Visual Clarity & Direction
                   </h2>
-                  <ul className="circle-list pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
-                    <li className="mb-6 text-xl leading-9">
+                  <ul className="circle-list pt-8 max-sm:pt-4 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
+                    <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       Designing the wireframes was a challenge, and just like
                       before, It also required a lot of iterations and research.
                       I used ✨ Figma✨ to get into specific details, better
@@ -372,7 +372,7 @@ const Inventory = () => {
                       like to see what I'm doing in real-time to validate the
                       user experience.)
                     </li>
-                    <li className="mb-6 text-xl leading-9">
+                    <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       I presented my wireframes to my technical lead and project
                       lead to get validation on the general flow and placement
                       of elements. I made sure to ask a lot of questions to make
@@ -386,13 +386,13 @@ const Inventory = () => {
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Low-fi Wireframes (selected frames)
                   </h2>
-                  <ul className="circle-list pt-8 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
-                    <li className="mb-6 text-xl leading-9">
+                  <ul className="circle-list pt-8 max-sm:pt-4 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
+                    <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       I used a week to create digital representations of my
                       paper sketches with a few changes and add ons and another
                       week to complete my modifications and complete my design.
                     </li>
-                    <li className="mb-6 text-xl leading-9">
+                    <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       However, The Smartup retail mobile app started of as two
                       separate parts: one for store owners and managers (the
                       control panel) and another for employees and managers (POS
@@ -416,7 +416,7 @@ const Inventory = () => {
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Final Wireframes (selected frames)
                   </h2>
-                  <p className="pt-8 text-xl leading-9">
+                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
                     The screens below show the final ideas after combining the
                     control panel and pos lite ideas into one app after two
                     weeks of ideations and modifications. I picked the best
@@ -440,7 +440,7 @@ const Inventory = () => {
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Approved Design
                   </h2>
-                  <p className="pt-8 text-xl leading-9">
+                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
                     As a budding UX professional, my expertise lies in
                     structuring and organising digital content and interactions
                     to ensure my ideas are organised into key sections and
@@ -455,7 +455,7 @@ const Inventory = () => {
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Conclusion/Takeaway
                   </h2>
-                  <p className="pt-8 text-xl leading-9">
+                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
                     This was a cool and interesting project to work on. It was
                     an exciting challenge that pushed me to new heights. It
                     taught me the essence of collaboration, and the iterative
@@ -482,7 +482,7 @@ const Inventory = () => {
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Style Guide
                   </h2>
-                  <p className="pt-8 text-xl leading-9">
+                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
                     I was inspired by the design system for the desktop & web
                     app to create my style guide for the mobile app to deliver a
                     clear and consistent design solution. Predominantly purple
@@ -570,7 +570,7 @@ const Inventory = () => {
                   <h2 className="font-avant-garde text-3xl font-medium leading-10">
                     Typography
                   </h2>
-                  <p className="pt-8 text-xl leading-9">
+                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
                     The choice of 'Albert Sans' was deliberate and driven by my
                     desire to achieve a clean, modern, and legible design that
                     fits perfectly with the project's objectives. I wanted to

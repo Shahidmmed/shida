@@ -40,7 +40,7 @@ const ScrollToTop: React.FC = () => {
       {isVisible && (
         <>
           <button
-            className="fixed bottom-4 max-sm:text-xs right-4 z-50 flex items-center flex-col justify-center text-black p-3 bg-transparent transition duration-300"
+            className="fixed bottom-5 max-sm:text-xs right-4 z-50 flex items-center flex-col justify-center text-black p-3 bg-transparent transition duration-300"
             onClick={scrollToTop}
           >
             <ChevronsUp size={32} className="max-sm:h-6" />
