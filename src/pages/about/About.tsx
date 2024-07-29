@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import Footer from "../layout/Footer";
-import shida from "/assets/images/shida.png";
 import kite from "/assets/images/kite.png";
 import kite2 from "/assets/images/kite2.png";
 import heart from "/assets/images/heart-kiss.png";
@@ -8,15 +7,18 @@ import whiskers from "/assets/images/whiskers.png";
 import whiskers2 from "/assets/images/whiskers2.png";
 import tanjiro from "/assets/images/tanjiro.png";
 import useAppearOnScroll from "@/useAppearOnScroll";
+import ImageTransition from "@/components/img-transition/ImageTransition";
 
 const About = () => {
   useAppearOnScroll([".appear-on-scroll"]);
+
+  const images = ["shida.jpg", "shida2.jpg"];
 
   return (
     <div className="pt-20 max-sm:pt-8">
       <section className="pb-16 max-sm:pb-8">
         <div className="max-w-[1220px] px-16 max-sm:px-8 mx-auto">
-          <h3 className="appear-on-scroll mb-6 font-bold max-sm:text-xl text-3xl leading-normal  text-left">
+          <h3 className="appear-on-scroll mb-6 font-medium max-sm:text-xl text-3xl leading-normal  text-left">
             <span className="bg-slide">Envisioning</span> the possibility of
             things and <span className="bg-slide">using my creativity</span> to
             make them happen in ways that I can{" "}
@@ -40,7 +42,8 @@ const About = () => {
               </Button>
             </div>
             <div className="appear-on-scroll relative max-sm:pb-8 flex flex-row-reverse">
-              <img src={shida} alt="orange kite" className="h-94 ml-4" />
+              {/* <img src={shida} alt="orange kite" className="h-94 ml-4" /> */}
+              <ImageTransition images={images} />
               <img
                 src={heart}
                 alt="heart"
@@ -93,34 +96,34 @@ const About = () => {
       <section className="py-10 bg-black text-white flex items-center max-sm:w-full max-sm:py-8 flex-col justify-center mx-auto">
         <div className="space-y-12 max-sm:space-y-6 max-w-[1220px] px-16 max-sm:px-8">
           <div className="appear-on-scroll">
-            <h3 className="font-avant-garde text-4xl max-sm:text-[25px] font-bold tracking-wider leading-14 mb-6">
+            <h3 className="poppins-regular text-4xl max-sm:text-[25px] font-bold tracking-wider leading-14 mb-6">
               Areas of expertise
             </h3>
             <hr className="border-white w-5/6 mt-0" />
           </div>
-          <p className="text-white appear-on-scroll max-sm:text-base avant-garde-extralight text-xl tracking-wide">
+          <p className="text-white appear-on-scroll max-sm:text-base poppins-light text-xl tracking-wide">
             My key areas of expertise are in Design, Management, Marketing and
             Strategy. Below is a more granular breakdown of my skill-set and
             services.
           </p>
-          <p className=" appear-on-scroll max-sm:text-base avant-garde-extralight text-blue-500 tracking-wide text-xl">
+          <p className=" appear-on-scroll max-sm:text-base poppins-light text-blue-500 tracking-wide text-xl">
             What i am good at (but not limited to) :
           </p>
-          <p className="text-white appear-on-scroll max-sm:text-base avant-garde-extralight mb-6 leading-normal tracking-wide text-xl text-left">
-            <span className="font-black">Design & Strategy: </span> Design
+          <p className="text-white appear-on-scroll max-sm:text-base poppins-light mb-6 leading-normal tracking-wide text-xl text-left">
+            <span className="font-medium">Design & Strategy: </span> Design
             Thinking, UI/UX Design, Product Strategy & Management, Creative
             Direction
           </p>
-          <p className="text-white appear-on-scroll max-sm:text-base avant-garde-extralight mb-6 text-xl tracking-wide leading-normal  text-left">
-            <span className="font-black">Research & Evaluation: </span>Market &
+          <p className="text-white appear-on-scroll max-sm:text-base poppins-light mb-6 text-xl tracking-wide leading-normal  text-left">
+            <span className="font-medium">Research & Evaluation: </span>Market &
             User Research, User Interviews, Usability Testing
           </p>
-          <p className="text-white appear-on-scroll max-sm:text-base avant-garde-extralight mb-6 text-xl tracking-wide leading-normal  text-left">
-            <span className="font-black">Prototyping & Design: </span>
+          <p className="text-white appear-on-scroll max-sm:text-base poppins-light mb-6 text-xl tracking-wide leading-normal  text-left">
+            <span className="font-medium">Prototyping & Design: </span>
             Wireframing, Prototyping, Visual Design & Style Guides
           </p>
-          <p className="text-white appear-on-scroll max-sm:text-base avant-garde-extralight mb-6 text-xl tracking-wide leading-normal  text-left">
-            <span className="font-black">Digital Marketing & Branding: </span>
+          <p className="text-white appear-on-scroll max-sm:text-base poppins-light mb-6 text-xl tracking-wide leading-normal  text-left">
+            <span className="font-medium">Digital Marketing & Branding: </span>
             Social Media Management, SEO, Copy & Content Writing
           </p>
 
@@ -132,14 +135,14 @@ const About = () => {
       <section className="py-12 px-16 mx-auto max-sm:w-full max-sm:px-2  max-sm:pb-0">
         <div className="appear-on-scroll flex justify-center items-center mx-auto max-w-full w-[1200px] max-sm:w-full">
           <img src={whiskers} alt="whiskers" className="h-24" />
-          <h4 className="font-avant-garde text-nowrap  font-semibold text-lg md:text-2xl lg:text-2xl max-sm:text-base max-sm:text-wrap max-sm:leading-6 xl2:text-3xl leading-9 md:leading-10 lg:leading-11 tracking-tight md: lg:tracking-tight text-center">
+          <h4 className="poppins-regular text-nowrap  font-semibold text-lg md:text-2xl lg:text-2xl max-sm:text-base max-sm:text-wrap max-sm:leading-6 xl2:text-3xl leading-9 md:leading-10 lg:leading-11 tracking-tight md: lg:tracking-tight text-center">
             Strategic thinking + collaboration = impactful solutions for you &
             your business.
           </h4>
           <img src={whiskers2} alt="whiskers" className="h-24" />
         </div>
 
-        <div className="appear-on-scroll font-avant-garde py-8 max-w-[1220px] px-10 mx-auto">
+        <div className="appear-on-scroll poppins-regular py-8 max-w-[1220px] px-10 mx-auto">
           <div className="flex max-sm:flex-col justify-evenly max-sm:pb-0 py-8">
             <div className="flex mb-6 w-[220px]">
               <div>

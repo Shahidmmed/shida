@@ -30,7 +30,7 @@ const Contact = () => {
         />
       </div>
       <div className="flex flex-col items-end">
-        <p className="appear-on-scroll font-avant-garde text-base font-light leading-6 tracking-wide max-sm:text-left max-sm:px-1 text-right px-4 pt-4">
+        <p className="appear-on-scroll poppins-regular text-base font-light leading-6 tracking-wide max-sm:text-left max-sm:px-1 text-right px-4 pt-4">
           Reach out for design consultations, collaborations and general
           enquiries. I'm just a click away!
         </p>

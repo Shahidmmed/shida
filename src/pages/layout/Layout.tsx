@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 const Layout = () => {
   return (
-    <div className="w-screen h-screen overflow-x-hidden">
+    <div className="w-screen h-full overflow-x-hidden">
       <Navbar />
       <div className="">
         <Outlet />

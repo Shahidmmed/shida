@@ -28,40 +28,14 @@
   font-style: normal;
 }
 
-/* body {
-  font-family: "ITC Avant Garde Gothic Std", sans-serif;
-} */
-
 body {
-  font-family: "Poppins", sans-serif; /* "ITC Avant Garde Gothic Std", sans-serif; */
+  font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-style: normal;
 }
 
-p,
-li {
-  color: #484a56;
-}
-
 b {
-  font-family: /* "ITC Avant Garde Gothic Std" */ "Poppins", sans-serif !important;
-}
-
-.avant-garde-extralight {
-  font-family: /* "ITC Avant Garde Std XLt" */ "Poppins", sans-serif;
-}
-
-.font-avant-garde {
-  font-family: /* "ITC Avant Garde Gothic Std" */ "Poppins", sans-serif;
-}
-
-.avant-garde-bold {
-  font-family: /* "ITC Avant Garde Gothic Std Bold" */ "Poppins", sans-serif;
-}
-
-.font-avant-garde-thin {
-  font-family: /* "ITC Avant Garde Gothic Std" */ "Poppins", sans-serif;
-  font-weight: 100;
+  font-family: "Poppins", sans-serif !important;
 }
 
 .mega-text {
@@ -113,7 +87,7 @@ b {
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  font-weight: bold;
+  font-weight: 500;
 }
 
 button[role="tab"] {
@@ -204,8 +178,8 @@ ul.circle-list li::marker {
 }
 
 .heart {
-  top: 41%;
-  left: 39%;
+  top: 64%;
+  left: 37%;
 }
 
 .link-txt:hover {
@@ -350,8 +324,8 @@ ul.circle-list li::marker {
   }
 
   .heart {
-    top: 41%;
-    left: 39%;
+    top: 64%;
+    left: 37%;
     height: 40px;
   }
 

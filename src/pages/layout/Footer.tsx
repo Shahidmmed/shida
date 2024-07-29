@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <div className="xl2:w-[1240px] w-[1100px] mx-auto px-12 max-sm:w-full max-sm:px-8">
       <div className="mx-auto flex items-left flex-col justify-center py-10">
-        <p className="appear-on-scroll font-avant-garde-book max-sm:font-normal text-[#403f3f] font-semibold md:max-xl:text-base max-sm:text-xs text-xl tracking-widest max-sm:tracking-wide pb-6">
+        <p className="appear-on-scroll font-light max-sm:font-normal text-[#484A56] md:max-xl:text-base max-sm:text-xs text-xl tracking-widest max-sm:tracking-wide pb-6">
           Not you scrolling to the bottom 😌,
         </p>
         <div className="appear-on-scroll flex relative">
@@ -23,7 +23,7 @@ const Footer = () => {
           </h1>
         </div>
         <div className="appear-on-scroll">
-          <p className="avant-garde-extralight text-[#403f3f] font-bold md:max-xl:text-base text-xl max-sm:text-wrap max-sm:text-xs max-sm:tracking-wide tracking-widest pt-6">
+          <p className="text-[#484A56] font-light md:max-xl:text-base text-xl max-sm:text-wrap max-sm:text-xs max-sm:tracking-wide tracking-widest pt-6">
             Reach out for design consultations, collaborations and general
             enquiries. I'm just a click away!
           </p>

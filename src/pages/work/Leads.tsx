@@ -26,7 +26,7 @@ const Leads = () => {
                 className="max-h-[300px] max-w-[400px] max-sm:w-[320px]"
               />
               <div className="ml-8 max-sm:w-full max-sm:ml-1">
-                <p className="font-bold text-[#484A56] text-sm leading-5 tracking-wider text-left mb-2 pb-2">
+                <p className="font-semibold text-[#484A56] text-sm leading-5 tracking-wider text-left mb-2 pb-2">
                   {project.designTypes.map((type, index) => (
                     <React.Fragment key={index}>
                       {type}{" "}
@@ -34,19 +34,19 @@ const Leads = () => {
                     </React.Fragment>
                   ))}
                 </p>
-                <h2 className="font-avant-garde font-semibold text-[#484A56] tracking-wider max-sm:text-3xl text-4xl text-left mb-2 text-nowrap">
+                <h2 className="poppins-regular text-[#484A56] tracking-wider max-sm:text-3xl text-4xl text-left mb-2 text-nowrap">
                   {project.name}
                 </h2>
-                <p className="mb-2 py-4 font-avant-garde text-sm text-[#484A56] leading-6 tracking-wider max-w-[550px]">
+                <p className="mb-2 py-4 poppins-light text-sm text-[#484A56] leading-6 tracking-wider max-w-[550px]">
                   {project.brief}
                 </p>
               </div>
             </div>
             <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-              <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
+              <h2 className="text-[#0D0D0D] appear-on-scroll poppins-regular text-3xl font-medium leading-10">
                 Introduction
               </h2>
-              <p className="appear-on-scroll py-8 max-sm:py-4 text-xl leading-9">
+              <p className="appear-on-scroll font-light py-8 max-sm:py-4 text-xl leading-9">
                 Leads is a software solution designed to help businesses
                 organise and manage their sales leads throughout the customer
                 acquisition process. It typically includes tools for capturing,
@@ -88,10 +88,10 @@ const Leads = () => {
               </div>
             </div>
             <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-              <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
+              <h2 className="appear-on-scroll poppins-regular text-3xl font-medium leading-10">
                 Summary
               </h2>
-              <p className="appear-on-scroll py-8 max-sm:py-4 text-xl leading-9">
+              <p className="appear-on-scroll font-light py-8 max-sm:py-4 text-xl leading-9">
                 I conducted an informal moderated usability study with 6
                 participants from 18th April to 28th April 2023. This test aimed
                 to determine if users can complete the core tasks within the
@@ -119,10 +119,10 @@ const Leads = () => {
               )}
             </div>
             <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-              <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
+              <h2 className="appear-on-scroll poppins-regular text-3xl font-medium leading-10">
                 Methodology
               </h2>
-              <ol className="desired pt-8 max-sm:pt-4 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
+              <ol className="desired pt-8 max-sm:pt-4 text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                 <li className="appear-on-scroll mb-6 max-sm:mb-3 list-lower-alpha text-xl leading-9">
                   A moderated usability study with a total of 6 participants
                   with backgrounds in business, sales and marketing.
@@ -154,17 +154,17 @@ const Leads = () => {
               </ol>
             </div>
             <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-              <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
+              <h2 className="appear-on-scroll poppins-regular text-3xl font-medium leading-10">
                 Key performance indicators (KPIs)
               </h2>
-              <p className="appear-on-scroll py-8 max-sm:py-4 text-xl leading-9">
+              <p className="font-light appear-on-scroll py-8 max-sm:py-4 text-xl leading-9">
                 I chose to use the System Usability Scale and Conversion Rate
                 KPIs to translate the success factors of my usability test into
                 actual figures because they're close to my research goals. I
                 used a standardised questionnaire to measure my product's
                 perceived usability.
               </p>
-              <ol className="desired pt-8 max-sm:pt-4 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
+              <ol className="desired pt-8 max-sm:pt-4 text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                 <li className="appear-on-scroll mb-6 max-sm:mb-3 list-lower-alpha text-xl leading-9">
                   Conversion Rate - Participants that completed desired actions
                   during the test.
@@ -176,10 +176,10 @@ const Leads = () => {
               </ol>
             </div>
             <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-              <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
+              <h2 className="appear-on-scroll poppins-regular text-3xl font-medium leading-10">
                 Script
               </h2>
-              <p className="appear-on-scroll py-8 max-sm:py-4">
+              <p className="font-light appear-on-scroll py-8 max-sm:py-4">
                 I prepared a short and simple script which contained a set of
                 pre-defined tasks participants followed. Participants were not
                 informed on how many tasks they were completing because I didn't
@@ -198,17 +198,17 @@ const Leads = () => {
               </div>
             </div>
             <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-              <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
+              <h2 className="appear-on-scroll poppins-regular text-3xl font-medium leading-10">
                 Research Questions
               </h2>
-              <p className="appear-on-scroll pt-8 max-sm:pt-4">
+              <p className="font-light appear-on-scroll pt-8 max-sm:pt-4">
                 To sum up the data collection, I asked a few questions at the
                 end of the session to gather information on the product's
                 overall effectiveness, observations and commentary in relation
                 to the goals of each task. I allowed participants to speak their
                 minds and express themselves freely.
               </p>
-              <ol className="desired pt-8 max-sm:pt-4 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
+              <ol className="desired pt-8 max-sm:pt-4 text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                 <li className="appear-on-scroll mb-6 max-sm:mb-3 list-lower-alpha text-xl leading-9">
                   By your first glance, did you get what the product offers?
                 </li>
@@ -229,10 +229,10 @@ const Leads = () => {
               </ol>
             </div>
             <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-              <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
+              <h2 className="appear-on-scroll poppins-regular text-3xl font-medium leading-10">
                 Participants
               </h2>
-              <ol className="desired pt-8 max-sm:pt-4 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
+              <ol className="desired pt-8 max-sm:pt-4 text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                 <li className="appear-on-scroll mb-6 max-sm:mb-3 list-lower-alpha text-xl leading-9">
                   All participants were business, marketing and sales
                   professionals between the ages of 22-40 with a relatively even
@@ -263,16 +263,18 @@ const Leads = () => {
               </div>
             </div>
             <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-              <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
+              <h2 className="appear-on-scroll poppins-regular text-3xl font-medium leading-10">
                 Card Sorting
               </h2>
-              <p className="appear-on-scroll py-8 max-sm:py-4 text-xl leading-9">
+              <p className="font-light appear-on-scroll py-8 max-sm:py-4 text-xl leading-9">
                 After the test, i compiled and summarised the data collected
                 using the card sorting method to group my insights and build
                 effectively toward next steps.
               </p>
               <div className="pt-8 max-sm:pt-4">
-                <p className="appear-on-scroll font-bold">Challenges</p>
+                <p className="font-light appear-on-scroll font-bold">
+                  Challenges
+                </p>
                 <div className="pt-6">
                   {project.images && project.images.length > 0 && (
                     <>
@@ -315,13 +317,13 @@ const Leads = () => {
               </div>
             </div>
             <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-              <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
+              <h2 className="appear-on-scroll poppins-regular text-3xl font-medium leading-10">
                 Insights
               </h2>
-              <p className="appear-on-scroll pt-8 max-sm:pt-4 font-avant-garde">
+              <p className="font-light appear-on-scroll pt-8 max-sm:pt-4">
                 The test identified only a few minor problems, including:
               </p>
-              <ol className="desired pt-8 max-sm:pt-4 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
+              <ol className="desired pt-8 max-sm:pt-4 text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                 <li className="appear-on-scroll mb-6 max-sm:mb-3 list-lower-alpha text-xl leading-9">
                   Modals- the idea of modals seemed great but aren't going to be
                   practical in real time.
@@ -347,10 +349,10 @@ const Leads = () => {
               </ol>
             </div>
             <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-              <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
+              <h2 className="appear-on-scroll poppins-regular text-3xl font-medium leading-10">
                 Implementing Feedback
               </h2>
-              <p className="appear-on-scroll pt-8 max-sm:pt-4 font-avant-garde">
+              <p className="font-light appear-on-scroll pt-8 max-sm:pt-4">
                 Most of the feedback and recommendations received were compiled
                 and grouped by severity. The data with the highest severity were
                 implemented immediately because they focused more on improving
@@ -370,7 +372,7 @@ const Leads = () => {
               </div>
             </div>
             <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-              <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
+              <h2 className="appear-on-scroll poppins-regular text-3xl font-medium leading-10">
                 Interface before the usability test.
               </h2>
               <div className="pt-6">
@@ -386,7 +388,7 @@ const Leads = () => {
               </div>
             </div>
             <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-              <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
+              <h2 className="appear-on-scroll text-3xl font-medium leading-10">
                 This is the interface after the usability test. The modal was
                 changed into a page
               </h2>
@@ -403,10 +405,10 @@ const Leads = () => {
               </div>
             </div>
             <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-              <h2 className="appear-on-scroll font-avant-garde text-3xl font-medium leading-10">
+              <h2 className="appear-on-scroll poppins-regular text-3xl font-medium leading-10">
                 Conclusion
               </h2>
-              <ol className="list-none pt-8 max-sm:pt-4 font-avant-garde text-base font-light leading-6 ml-1 max-sm:ml-1">
+              <ol className="list-none pt-8 max-sm:pt-4 text-base font-light leading-6 ml-1 max-sm:ml-1">
                 <div className="flex">
                   {project.images && project.images.length > 0 && (
                     <>

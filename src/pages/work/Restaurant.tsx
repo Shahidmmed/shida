@@ -28,7 +28,7 @@ const Restaurant = () => {
                 className="appear-on-scroll max-h-[300px] max-w-[400px] max-sm:w-[320px] ml-10 max-sm:ml-0"
               />
               <div className="ml-8 max-sm:ml-1 max-sm:w-full">
-                <p className="appear-on-scroll text-[#484A56] font-bold text-sm leading-5 tracking-wider text-left mb-2 pb-2">
+                <p className="appear-on-scroll text-[#484A56] font-semibold text-sm leading-5 tracking-wider text-left mb-2 pb-2">
                   {project.designTypes.map((type, index) => (
                     <React.Fragment key={index}>
                       {type}{" "}
@@ -36,10 +36,10 @@ const Restaurant = () => {
                     </React.Fragment>
                   ))}
                 </p>
-                <h2 className="appear-on-scroll text-[#484A56] font-avant-garde font-semibold tracking-wider max-sm:text-3xl text-4xl text-left mb-2 text-nowrap">
+                <h2 className="appear-on-scroll text-[#484A56] poppins-regular font-semibold tracking-wider max-sm:text-3xl text-4xl text-left mb-2 text-nowrap">
                   {project.name}
                 </h2>
-                <p className="appear-on-scroll text-[#484A56] mb-2 py-4 font-avant-garde text-sm leading-6 tracking-wider max-w-[550px]">
+                <p className="appear-on-scroll text-[#484A56] mb-2 py-4 poppins-light text-sm leading-6 tracking-wider max-w-[550px]">
                   {project.brief}
                 </p>
               </div>
@@ -68,10 +68,10 @@ const Restaurant = () => {
               </TabsList>
               <TabsContent value="overview" className="tab-content-appear">
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" poppins-regular text-3xl font-medium leading-10">
                     Introduction
                   </h2>
-                  <p className="py-8 max-sm:py-4  text-xl leading-9">
+                  <p className="font-light py-8 max-sm:py-4  text-xl leading-9">
                     Leads is a software solution designed to help businesses
                     organise and manage their sales leads throughout the
                     customer acquisition process. It typically includes tools
@@ -96,7 +96,7 @@ const Restaurant = () => {
                   </div>
                   <div className="xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-16 flex">
                     <div>
-                      <h2 className=" font-avant-garde text-3xl font-medium leading-10">
+                      <h2 className=" poppins-regular text-3xl font-medium leading-10">
                         Problem
                       </h2>
                       {project.images && project.images.length > 0 && (
@@ -107,7 +107,7 @@ const Restaurant = () => {
                           />
                         </div>
                       )}
-                      <p className="pt-8 max-sm:pt-4 text-xl leading-9">
+                      <p className="font-light pt-8 max-sm:pt-4 text-xl leading-9">
                         People find accessing valid Information on restaurants
                         and booking/reserving tables difficult. They are also
                         faced with poor/unreliable user experiences when using
@@ -115,7 +115,7 @@ const Restaurant = () => {
                       </p>
                     </div>
                     <div className="max-sm:ml-3">
-                      <h2 className=" font-avant-garde text-3xl font-medium leading-10">
+                      <h2 className=" poppins-regular text-3xl font-medium leading-10">
                         Goal
                       </h2>
                       {project.images && project.images.length > 0 && (
@@ -127,7 +127,7 @@ const Restaurant = () => {
                           />
                         </div>
                       )}
-                      <p className="pt-8 max-sm:pt-4 text-xl leading-9">
+                      <p className="font-light pt-8 max-sm:pt-4 text-xl leading-9">
                         The goal is to design a user-friendly platfrom that is
                         simple to use but contains enough information for the
                         user to make reservations and pre-order meals.
@@ -156,10 +156,10 @@ const Restaurant = () => {
                   </div>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" poppins-regular text-3xl font-medium leading-10">
                     Design Process
                   </h2>
-                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
+                  <p className="font-light pt-8 max-sm:pt-4 text-xl leading-9">
                     This was one of my first projects and I was very excited to
                     use my creative problem-solving skills to tackle user
                     challenges, and prioritise their needs to make the product
@@ -177,10 +177,10 @@ const Restaurant = () => {
               </TabsContent>
               <TabsContent value="empathising" className="tab-content-appear">
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto pt-8 max-sm:pt-4 pb-14">
-                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" poppins-regular text-3xl font-medium leading-10">
                     Qualitative Research
                   </h2>
-                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
+                  <p className="font-light pt-8 max-sm:pt-4 text-xl leading-9">
                     I interviewed seven potential users with different
                     backgrounds to talk about restaurants and their booking
                     processes, what challenges they faced and what they would
@@ -193,11 +193,11 @@ const Restaurant = () => {
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto pt-8 max-sm:pt-4 pb-14 flex">
                   <div>
-                    <h2 className=" font-avant-garde text-3xl font-medium leading-10">
+                    <h2 className=" poppins-regular text-3xl font-medium leading-10">
                       Examples of questions I asked
                     </h2>
 
-                    <ul className=" pt-8 max-sm:pt-4 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
+                    <ul className=" pt-8 max-sm:pt-4 text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                       <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                         How old are you?
                       </li>
@@ -234,10 +234,10 @@ const Restaurant = () => {
                     </>
                   )}
                   <div>
-                    <h2 className=" font-avant-garde text-3xl font-medium leading-10">
+                    <h2 className=" poppins-regular text-3xl font-medium leading-10">
                       Key insights derived from interviews
                     </h2>
-                    <ul className="pt-8 max-sm:pt-4 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
+                    <ul className="pt-8 max-sm:pt-4 text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                       <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                         People dont make reservations because they think it
                         doesn't matter.
@@ -262,10 +262,10 @@ const Restaurant = () => {
                   </div>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" poppins-regular text-3xl font-medium leading-10">
                     Quantitative Research
                   </h2>
-                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
+                  <p className="font-light pt-8 max-sm:pt-4 text-xl leading-9">
                     I did an online survey using Google Forms to gain insights
                     from more people within the short time I had. I also used
                     this opportunity to observe patterns and similarities
@@ -298,10 +298,10 @@ const Restaurant = () => {
                   </div>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" poppins-regular text-3xl font-medium leading-10">
                     Feedback Analysis
                   </h2>
-                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
+                  <p className="font-light pt-8 max-sm:pt-4 text-xl leading-9">
                     After gathering all of the data from the research, i
                     organised my findings by using coloured sticky notes to
                     observe similarities and recurring patterns.
@@ -320,10 +320,10 @@ const Restaurant = () => {
               </TabsContent>
               <TabsContent value="defining" className="tab-content-appear">
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto pt-8 max-sm:pt-4 pb-14">
-                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" poppins-regular text-3xl font-medium leading-10">
                     Empathy Maps
                   </h2>
-                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
+                  <p className="font-light pt-8 max-sm:pt-4 text-xl leading-9">
                     I created aggregated empathy maps to understand users
                     further and to illustrate their thoughts, motivations,
                     emotions, and behaviours. This enabled me to create possible
@@ -357,10 +357,10 @@ const Restaurant = () => {
                   </div>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto pt-8 max-sm:pt-4 pb-14">
-                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" poppins-regular text-3xl font-medium leading-10">
                     Personas
                   </h2>
-                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
+                  <p className="font-light pt-8 max-sm:pt-4 text-xl leading-9">
                     With the data collected from the interviews and survey, I
                     created three personas whose responses represent that of a
                     larger group of users.
@@ -377,7 +377,7 @@ const Restaurant = () => {
                   </div>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" poppins-regular text-3xl font-medium leading-10">
                     Pain Points
                   </h2>
                   <div>
@@ -392,10 +392,10 @@ const Restaurant = () => {
                   </div>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" poppins-regular text-3xl font-medium leading-10">
                     Problem Statements
                   </h2>
-                  <ol className="desired pt-8 max-sm:pt-4 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
+                  <ol className="desired pt-8 max-sm:pt-4 text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                     <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       Sasha is a student who needs a way to access adequate
                       information on restaurants and make reservations
@@ -415,10 +415,10 @@ const Restaurant = () => {
                   </ol>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" poppins-regular text-3xl font-medium leading-10">
                     User Stories
                   </h2>
-                  <ol className="desired pt-8 max-sm:pt-4 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
+                  <ol className="desired pt-8 max-sm:pt-4 text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                     <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       As a student who loves to spend time with family and
                       friends, I want a platform that will allow me to make
@@ -440,10 +440,10 @@ const Restaurant = () => {
                   </ol>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" poppins-regular text-3xl font-medium leading-10">
                     Journey Map
                   </h2>
-                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
+                  <p className="font-light pt-8 max-sm:pt-4 text-xl leading-9">
                     I created a user journey map and flow to visualize the
                     user’s experience using the app.
                   </p>
@@ -466,10 +466,10 @@ const Restaurant = () => {
               </TabsContent>
               <TabsContent value="ideation" className="tab-content-appear">
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" poppins-regular text-3xl font-medium leading-10">
                     Information Architecture
                   </h2>
-                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
+                  <p className="font-light pt-8 max-sm:pt-4 text-xl leading-9">
                     I created a structure for the Resto mobile app using an
                     information architecture by laying out each individual
                     screen to identify what users will need and can easily find.
@@ -486,10 +486,10 @@ const Restaurant = () => {
                   </div>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" poppins-regular text-3xl font-medium leading-10">
                     User flow
                   </h2>
-                  <ol className="desired pt-8 max-sm:pt-4 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
+                  <ol className="desired pt-8 max-sm:pt-4 text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                     <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       After understanding and defining my project objectives, I
                       had to determine how users would see the product
@@ -525,10 +525,10 @@ const Restaurant = () => {
               </TabsContent>
               <TabsContent value="design" className="tab-content-appear">
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" poppins-regular text-3xl font-medium leading-10">
                     Low Fidelity Wireframes
                   </h2>
-                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
+                  <p className="font-light pt-8 max-sm:pt-4 text-xl leading-9">
                     I created low-fidelity wireframes using Figma, so I could
                     swiftly join the site’s information architecture to display
                     particular types of information on the user interface.
@@ -545,10 +545,10 @@ const Restaurant = () => {
                   </div>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" poppins-regular text-3xl font-medium leading-10">
                     High Fidelity Wireframes
                   </h2>
-                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
+                  <p className="font-light pt-8 max-sm:pt-4 text-xl leading-9">
                     After creating low-fidelity prototypes and establishing the
                     main ideas of the mobile app, I picked the best design
                     patterns and created High-Fidelity wireframes. These
@@ -570,10 +570,10 @@ const Restaurant = () => {
               </TabsContent>
               <TabsContent value="testing" className="tab-content-appear">
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" poppins-regular text-3xl font-medium leading-10">
                     Usability Testing
                   </h2>
-                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
+                  <p className="font-light pt-8 max-sm:pt-4 text-xl leading-9">
                     I performed both moderated and unmoderated usability study
                     which included 5 participants with different backgrounds.
                     Before going ahead with the final designs, I needed to
@@ -585,10 +585,10 @@ const Restaurant = () => {
                   </p>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" poppins-regular text-3xl font-medium leading-10">
                     Research Goal
                   </h2>
-                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
+                  <p className="font-light pt-8 max-sm:pt-4 text-xl leading-9">
                     The goal of this research is to figure out if users can
                     complete the core tasks within the app efficiently and
                     whether or not they understand the interface and its
@@ -596,7 +596,7 @@ const Restaurant = () => {
                   </p>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" poppins-regular text-3xl font-medium leading-10">
                     Research Questions
                   </h2>
                   <div className="flex pt-10">
@@ -623,10 +623,10 @@ const Restaurant = () => {
                   </div>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" poppins-regular text-3xl font-medium leading-10">
                     Participants
                   </h2>
-                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
+                  <p className="font-light pt-8 max-sm:pt-4 text-xl leading-9">
                     With a total of 5 participants ,Three participants will
                     complete the tasks independently, and two will be guided and
                     given a questionnaire on their experience. Who are they?
@@ -657,10 +657,10 @@ const Restaurant = () => {
                   </div>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" poppins-regular text-3xl font-medium leading-10">
                     Affinity Mapping
                   </h2>
-                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
+                  <p className="font-light pt-8 max-sm:pt-4 text-xl leading-9">
                     Based on my findings, I created an affinity diagram and
                     generated actionable insights from the data received
                   </p>
@@ -686,10 +686,10 @@ const Restaurant = () => {
                   )}
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className=" font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className=" poppins-regular text-3xl font-medium leading-10">
                     Implementing Feedback
                   </h2>
-                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
+                  <p className="font-light pt-8 max-sm:pt-4 text-xl leading-9">
                     The feedback from the Usability test were considered and
                     implemented.
                   </p>
@@ -705,7 +705,7 @@ const Restaurant = () => {
                   </div>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10 pb-8">
+                  <h2 className="poppins-regular text-3xl font-medium leading-10 pb-8">
                     Next Steps
                   </h2>
                   {project.images && project.images.length > 0 && (

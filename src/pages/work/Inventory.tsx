@@ -62,7 +62,7 @@ const Inventory = () => {
                 className="max-h-[300px] max-w-[400px] max-sm:w-[320px] ml-10 max-sm:ml-0"
               />
               <div className="ml-8 max-sm:w-full max-sm:ml-1">
-                <p className="font-bold text-[#484A56] text-sm leading-5 tracking-wider text-left mb-2 pb-2">
+                <p className="font-semibold text-[#484A56] text-sm leading-5 tracking-wider text-left mb-2 pb-2">
                   {project.designTypes.map((type, index) => (
                     <React.Fragment key={index}>
                       {type}{" "}
@@ -70,10 +70,10 @@ const Inventory = () => {
                     </React.Fragment>
                   ))}
                 </p>
-                <h2 className="appear-on-scroll text-[#484A56] font-avant-garde font-semibold tracking-wider max-sm:text-3xl max-sm:text-wrap text-4xl text-left mb-2 text-nowrap">
+                <h2 className="appear-on-scroll text-[#484A56] poppins-regular font-semibold tracking-wider max-sm:text-3xl max-sm:text-wrap text-4xl text-left mb-2 text-nowrap">
                   {project.name}
                 </h2>
-                <p className="appear-on-scroll text-[#484A56] mb-2 py-4 font-avant-garde text-sm leading-6 tracking-wider">
+                <p className="appear-on-scroll text-[#484A56] mb-2 py-4 poppins-regular text-sm leading-6 tracking-wider">
                   {project.brief}
                 </p>
               </div>
@@ -98,12 +98,12 @@ const Inventory = () => {
                 </TabsTrigger>
               </TabsList>
               <TabsContent value="defining" className="tab-content-appear">
-                <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto pt-8 max-sm:pt-4 pb-14">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                <div className="text-[#0D0D0D] px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto pt-8 max-sm:pt-4 pb-14">
+                  <h2 className=" poppins-regular text-3xl font-medium leading-10">
                     One thing about me: I love to work on challenging projects,
                     especially those new to me.
                   </h2>
-                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
+                  <p className="font-light pt-8 max-sm:pt-4 text-xl poppins-light leading-9">
                     The stress is definitely there, but the sheer determination
                     to see a project through is stronger and always wins, and
                     that's how we got here: the exciting task of transforming a
@@ -142,10 +142,10 @@ const Inventory = () => {
                   </div>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className="poppins-regular text-3xl font-medium leading-10">
                     Goals and Objectives
                   </h2>
-                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
+                  <p className="font-light pt-8 max-sm:pt-4 text-xl leading-9">
                     My task was to design a functional mobile app that will help
                     users track inventory data and sales data, point of sale,
                     manage staff members and view reports. The primary objective
@@ -160,7 +160,7 @@ const Inventory = () => {
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
                   <div>
-                    <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                    <h2 className="poppins-regular text-3xl font-medium leading-10">
                       My Design Process
                     </h2>
                     <div className="pt-8 max-sm:pt-4">
@@ -177,10 +177,10 @@ const Inventory = () => {
                   </div>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className="poppins-regular text-3xl font-medium leading-10">
                     Defining and Understanding
                   </h2>
-                  <ol className="desired pt-8 max-sm:pt-4 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
+                  <ol className="desired pt-8 max-sm:pt-4 text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                     <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       First things first, I had to familiarize myself with the
                       main product and ground myself by understanding the
@@ -231,10 +231,10 @@ const Inventory = () => {
               </TabsContent>
               <TabsContent value="developing" className="tab-content-appear">
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className="poppins-regular text-3xl font-medium leading-10">
                     Defining and Understanding
                   </h2>
-                  <ol className="desired pt-8 max-sm:pt-4 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
+                  <ol className="desired pt-8 max-sm:pt-4 text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                     <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       After understanding and defining my project objectives, I
                       had to determine how users would see the product
@@ -282,10 +282,10 @@ const Inventory = () => {
                   </div>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className="poppins-regular text-3xl font-medium leading-10">
                     Information Architecture
                   </h2>
-                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
+                  <p className="font-light pt-8 max-sm:pt-4 text-xl leading-9">
                     As a budding UX professional, my expertise lies in
                     structuring and organizing digital content and interactions
                     to ensure my ideas are organised into key sections and
@@ -304,10 +304,10 @@ const Inventory = () => {
                   )}
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className="poppins-regular text-3xl font-medium leading-10">
                     User Journeys
                   </h2>
-                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
+                  <p className="font-light pt-8 max-sm:pt-4 text-xl leading-9">
                     By understanding the user journey, their emotions, and the
                     opportunities for improvement, i was able to structure and
                     design to meet the needs and expectations of users and the
@@ -326,10 +326,10 @@ const Inventory = () => {
                   )}
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className="poppins-regular text-3xl font-medium leading-10">
                     User Flows
                   </h2>
-                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
+                  <p className="font-light pt-8 max-sm:pt-4 text-xl leading-9">
                     I created this user flow to help me and my team navigate the
                     core functions of recording a sale and generating invoices
                     on our app. It's important to note that the app is primarily
@@ -351,7 +351,7 @@ const Inventory = () => {
                   )}
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7 flex flex-col items-center justify-center">
-                  <p>
+                  <p className="font-light ">
                     Every design decision is meticulously tailored to enhance
                     user engagement and satisfaction.
                   </p>
@@ -360,10 +360,10 @@ const Inventory = () => {
               </TabsContent>
               <TabsContent value="clarity" className="tab-content-appear">
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className="poppins-regular text-3xl font-medium leading-10">
                     Visual Clarity & Direction
                   </h2>
-                  <ul className="circle-list pt-8 max-sm:pt-4 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
+                  <ul className="circle-list pt-8 max-sm:pt-4 text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                     <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       Designing the wireframes was a challenge, and just like
                       before, It also required a lot of iterations and research.
@@ -385,10 +385,10 @@ const Inventory = () => {
                   </ul>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className="poppins-regular text-3xl font-medium leading-10">
                     Low-fi Wireframes (selected frames)
                   </h2>
-                  <ul className="circle-list pt-8 max-sm:pt-4 font-avant-garde text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
+                  <ul className="circle-list pt-8 max-sm:pt-4 text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
                     <li className="mb-6 max-sm:mb-3 text-xl leading-9">
                       I used a week to create digital representations of my
                       paper sketches with a few changes and add ons and another
@@ -415,10 +415,10 @@ const Inventory = () => {
                   )}
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className="poppins-regular text-3xl font-medium leading-10">
                     Final Wireframes (selected frames)
                   </h2>
-                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
+                  <p className="font-light pt-8 max-sm:pt-4 text-xl leading-9">
                     The screens below show the final ideas after combining the
                     control panel and pos lite ideas into one app after two
                     weeks of ideations and modifications. I picked the best
@@ -439,10 +439,10 @@ const Inventory = () => {
               </TabsContent>
               <TabsContent value="design" className="tab-content-appear">
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className="poppins-regular text-3xl font-medium leading-10">
                     Approved Design
                   </h2>
-                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
+                  <p className="font-light pt-8 max-sm:pt-4 text-xl leading-9">
                     As a budding UX professional, my expertise lies in
                     structuring and organising digital content and interactions
                     to ensure my ideas are organised into key sections and
@@ -454,10 +454,10 @@ const Inventory = () => {
                   </Button>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className="poppins-regular text-3xl font-medium leading-10">
                     Conclusion/Takeaway
                   </h2>
-                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
+                  <p className="font-light pt-8 max-sm:pt-4 text-xl leading-9">
                     This was a cool and interesting project to work on. It was
                     an exciting challenge that pushed me to new heights. It
                     taught me the essence of collaboration, and the iterative
@@ -481,10 +481,10 @@ const Inventory = () => {
               </TabsContent>
               <TabsContent value="guide" className="tab-content-appear">
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className="poppins-regular text-3xl font-medium leading-10">
                     Style Guide
                   </h2>
-                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
+                  <p className="font-light pt-8 max-sm:pt-4 text-xl leading-9">
                     I was inspired by the design system for the desktop & web
                     app to create my style guide for the mobile app to deliver a
                     clear and consistent design solution. Predominantly purple
@@ -494,7 +494,7 @@ const Inventory = () => {
                   </p>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className="poppins-regular text-3xl font-medium leading-10">
                     Color palette
                   </h2>
                   <div className="py-10 flex flex-col justify-center">
@@ -553,7 +553,7 @@ const Inventory = () => {
                   </div>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className="poppins-regular text-3xl font-medium leading-10">
                     Logo
                   </h2>
                   <div className="py-10 flex justify-center">
@@ -569,10 +569,10 @@ const Inventory = () => {
                   </div>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className="poppins-regular text-3xl font-medium leading-10">
                     Typography
                   </h2>
-                  <p className="pt-8 max-sm:pt-4 text-xl leading-9">
+                  <p className="font-light pt-8 max-sm:pt-4 text-xl leading-9">
                     The choice of 'Albert Sans' was deliberate and driven by my
                     desire to achieve a clean, modern, and legible design that
                     fits perfectly with the project's objectives. I wanted to
@@ -587,7 +587,7 @@ const Inventory = () => {
                       <div
                         key={index}
                         className={`text-item ${
-                          index % 2 === 0 ? "avant-garde-extralight" : ""
+                          index % 2 === 0 ? "poppins-light" : ""
                         }`}
                       >
                         {item}
@@ -617,7 +617,7 @@ const Inventory = () => {
                   </Table>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className="poppins-regular text-3xl font-medium leading-10">
                     Icons
                   </h2>
                   <div className="py-10 flex justify-center">
@@ -629,7 +629,7 @@ const Inventory = () => {
                   </div>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className="poppins-regular text-3xl font-medium leading-10">
                     Border Radius
                   </h2>
                   <div className="py-10 flex justify-center">
@@ -645,7 +645,7 @@ const Inventory = () => {
                   </div>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className="poppins-regular text-3xl font-medium leading-10">
                     Buttons
                   </h2>
                   <div className="py-10 flex justify-center">
@@ -662,7 +662,7 @@ const Inventory = () => {
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full flex mx-auto justify-evenly py-14 max-sm:py-7">
                   <div>
-                    <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                    <h2 className="poppins-regular text-3xl font-medium leading-10">
                       Navigations
                     </h2>
                     <div className="py-10 flex justify-center">
@@ -678,7 +678,7 @@ const Inventory = () => {
                     </div>
                   </div>
                   <div>
-                    <h2 className="font-avant-garde text-base font-medium leading-10">
+                    <h2 className="poppins-regular text-base font-medium leading-10">
                       Radio buttons
                     </h2>
                     <div className="py-4 flex justify-center">
@@ -695,7 +695,7 @@ const Inventory = () => {
                   </div>
                 </div>
                 <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
-                  <h2 className="font-avant-garde text-3xl font-medium leading-10">
+                  <h2 className="poppins-regular text-3xl font-medium leading-10">
                     Illustrations
                   </h2>
                   <div className="py-10 flex justify-center">

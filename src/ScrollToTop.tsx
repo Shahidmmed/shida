@@ -5,14 +5,7 @@ const ScrollToTop: React.FC = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
-    window.onscroll = function () {
-      console.log("first");
-      console.log("ScrollY 1: ", window.scrollY, window.pageYOffset);
-    };
-
-    console.log("ScrollY: ", window.scrollY, window.pageYOffset);
     const toggleVisibility = () => {
-      console.log("ScrollY: ", window.scrollY);
       if (window.scrollY || window.pageYOffset > 300) {
         console.log("first");
         setIsVisible(true);

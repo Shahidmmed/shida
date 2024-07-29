@@ -68,7 +68,7 @@ const Work = () => {
               className="md:max-xl:h-12 absolute stars"
             />
             <img src={ux} alt="ux" className="md:max-xl:h-8 absolute ux" />
-            <h1 className="md:max-xl:max-w-[575px] max-w-[780px] max-sm:w-full max-sm:text-[25px] max-sm:leading-[42px] z-10 font-avant-garde mb-6 font-semibold md:max-xl:text-2xl text-4xl leading-[53PX] max-sm:tracking-wide tracking-wider text-center">
+            <h1 className="md:max-xl:max-w-[575px] max-w-[780px] max-sm:w-full max-sm:text-[25px] max-sm:leading-[42px] z-10 poppins-regular mb-6 font-semibold md:max-xl:text-2xl text-4xl leading-[53PX] max-sm:tracking-wide tracking-wider text-center">
               I Create, Manage, and Market Products
             </h1>
             <img
@@ -87,7 +87,7 @@ const Work = () => {
           </div>
 
           <div className="appear-on-scroll flex relative">
-            <p className="text-center max-w-[850px] text-[#403f3f] avant-garde-extralight font-bold leading-[32px] max-sm:leading-[20px] max-sm:text-xs text-base z-10 m-8">
+            <p className="text-center max-w-[850px] text-[#403f3f] leading-[32px] max-sm:leading-[20px] max-sm:text-xs text-base z-10 m-8">
               I craft digital experiences using storytelling and modern
               approaches to connect individuals with your business and products.
             </p>
@@ -103,12 +103,12 @@ const Work = () => {
         </div>
         <div className="text-container py-3">
           {items.map((item, index) => (
-            <div key={index} className="text-item">
+            <div key={index} className="text-item font-light">
               {item}
             </div>
           ))}
           {items.map((item, index) => (
-            <div key={index + items.length} className="text-item">
+            <div key={index + items.length} className="text-item font-light">
               {item}
             </div>
           ))}
@@ -125,17 +125,17 @@ const Work = () => {
                 }}
               ></Card>
               <div className="work-info px-4 py-8 md:max-2xl:max-w-[520px] md:max-xl:w-[450px] ml-8">
-                <p className="text-white appear-on-scroll font-avant-garde font-medium text-xs leading-5 tracking-widest text-left mb-2 pb-2">
+                <p className="text-white appear-on-scroll  font-medium text-xs leading-5 tracking-widest text-left mb-2 pb-2">
                   {item.designTypes.map((type, index) => (
                     <React.Fragment key={index}>
                       {type} {index !== item.designTypes.length - 1 && <> ♦ </>}
                     </React.Fragment>
                   ))}
                 </p>
-                <h2 className="appear-on-scroll font-avant-garde font-semibold tracking-wider work-text max-sm:text-nowrap max-sm:text-[25px] text-left mb-2 text-nowrap">
+                <h2 className="appear-on-scroll font-medium tracking-wider work-text max-sm:text-nowrap max-sm:text-[25px] text-left mb-2 text-nowrap">
                   {item.name}
                 </h2>
-                <p className="text-white appear-on-scroll mb-2 py-4 text-sm max-sm:text-xs avant-garde-extralight leading-7 tracking-wider">
+                <p className="text-white poppins-light extralight appear-on-scroll mb-2 py-4 text-sm max-sm:text-xs leading-7 tracking-wider">
                   {item.brief}
                 </p>
                 <Link
@@ -166,7 +166,7 @@ const Work = () => {
               <a
                 href={work.link}
                 target="_blank"
-                className="md:max-2xl:max-w-[250px] md:max-xl:max-w-[205px] text-xl max-sm:text-xs md:max-xl:text-base mt-2 pt-6 font-avant-garde-thin font-thin leading-6 tracking-wide text-gray-400"
+                className="md:max-2xl:max-w-[250px] md:max-xl:max-w-[205px] text-xl max-sm:text-xs md:max-xl:text-base mt-2 pt-6  font-light leading-6 tracking-wide text-gray-400"
               >
                 {work.name}
               </a>
