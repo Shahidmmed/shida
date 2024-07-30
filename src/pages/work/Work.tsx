@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Footer from "../layout/Footer";
 import { Link } from "react-router-dom";
 import { data, moreWork } from "@/data/info";
@@ -57,6 +57,14 @@ const Work = () => {
     };
   }, []);
 
+  const workRef = useRef<HTMLDivElement>(null);
+
+  const scrollToSection = () => {
+    if (workRef.current) {
+      workRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="pt-20">
       <section className="pb-16">
@@ -97,7 +105,10 @@ const Work = () => {
               className="md:max-xl:h-8 heart absolute"
             />
           </div>
-          <Button className="appear-on-scroll text-center rounded-none bg-black hover:bg-white hover:text-black hover:border-black hover:border px-28 py-6 m-8">
+          <Button
+            onClick={scrollToSection}
+            className="appear-on-scroll text-center rounded-none bg-black hover:bg-white hover:text-black hover:border-black hover:border px-28 py-6 m-8"
+          >
             My Work
           </Button>
         </div>
@@ -115,7 +126,7 @@ const Work = () => {
         </div>
       </section>
       <section className="bg-black text-white py-20 px-16 flex items-center flex-col justify-center mx-auto">
-        <div className="work-items space-y-12">
+        <div className="work-items space-y-12" ref={workRef}>
           {data.map((item, index) => (
             <div key={index} className="work-item flex work-container">
               <Card
@@ -132,7 +143,7 @@ const Work = () => {
                     </React.Fragment>
                   ))}
                 </p>
-                <h2 className="appear-on-scroll font-medium tracking-wider work-text max-sm:text-nowrap max-sm:text-[25px] text-left mb-2 text-nowrap">
+                <h2 className="appear-on-scroll font-normal tracking-wider work-text max-sm:text-nowrap max-sm:text-[25px] text-left mb-2 text-nowrap">
                   {item.name}
                 </h2>
                 <p className="text-white poppins-light extralight appear-on-scroll mb-2 py-4 text-sm max-sm:text-xs leading-7 tracking-wider">

@@ -272,9 +272,7 @@ const Leads = () => {
                 effectively toward next steps.
               </p>
               <div className="pt-8 max-sm:pt-4">
-                <p className="font-light appear-on-scroll font-bold">
-                  Challenges
-                </p>
+                <p className="appear-on-scroll font-medium">Challenges</p>
                 <div className="pt-6">
                   {project.images && project.images.length > 0 && (
                     <>
@@ -287,7 +285,7 @@ const Leads = () => {
                   )}
                 </div>
                 <div className="pt-8 max-sm:pt-4">
-                  <p className="appear-on-scroll font-bold">Comments</p>
+                  <p className="appear-on-scroll font-medium">Comments</p>
                   <div className="pt-6">
                     {project.images && project.images.length > 0 && (
                       <>
@@ -302,7 +300,7 @@ const Leads = () => {
                 </div>
               </div>
               <div className="pt-8 max-sm:pt-4">
-                <p className="appear-on-scroll font-bold">Recommendations</p>
+                <p className="appear-on-scroll font-medium">Recommendations</p>
                 <div className="pt-6">
                   {project.images && project.images.length > 0 && (
                     <>
