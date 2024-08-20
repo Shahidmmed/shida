@@ -126,10 +126,16 @@ const About = () => {
             <span className="font-medium">Digital Marketing & Branding: </span>
             Social Media Management, SEO, Copy & Content Writing
           </p>
-
-          <Button className="appear-on-scroll rounded-none bg-white hover:bg-black hover:text-white hover:border-white hover:border text-base px-18 py-7 text-black border">
-            My Resume
-          </Button>
+          <div>
+            <a
+              href="https://drive.google.com/file/d/1-HL6H9SGoUVYqK42891tYTgVxCZ96QF4/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="appear-on-scroll rounded-none bg-white hover:bg-black hover:text-white hover:border-white hover:border text-base px-18 py-7 text-black border"
+            >
+              My Resume
+            </a>
+          </div>
         </div>
       </section>
       <section className="py-12 px-16 mx-auto max-sm:w-full max-sm:px-2  max-sm:pb-0">

@@ -169,7 +169,7 @@ const Leads = () => {
                   Conversion Rate - Participants that completed desired actions
                   during the test.
                 </li>
-                <li className="appear-on-scroll mb-6 max-sm:mb-3 pb-4 list-lower-alpha">
+                <li className="appear-on-scroll mb-6 max-sm:mb-3 pb-4 text-xl list-lower-alpha">
                   System Usability Scale- How easy the app is for the user
                   through the use of a questionnaire.
                 </li>
@@ -179,7 +179,7 @@ const Leads = () => {
               <h2 className="appear-on-scroll poppins-regular text-3xl font-medium leading-10">
                 Script
               </h2>
-              <p className="font-light appear-on-scroll py-8 max-sm:py-4">
+              <p className="font-light text-xl appear-on-scroll py-8 max-sm:py-4">
                 I prepared a short and simple script which contained a set of
                 pre-defined tasks participants followed. Participants were not
                 informed on how many tasks they were completing because I didn't
@@ -189,19 +189,21 @@ const Leads = () => {
                 task during the test.
               </p>
               <div className="mt-4">
-                <Link
-                  to="#"
+                <a
+                  href="https://drive.google.com/file/d/1-Wa68vvwG97zp97Hs7cof8VgtHDBnySI/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="rounded-none appear-on-scroll bg-black hover:bg-white hover:text-black hover:border-black  px-12 py-4 border mt-6 text-white"
                 >
                   View Script
-                </Link>
+                </a>
               </div>
             </div>
             <div className="px-16 max-sm:px-8 xl2:w-[1240px] w-[1100px] max-sm:w-full mx-auto py-14 max-sm:py-7">
               <h2 className="appear-on-scroll poppins-regular text-3xl font-medium leading-10">
                 Research Questions
               </h2>
-              <p className="font-light appear-on-scroll pt-8 max-sm:pt-4">
+              <p className="font-light text-xl appear-on-scroll pt-8 max-sm:pt-4">
                 To sum up the data collection, I asked a few questions at the
                 end of the session to gather information on the product's
                 overall effectiveness, observations and commentary in relation
@@ -233,7 +235,7 @@ const Leads = () => {
                 Participants
               </h2>
               <ol className="desired pt-8 max-sm:pt-4 text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
-                <li className="appear-on-scroll mb-6 max-sm:mb-3 list-lower-alpha text-xl leading-9">
+                <li className="appear-on-scroll text-xl mb-6 max-sm:mb-3 list-lower-alpha text-xl leading-9">
                   All participants were business, marketing and sales
                   professionals between the ages of 22-40 with a relatively even
                   distribution of only two genders.
@@ -318,7 +320,7 @@ const Leads = () => {
               <h2 className="appear-on-scroll poppins-regular text-3xl font-medium leading-10">
                 Insights
               </h2>
-              <p className="font-light appear-on-scroll pt-8 max-sm:pt-4">
+              <p className="font-light text-xl appear-on-scroll pt-8 max-sm:pt-4">
                 The test identified only a few minor problems, including:
               </p>
               <ol className="desired pt-8 max-sm:pt-4 text-base font-light leading-6 list-disc ml-8 max-sm:ml-1">
@@ -350,7 +352,7 @@ const Leads = () => {
               <h2 className="appear-on-scroll poppins-regular text-3xl font-medium leading-10">
                 Implementing Feedback
               </h2>
-              <p className="font-light appear-on-scroll pt-8 max-sm:pt-4">
+              <p className="font-light text-xl appear-on-scroll pt-8 max-sm:pt-4">
                 Most of the feedback and recommendations received were compiled
                 and grouped by severity. The data with the highest severity were
                 implemented immediately because they focused more on improving
